@@ -1,0 +1,4 @@
+seed 42: eval EER 1.56%  AUC 0.9987  | nguong dev: bo sot spoof 6.82%, bao nham bonafide 0.37%
+seed 43: eval EER 1.61%  AUC 0.9986  | nguong dev: bo sot spoof 6.27%, bao nham bonafide 0.46%
+seed 44: eval EER 1.54%  AUC 0.9987  | nguong dev: bo sot spoof 7.15%, bao nham bonafide 0.37%
+TRUNG BINH 3 seed: EER 1.57% +- 0.03% | AUC 0.9987 +- 0.0001

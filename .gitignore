@@ -1,0 +1,12 @@
+data/
+.venv/
+__pycache__/
+*.pyc
+mlruns/
+*.pt
+*.pth
+*.onnx
+.ipynb_checkpoints/
+models/
+bad_files.txt
+reports/_montage_check.jpg

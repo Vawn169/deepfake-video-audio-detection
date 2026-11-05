@@ -1,0 +1,44 @@
+time,ckpt,dataset,auc
+2026-10-17 22:01:16,checkpoints_s44/best_effnet_b0.pt,FF++ c23 Val,0.9901
+2026-10-17 22:07:42,checkpoints_s42/best_effnet_b0.pt,FF++ c23 Val,0.9887
+2026-10-17 22:07:42,checkpoints_s42/best_effnet_b0.pt,FF++ c23 Test,0.9842
+2026-10-17 22:07:42,checkpoints_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.7754
+2026-10-17 22:08:21,checkpoints_s43/best_effnet_b0.pt,FF++ c23 Val,0.9886
+2026-10-17 22:08:21,checkpoints_s43/best_effnet_b0.pt,FF++ c23 Test,0.9902
+2026-10-17 22:08:21,checkpoints_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.8042
+2026-10-17 22:08:58,checkpoints_s44/best_effnet_b0.pt,FF++ c23 Val,0.9901
+2026-10-17 22:08:58,checkpoints_s44/best_effnet_b0.pt,FF++ c23 Test,0.9922
+2026-10-17 22:08:58,checkpoints_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.7624
+2026-10-18 22:10:20,checkpoints_s42/best_effnet_b0.pt,FF++ c23 Val,0.9887
+2026-10-18 22:10:20,checkpoints_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7274
+2026-10-18 22:10:56,checkpoints_s43/best_effnet_b0.pt,FF++ c23 Val,0.9886
+2026-10-18 22:10:56,checkpoints_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7288
+2026-10-18 22:11:28,checkpoints_s44/best_effnet_b0.pt,FF++ c23 Val,0.9901
+2026-10-18 22:11:28,checkpoints_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.6965
+2026-10-19 17:55:14,checkpoints_s42/best_effnet_b0.pt,FF++ c23 Val,0.9887
+2026-10-19 17:55:14,checkpoints_s42/best_effnet_b0.pt,FF++ c40 Test,0.8001
+2026-10-19 17:56:23,checkpoints_s43/best_effnet_b0.pt,FF++ c23 Val,0.9886
+2026-10-19 17:56:23,checkpoints_s43/best_effnet_b0.pt,FF++ c40 Test,0.8143
+2026-10-19 17:57:15,checkpoints_s44/best_effnet_b0.pt,FF++ c23 Val,0.9901
+2026-10-19 17:57:15,checkpoints_s44/best_effnet_b0.pt,FF++ c40 Test,0.7818
+2026-10-20 10:36:17,checkpoints_aug_s42/best_effnet_b0.pt,FF++ c23 Val,0.9836
+2026-10-20 10:36:17,checkpoints_aug_s42/best_effnet_b0.pt,FF++ c23 Test,0.9822
+2026-10-20 10:36:17,checkpoints_aug_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.8459
+2026-10-20 10:36:17,checkpoints_aug_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7694
+2026-10-20 10:36:17,checkpoints_aug_s42/best_effnet_b0.pt,FF++ c40 Test,0.8604
+2026-10-20 10:37:14,checkpoints_aug_s43/best_effnet_b0.pt,FF++ c23 Val,0.9806
+2026-10-20 10:37:14,checkpoints_aug_s43/best_effnet_b0.pt,FF++ c23 Test,0.9793
+2026-10-20 10:37:14,checkpoints_aug_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.8413
+2026-10-20 10:37:14,checkpoints_aug_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7783
+2026-10-20 10:37:14,checkpoints_aug_s43/best_effnet_b0.pt,FF++ c40 Test,0.8708
+2026-10-20 10:38:11,checkpoints_aug_s44/best_effnet_b0.pt,FF++ c23 Val,0.9838
+2026-10-20 10:38:11,checkpoints_aug_s44/best_effnet_b0.pt,FF++ c23 Test,0.9805
+2026-10-20 10:38:11,checkpoints_aug_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.8248
+2026-10-20 10:38:11,checkpoints_aug_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.747
+2026-10-20 10:38:11,checkpoints_aug_s44/best_effnet_b0.pt,FF++ c40 Test,0.883
+2026-11-01 21:08:30,checkpoints_audio_s42/best_mlp.pt,ASVspoof2019 LA eval EER,0.0156
+2026-11-01 21:08:30,checkpoints_audio_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9987
+2026-11-01 21:08:30,checkpoints_audio_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.0161
+2026-11-01 21:08:30,checkpoints_audio_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9986
+2026-11-01 21:08:30,checkpoints_audio_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.0154
+2026-11-01 21:08:30,checkpoints_audio_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9987

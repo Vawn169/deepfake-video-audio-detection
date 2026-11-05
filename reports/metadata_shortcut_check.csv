@@ -1,0 +1,5 @@
+dataset,num_videos,logreg_auc,rf_auc
+FF++ c23 Val,694,0.5736,0.5785
+FF++ c23 Test,700,0.5826,0.5832
+Celeb-DF v2 (200),200,0.5512,0.5204
+Celeb-DF CRF30 (200),200,0.5646,0.5033

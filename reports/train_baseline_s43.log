@@ -1,0 +1,17 @@
+Dang nap du lieu FF++ c23 (Train & Val)...
+Train frames: 56164 (3571 videos) | Real: 11232, Fake: 44932 | pos_weight: 0.250
+Val frames:   10734 (694 videos)
+
+--- BAT DAU HUAN LUYEN TREN cuda (10 EPOCHS) ---
+Epoch 01/10 (120.8s) | Train Loss: 0.1083 | Val Loss: 0.0904 | Val AUC: 0.9844 | Val Acc: 0.9366 | Val F1: 0.9590 [*BEST*]
+Epoch 02/10 (107.8s) | Train Loss: 0.0512 | Val Loss: 0.1160 | Val AUC: 0.9860 | Val Acc: 0.9553 | Val F1: 0.9720 [*BEST*]
+Epoch 03/10 (105.5s) | Train Loss: 0.0346 | Val Loss: 0.0793 | Val AUC: 0.9845 | Val Acc: 0.9424 | Val F1: 0.9629
+Epoch 04/10 (104.6s) | Train Loss: 0.0244 | Val Loss: 0.0916 | Val AUC: 0.9866 | Val Acc: 0.9640 | Val F1: 0.9771 [*BEST*]
+Epoch 05/10 (104.4s) | Train Loss: 0.0177 | Val Loss: 0.1190 | Val AUC: 0.9863 | Val Acc: 0.9625 | Val F1: 0.9764
+Epoch 06/10 (104.5s) | Train Loss: 0.0131 | Val Loss: 0.1080 | Val AUC: 0.9862 | Val Acc: 0.9597 | Val F1: 0.9744
+Epoch 07/10 (109.8s) | Train Loss: 0.0090 | Val Loss: 0.1524 | Val AUC: 0.9886 | Val Acc: 0.9611 | Val F1: 0.9755 [*BEST*]
+Epoch 08/10 (113.0s) | Train Loss: 0.0067 | Val Loss: 0.1261 | Val AUC: 0.9866 | Val Acc: 0.9597 | Val F1: 0.9744
+Epoch 09/10 (112.5s) | Train Loss: 0.0046 | Val Loss: 0.1573 | Val AUC: 0.9876 | Val Acc: 0.9611 | Val F1: 0.9754
+Epoch 10/10 (112.4s) | Train Loss: 0.0034 | Val Loss: 0.1513 | Val AUC: 0.9869 | Val Acc: 0.9597 | Val F1: 0.9745
+
+Hoan tat. Best Val Video AUC: 0.9886 (luu tai checkpoints_s43/best_effnet_b0.pt)

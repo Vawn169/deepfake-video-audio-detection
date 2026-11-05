@@ -1,0 +1,9 @@
+{
+  "overfit_32videos_auc": 1.0,
+  "shuffled_label_val_aucs": [
+    0.4933,
+    0.5378,
+    0.6289
+  ],
+  "shuffled_label_val_auc_mean": 0.5533
+}
