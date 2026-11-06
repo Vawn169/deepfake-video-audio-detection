@@ -42,3 +42,13 @@ Latency Docker CPU (--cpus=4 --memory=4g, bỏ 2 warm-up, n=20, server):
   audio từ video (20 video trên ghép 20 flac đó, AAC): mean=0.314s p50=0.312s p95=0.368s max=0.374s
 Lưu ý ổ đĩa: ổ ảo WSL (ext4.vhdx) nằm trên ổ C, 50,3 GB; ổ C còn khoảng 39 GB.
 Tiếp theo: ghi mục đóng băng thí nghiệm vào protocol (cuối Tuần 8); Tuần 9: unit test, README, LICENSE, chạy lại repo trên máy sạch.
+
+# 2026-11-06: Giai đoạn 0 của kế hoạch nâng cấp v2.
+Repo public (bản sạch, không lịch sử cũ, không ảnh mặt từ dataset): https://github.com/Vawn169/deepfake-video-audio-detection
+Unit test (tests/, commit f93b001): 17 test. test_splits (không cần dữ liệu): danh tính FF++ train/val/test không giao nhau (720/140/140), manifest c23 5.000 dòng khớp split, c40 700 dòng chỉ test, Celeb-DF 200 (100/100, không trùng). test_api: không mặt, không tiếng, 415, 422, chuyển 44,1 kHz. test_regression: real_862 0,072, real_186 0,0303, FaceSwap_280_249 0,9999 (sai số 0,005); 3 logit audio (sai số 0,01).
+requirements.txt Tuần 1 thiếu scikit-learn, transformers, soundfile, fastapi, uvicorn, python-multipart, safetensors, huggingface_hub và địa chỉ tải PyTorch cu128; đã tạo lại từ venv đang chạy, không đổi phiên bản nào (commit 374ce47). pytest, httpx ở requirements-dev.txt.
+Kiểm tra máy sạch: clone repo public (b4f7f75) vào /mnt/d/clean_check, venv Python 3.14 mới, pip install -r requirements.txt -r requirements-dev.txt thành công sau 1.971 s; không có mô hình: 4 passed, 13 skipped (đúng thiết kế); nối mô hình và dữ liệu bằng symlink: 17 passed. Docker không build lại trong bước này (đã kiểm ở Tuần 8).
+Quyền dữ liệu: Deepfake-Eval-2024 gửi form Hugging Face 2026-11-06, chờ duyệt tay. AV-Deepfake1M gửi EULA đã ký qua mail 2026-11-06; Deepfakes1m@gmail.com không tồn tại (lỗi 550), deepfakes1mchallenge@gmail.com không báo lỗi.
+In-the-Wild: tải release_in_the_wild.zip 8.161.489.023 byte về /mnt/d/in_the_wild, zip kiểm tra CRC đạt, giải nén 31.779 wav; meta.csv: 19.963 bona-fide, 11.816 spoof (khớp README); 54 tên người nói trong meta.csv (bài báo ghi 58, chưa rõ lý do). Chưa chạy mô hình nào trên In-the-Wild.
+Protocol: mục "mở lại thí nghiệm có kiểm soát" commit e88e267 trước khi giải nén dữ liệu mới.
+Tiếp theo: Giai đoạn 1a audio trên In-the-Wild (chờ người làm đồng ý chạy), Deepfake-Eval-2024 khi được duyệt.
