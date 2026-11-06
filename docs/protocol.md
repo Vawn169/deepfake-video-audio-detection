@@ -91,3 +91,19 @@
   - Grad-CAM theo vùng: 48 video (kế hoạch 50).
   - MLflow và DVC không dùng; thay bằng git commit, docs/protocol.md, reports/eval_ledger.csv và các file trong reports/.
   - Mức 3 (fusion FakeAVCeleb) không làm: chưa có quyền dữ liệu.
+
+## Sửa đổi: mở lại thí nghiệm có kiểm soát (2026-11-06, trước khi tải dữ liệu mới về giải nén và trước khi chạy bất kỳ mô hình nào trên dữ liệu mới)
+- Lý do: mốc "Tuần 8" ở mục đóng băng (2026-11-03) tính theo tiến độ công việc; theo lịch thật dự án mới khoảng tuần 3–4 trên 10, còn khoảng 7 tuần. Thử trên dữ liệu ngoài đời (2026-11-05) cho thấy nhánh audio chấm mọi giọng thật ngoài đời là spoof và nhánh video báo nhầm clip mạng xã hội. Kế hoạch nâng cấp v2 dùng thời gian còn lại để đo và sửa các lỗi này.
+- Mọi kết quả, checkpoint và mục đóng băng cũ giữ nguyên, không đánh giá lại các tập test cũ với checkpoint cũ. Mô hình mới lưu ở thư mục mới (checkpoints_audio_v2_*, checkpoints_video_v2_*).
+- Tập test mới, chỉ dùng để test, không dùng để train, chọn mô hình, chọn tầng hay chọn ngưỡng:
+  - In-the-Wild (Müller và cộng sự, 2022; Hugging Face mueller91/In-The-Wild, CC BY-SA 4.0): toàn bộ bộ dữ liệu, nhãn theo file meta đi kèm. Số câu phải khớp README (19.963 thật, 11.816 giả); nếu lệch thì ghi lại số thực tế trước khi chạy mô hình.
+  - Deepfake-Eval-2024 (Hugging Face nuriachandra/Deepfake-Eval-2024, CC BY-SA 4.0, điều khoản chỉ cho phép dùng để đánh giá): phần video và phần audio, chỉ các mục có nhãn real/fake. Đang chờ duyệt quyền; chỉ dùng sau khi được duyệt.
+- Giai đoạn 1a (đo mô hình hiện tại, không train):
+  - Video: 6 checkpoint (checkpoints_s42/43/44, checkpoints_aug_s42/43/44) trên Deepfake-Eval-2024 video, mỗi checkpoint một lần, cùng tiền xử lý như cũ (16 frame, MediaPipe, ngưỡng EER từ FF++ Val). Chỉ số chính: AUC cấp video trên các video có ít nhất 4 frame có mặt, kèm tỷ lệ video đủ điều kiện. Chỉ số phụ: AUC trên toàn bộ video, video không đủ mặt nhận điểm 0,5.
+  - Audio: 3 checkpoint (checkpoints_audio_s42/43/44) trên In-the-Wild và Deepfake-Eval-2024 audio, mỗi checkpoint một lần, cùng tiền xử lý như cũ (16 kHz mono, tối đa 4 giây đầu, không cắt im lặng). File không phải 16 kHz mono chuyển bằng ffmpeg như API. Chỉ số: EER và AUC; ngưỡng EER từ ASVspoof 2019 dev để báo tỷ lệ bỏ sót và báo nhầm. Không loại clip nào sau khi xem điểm; nếu metadata có ngôn ngữ thì báo thêm riêng tiếng Anh và không phải tiếng Anh.
+  - Fusion không train: trên các video Deepfake-Eval-2024 có cả điểm video (đủ mặt) và điểm audio, điểm gộp = trung bình xác suất giả của checkpoint API (aug_s44 và audio_s43), so với nhãn video. Không chọn trọng số.
+  - Mỗi lần đánh giá ghi vào reports/eval_ledger.csv; báo trung bình ± SD mẫu của 3 seed. Kết quả báo cáo dù tốt hay xấu.
+- Giai đoạn 1b (audio v2) và 2 (video v2): cấu hình A/B/C và V-A/V-B theo kế hoạch v2. Siêu tham số chi tiết, tập validation và tiêu chí chọn checkpoint ghi trong một mục sửa đổi riêng, commit trước khi train.
+- Bộ clip ngoài đời (clip đã được đồng ý của người làm và người thân, clip CC trên Wikimedia Commons): danh sách chốt trước, chỉ dùng để minh họa, không dùng để chọn hay tinh chỉnh.
+- Không công khai mẫu từ Deepfake-Eval-2024 hay In-the-Wild trong repo, slide hay báo cáo. Dữ liệu lưu trên ổ D.
+- Đóng băng lần hai dự kiến 2026-12-13.
