@@ -64,7 +64,21 @@ Measured CPU latency in Docker (n = 20): video mean 1.68 s, audio file mean 0.19
 
 ## Environment
 
-Python 3.14, PyTorch 2.11 (CUDA 12.8 for training, CPU in Docker). Pinned versions in `requirements.txt` and `requirements-api.txt`.
+Python 3.14, PyTorch 2.11 (CUDA 12.8 for training, CPU in Docker). Pinned versions in `requirements.txt` (includes the PyTorch cu128 index), `requirements-api.txt` and `requirements-dev.txt`.
+
+```bash
+python3.14 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt -r requirements-dev.txt
+```
+
+## Tests
+
+```bash
+python -m pytest tests -q
+```
+
+`tests/test_splits.py` needs no data: it checks that FF++ train/val/test identities are disjoint, that the manifests follow the official splits, and that the Celeb-DF test subset is fixed at 100 real + 100 fake. The API and regression tests are skipped automatically when the checkpoints, model files or datasets are not present.
 
 ## License
 
