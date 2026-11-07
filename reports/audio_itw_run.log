@@ -1,0 +1,12 @@
+
+5000/31779  47.3 file/s
+10000/31779  50.8 file/s
+15000/31779  52.1 file/s
+20000/31779  53.3 file/s
+25000/31779  54.4 file/s
+30000/31779  55.4 file/s
+XONG trich dac trung: 31779 file, 572.1s, device=cuda
+seed 42: In-the-Wild EER 30.02%  AUC 0.7737 | nguong dev: bo sot spoof 12.09%, bao nham bona-fide 54.38%
+seed 43: In-the-Wild EER 30.24%  AUC 0.7645 | nguong dev: bo sot spoof 7.58%, bao nham bona-fide 65.35%
+seed 44: In-the-Wild EER 29.82%  AUC 0.7702 | nguong dev: bo sot spoof 9.20%, bao nham bona-fide 60.92%
+TRUNG BINH 3 seed: EER 30.03% +- 0.21% | AUC 0.7695 +- 0.0047

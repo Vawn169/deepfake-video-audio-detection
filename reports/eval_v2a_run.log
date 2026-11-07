@@ -1,0 +1,18 @@
+--> Nguong EER chon tren Val: 0.5748
+FF++ c23 Val           | Videos: 694  | AUC: 0.9841 [0.9765, 0.9910] | EER: 0.0576 | Acc@ValThr: 0.9424 | F1@ValThr: 0.9632 (Acc@0.5: 0.9467)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9779 [0.9682, 0.9865] | EER: 0.0768 | Acc@ValThr: 0.9243 | F1@ValThr: 0.9513 (Acc@0.5: 0.9300)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8875 [0.8604, 0.9126] | EER: 0.1993 | Acc@ValThr: 0.7897 | F1@ValThr: 0.8543 (Acc@0.5: 0.8097)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8366 [0.7766, 0.8862] | EER: 0.2600 | Acc@ValThr: 0.7300 | F1@ValThr: 0.7065 (Acc@0.5: 0.7450)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.8025 [0.7379, 0.8620] | EER: 0.2500 | Acc@ValThr: 0.6100 | F1@ValThr: 0.4265 (Acc@0.5: 0.6300)
+--> Nguong EER chon tren Val: 0.6959
+FF++ c23 Val           | Videos: 694  | AUC: 0.9814 [0.9728, 0.9889] | EER: 0.0729 | Acc@ValThr: 0.9265 | F1@ValThr: 0.9527 (Acc@0.5: 0.9380)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9797 [0.9704, 0.9876] | EER: 0.0607 | Acc@ValThr: 0.9157 | F1@ValThr: 0.9452 (Acc@0.5: 0.9400)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8876 [0.8612, 0.9124] | EER: 0.2055 | Acc@ValThr: 0.7282 | F1@ValThr: 0.8025 (Acc@0.5: 0.8097)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8596 [0.8046, 0.9066] | EER: 0.2500 | Acc@ValThr: 0.7350 | F1@ValThr: 0.6901 (Acc@0.5: 0.7650)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.8130 [0.7507, 0.8648] | EER: 0.2600 | Acc@ValThr: 0.5900 | F1@ValThr: 0.3279 (Acc@0.5: 0.6400)
+--> Nguong EER chon tren Val: 0.4988
+FF++ c23 Val           | Videos: 694  | AUC: 0.9813 [0.9726, 0.9888] | EER: 0.0549 | Acc@ValThr: 0.9424 | F1@ValThr: 0.9631 (Acc@0.5: 0.9409)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9787 [0.9693, 0.9869] | EER: 0.0723 | Acc@ValThr: 0.9286 | F1@ValThr: 0.9540 (Acc@0.5: 0.9286)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8745 [0.8464, 0.9010] | EER: 0.2118 | Acc@ValThr: 0.8069 | F1@ValThr: 0.8723 (Acc@0.5: 0.8054)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8303 [0.7736, 0.8839] | EER: 0.2650 | Acc@ValThr: 0.7450 | F1@ValThr: 0.7273 (Acc@0.5: 0.7450)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7632 [0.6924, 0.8265] | EER: 0.3250 | Acc@ValThr: 0.6000 | F1@ValThr: 0.4444 (Acc@0.5: 0.5950)

@@ -1,0 +1,98 @@
+
+dev aug=True: 5000/24844  42.3 file/s
+dev aug=True: 10000/24844  41.3 file/s
+dev aug=True: 15000/24844  41.0 file/s
+dev aug=True: 20000/24844  40.8 file/s
+XONG dev aug=True: 24844 file, 611s
+
+train aug=True: 5000/25380  39.5 file/s
+train aug=True: 10000/25380  40.3 file/s
+train aug=True: 15000/25380  40.4 file/s
+train aug=True: 20000/25380  37.6 file/s
+train aug=True: 25000/25380  37.6 file/s
+XONG train aug=True: 25380 file, 678s
+config a: train (25380, 13, 768), dev (24844, 13, 768), dev nhieu (24844, 13, 768)
+tang  0: dev 5.65%  dev nhieu 32.28%
+tang  1: dev 3.73%  dev nhieu 27.79%
+tang  2: dev 2.55%  dev nhieu 25.75%
+tang  3: dev 2.32%  dev nhieu 27.05%
+tang  4: dev 2.19%  dev nhieu 24.33%
+tang  5: dev 2.39%  dev nhieu 25.67%
+tang  6: dev 3.34%  dev nhieu 28.81%
+tang  7: dev 3.92%  dev nhieu 29.60%
+tang  8: dev 4.25%  dev nhieu 32.06%
+tang  9: dev 2.98%  dev nhieu 32.43%
+tang 10: dev 2.60%  dev nhieu 26.49%
+tang 11: dev 4.10%  dev nhieu 28.88%
+tang 12: dev 3.93%  dev nhieu 32.33%
+=> chon tang 4
+seed 42: epoch 3, dev EER 1.81%, dev nhieu EER 22.96%, nguong 3.8585
+seed 43: epoch 1, dev EER 1.62%, dev nhieu EER 25.42%, nguong 3.2237
+seed 44: epoch 1, dev EER 2.11%, dev nhieu EER 22.28%, nguong 1.5096
+config b: train (50760, 13, 768), dev (24844, 13, 768), dev nhieu (24844, 13, 768)
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang  0: dev 7.42%  dev nhieu 15.40%
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang  1: dev 5.07%  dev nhieu 12.44%
+tang  2: dev 3.50%  dev nhieu 10.32%
+tang  3: dev 3.30%  dev nhieu 9.58%
+tang  4: dev 3.02%  dev nhieu 9.38%
+tang  5: dev 3.29%  dev nhieu 9.89%
+tang  6: dev 4.59%  dev nhieu 12.20%
+tang  7: dev 6.48%  dev nhieu 14.05%
+tang  8: dev 6.87%  dev nhieu 14.37%
+tang  9: dev 4.32%  dev nhieu 12.37%
+tang 10: dev 3.26%  dev nhieu 10.52%
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang 11: dev 4.55%  dev nhieu 13.77%
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang 12: dev 4.16%  dev nhieu 13.67%
+=> chon tang 4
+seed 42: epoch 8, dev EER 1.89%, dev nhieu EER 7.68%, nguong 4.5619
+seed 43: epoch 20, dev EER 1.96%, dev nhieu EER 7.58%, nguong 7.8152
+seed 44: epoch 16, dev EER 2.12%, dev nhieu EER 7.65%, nguong 7.0798
+In-the-Wild seed 42: EER 21.60%  AUC 0.8611 | nguong val: bo sot spoof 58.85%, bao nham bona-fide 6.51%
+In-the-Wild seed 43: EER 23.51%  AUC 0.8392 | nguong val: bo sot spoof 54.22%, bao nham bona-fide 9.29%
+In-the-Wild seed 44: EER 20.38%  AUC 0.8734 | nguong val: bo sot spoof 36.82%, bao nham bona-fide 11.12%
+In-the-Wild TRUNG BINH: EER 21.83% +- 1.58% | AUC 0.8579 +- 0.0173
+ASVspoof2019 LA eval seed 42: EER 10.06%  AUC 0.9653 | nguong val: bo sot spoof 37.97%, bao nham bona-fide 0.49%
+ASVspoof2019 LA eval seed 43: EER 8.31%  AUC 0.9744 | nguong val: bo sot spoof 40.91%, bao nham bona-fide 0.12%
+ASVspoof2019 LA eval seed 44: EER 8.30%  AUC 0.9745 | nguong val: bo sot spoof 27.07%, bao nham bona-fide 0.71%
+ASVspoof2019 LA eval TRUNG BINH: EER 8.89% +- 1.02% | AUC 0.9714 +- 0.0053
+In-the-Wild seed 42: EER 22.70%  AUC 0.8594 | nguong val: bo sot spoof 23.81%, bao nham bona-fide 21.52%
+In-the-Wild seed 43: EER 22.98%  AUC 0.8584 | nguong val: bo sot spoof 20.53%, bao nham bona-fide 25.22%
+In-the-Wild seed 44: EER 22.01%  AUC 0.8680 | nguong val: bo sot spoof 19.20%, bao nham bona-fide 24.89%
+In-the-Wild TRUNG BINH: EER 22.56% +- 0.50% | AUC 0.8620 +- 0.0053
+ASVspoof2019 LA eval seed 42: EER 11.13%  AUC 0.9585 | nguong val: bo sot spoof 27.15%, bao nham bona-fide 1.62%
+ASVspoof2019 LA eval seed 43: EER 11.02%  AUC 0.9594 | nguong val: bo sot spoof 26.26%, bao nham bona-fide 1.74%
+ASVspoof2019 LA eval seed 44: EER 10.63%  AUC 0.9617 | nguong val: bo sot spoof 25.79%, bao nham bona-fide 1.62%
+ASVspoof2019 LA eval TRUNG BINH: EER 10.93% +- 0.27% | AUC 0.9599 +- 0.0017
+CHUOI KET THUC exit=0

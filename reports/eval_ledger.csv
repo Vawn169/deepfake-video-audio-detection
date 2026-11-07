@@ -42,3 +42,48 @@ time,ckpt,dataset,auc
 2026-11-01 21:08:30,checkpoints_audio_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9986
 2026-11-01 21:08:30,checkpoints_audio_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.0154
 2026-11-01 21:08:30,checkpoints_audio_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9987
+2026-11-07 17:13:17,checkpoints_audio_s42/best_mlp.pt,In-the-Wild EER,0.3002
+2026-11-07 17:13:17,checkpoints_audio_s42/best_mlp.pt,In-the-Wild AUC,0.7737
+2026-11-07 17:13:17,checkpoints_audio_s43/best_mlp.pt,In-the-Wild EER,0.3024
+2026-11-07 17:13:17,checkpoints_audio_s43/best_mlp.pt,In-the-Wild AUC,0.7645
+2026-11-07 17:13:17,checkpoints_audio_s44/best_mlp.pt,In-the-Wild EER,0.2982
+2026-11-07 17:13:17,checkpoints_audio_s44/best_mlp.pt,In-the-Wild AUC,0.7702
+2026-11-08 01:59:27,checkpoints_video_v2a_s42/best_effnet_b0.pt,FF++ c23 Val,0.9841
+2026-11-08 01:59:27,checkpoints_video_v2a_s42/best_effnet_b0.pt,FF++ c23 Test,0.9779
+2026-11-08 01:59:27,checkpoints_video_v2a_s42/best_effnet_b0.pt,FF++ c40 Test,0.8875
+2026-11-08 01:59:27,checkpoints_video_v2a_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.8366
+2026-11-08 01:59:27,checkpoints_video_v2a_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.8025
+2026-11-08 02:00:53,checkpoints_video_v2a_s43/best_effnet_b0.pt,FF++ c23 Val,0.9814
+2026-11-08 02:00:53,checkpoints_video_v2a_s43/best_effnet_b0.pt,FF++ c23 Test,0.9797
+2026-11-08 02:00:53,checkpoints_video_v2a_s43/best_effnet_b0.pt,FF++ c40 Test,0.8876
+2026-11-08 02:00:53,checkpoints_video_v2a_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.8596
+2026-11-08 02:00:53,checkpoints_video_v2a_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.813
+2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,FF++ c23 Val,0.9813
+2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,FF++ c23 Test,0.9787
+2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,FF++ c40 Test,0.8745
+2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.8303
+2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7632
+2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,In-the-Wild EER,0.2160
+2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,In-the-Wild AUC,0.8611
+2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,In-the-Wild EER,0.2351
+2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,In-the-Wild AUC,0.8392
+2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,In-the-Wild EER,0.2038
+2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,In-the-Wild AUC,0.8734
+2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,ASVspoof2019 LA eval EER,0.1006
+2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9653
+2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.0831
+2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9744
+2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.0830
+2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9745
+2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,In-the-Wild EER,0.2270
+2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,In-the-Wild AUC,0.8594
+2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,In-the-Wild EER,0.2298
+2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,In-the-Wild AUC,0.8584
+2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,In-the-Wild EER,0.2201
+2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,In-the-Wild AUC,0.8680
+2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,ASVspoof2019 LA eval EER,0.1113
+2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9585
+2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.1102
+2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9594
+2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.1063
+2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9617

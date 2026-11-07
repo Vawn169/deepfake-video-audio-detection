@@ -52,3 +52,19 @@ Quyền dữ liệu: Deepfake-Eval-2024 gửi form Hugging Face 2026-11-06, ch�
 In-the-Wild: tải release_in_the_wild.zip 8.161.489.023 byte về /mnt/d/in_the_wild, zip kiểm tra CRC đạt, giải nén 31.779 wav; meta.csv: 19.963 bona-fide, 11.816 spoof (khớp README); 54 tên người nói trong meta.csv (bài báo ghi 58, chưa rõ lý do). Chưa chạy mô hình nào trên In-the-Wild.
 Protocol: mục "mở lại thí nghiệm có kiểm soát" commit e88e267 trước khi giải nén dữ liệu mới.
 Tiếp theo: Giai đoạn 1a audio trên In-the-Wild (chờ người làm đồng ý chạy), Deepfake-Eval-2024 khi được duyệt.
+
+# 2026-11-07: Giai đoạn 1a audio trên In-the-Wild (script src/audio_eval_itw.py commit 9617eeb trước khi chạy; mỗi checkpoint một lần).
+31.779 file (16 kHz mono, 19.963 bona-fide / 11.816 spoof), không loại file nào. Trích đặc trưng 572 s trên GPU.
+EER 30,02% / 30,24% / 29,82% (s42/43/44), trung bình 30,03% ± 0,21%; AUC 0,7695 ± 0,0047. (ASVspoof 2019 LA eval: EER 1,57%.)
+Ở ngưỡng chọn trên ASVspoof dev: báo nhầm bona-fide 54,38% / 65,35% / 60,92%, bỏ sót spoof 12,09% / 7,58% / 9,20%. Khớp với quan sát 05/11: giọng thật ngoài đời phần lớn bị chấm spoof.
+Kết quả: reports/audio_itw_results.csv, reports/audio_itw_run.log, eval_ledger.csv. Đây là mốc để so với audio v2 (Giai đoạn 1b).
+
+# 2026-11-08: Giai đoạn 1b audio v2 và Giai đoạn 2 video V-A (người làm ủy quyền chạy không duyệt từng mục; protocol commit ddd2e18 trước khi viết code).
+Audio v2 (src/audio_v2.py, commit fcd5e4b trước khi chạy; đặc trưng ở /mnt/d/audio_feats_v2; RIRS_NOISES ở /mnt/d/rirs_noises):
+  A cắt im lặng: tầng 4; In-the-Wild EER 21,83% ± 1,58%, AUC 0,8579 ± 0,0173; ASVspoof eval EER 8,89% ± 1,02%.
+  B cắt im lặng + augmentation: tầng 4; In-the-Wild EER 22,56% ± 0,50%, AUC 0,8620 ± 0,0053; ASVspoof eval EER 10,93% ± 0,27%.
+  Bản cũ: In-the-Wild 30,03%, ASVspoof eval 1,57%. Cắt im lặng là phần lớn cải thiện; augmentation không giảm thêm EER nhưng ổn định hơn và cân bằng lỗi hơn.
+Video V-A (src/train_v2a.py, commit f3b4a3d trước khi train): điểm chọn Val 0,9767/0,9745/0,9735. Tập cũ (đã xem trước, chỉ báo cáo kèm): c23 0,9788 ± 0,0009; c40 0,8832 ± 0,0075; Celeb-DF 0,8422 ± 0,0154; CRF30 0,7929 ± 0,0263. Tập test chính (Deepfake-Eval-2024) chờ quyền.
+src/eval_de24.py viết và chạy thử (không ghi ledger) trước khi có dữ liệu. Báo cáo Word cũ đã sửa số (a9956c3); bản nháp mới docs/BAO_CAO_v2_draft.md.
+Test: 24 passed (thêm tests/test_v2.py).
+Chưa đổi API: checkpoint audio cho API chỉ đổi sau khi chọn theo validation và ghi vào protocol (Giai đoạn 4).

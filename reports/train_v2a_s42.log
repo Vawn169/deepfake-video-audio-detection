@@ -1,0 +1,16 @@
+Train frames: 56164 (3571 videos) | pos_weight: 0.250
+Val: 694 videos | Val-degraded: 694 videos
+
+--- V-A (SOCIAL) TRAIN seed 42 tren cuda (10 EPOCHS) ---
+Epoch 01/10 (242.6s) | Train Loss: 0.1958 | Val AUC: 0.9635 | ValDeg AUC: 0.9456 | Score: 0.9546 [*BEST*]
+Epoch 02/10 (245.4s) | Train Loss: 0.1334 | Val AUC: 0.9681 | ValDeg AUC: 0.9456 | Score: 0.9569 [*BEST*]
+Epoch 03/10 (252.3s) | Train Loss: 0.1087 | Val AUC: 0.9739 | ValDeg AUC: 0.9557 | Score: 0.9648 [*BEST*]
+Epoch 04/10 (221.3s) | Train Loss: 0.0911 | Val AUC: 0.9811 | ValDeg AUC: 0.9644 | Score: 0.9728 [*BEST*]
+Epoch 05/10 (230.7s) | Train Loss: 0.0780 | Val AUC: 0.9812 | ValDeg AUC: 0.9656 | Score: 0.9734 [*BEST*]
+Epoch 06/10 (226.1s) | Train Loss: 0.0665 | Val AUC: 0.9837 | ValDeg AUC: 0.9673 | Score: 0.9755 [*BEST*]
+Epoch 07/10 (226.8s) | Train Loss: 0.0598 | Val AUC: 0.9811 | ValDeg AUC: 0.9644 | Score: 0.9728
+Epoch 08/10 (225.7s) | Train Loss: 0.0508 | Val AUC: 0.9836 | ValDeg AUC: 0.9687 | Score: 0.9762 [*BEST*]
+Epoch 09/10 (229.4s) | Train Loss: 0.0449 | Val AUC: 0.9836 | ValDeg AUC: 0.9681 | Score: 0.9758
+Epoch 10/10 (230.1s) | Train Loss: 0.0429 | Val AUC: 0.9841 | ValDeg AUC: 0.9693 | Score: 0.9767 [*BEST*]
+
+Hoan tat. Best select score: 0.9767 (luu tai checkpoints_video_v2a_s42/best_effnet_b0.pt)
