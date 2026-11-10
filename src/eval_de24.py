@@ -17,7 +17,7 @@ sys.path.insert(0, HERE)
 from preprocess import make_detector, crop_face
 from dataset import get_transforms
 from model import build_model
-from audio_v2 import trim
+from audio_common import trim
 
 N_FRAMES, MARGIN, SIZE, MIN_FACES, SR, MAXLEN = 16, 0.3, 224, 4, 16000, 64000
 LEDGER = os.path.join(ROOT, 'reports', 'eval_ledger.csv')

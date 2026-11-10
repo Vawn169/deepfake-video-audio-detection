@@ -20,7 +20,7 @@ RUN pip install torch==2.11.0 torchvision==0.26.0 \
 COPY src/ src/
 COPY models/ models/
 COPY checkpoints_aug_s44/best_effnet_b0.pt checkpoints_aug_s44/best_effnet_b0.pt
-COPY checkpoints_audio_s43/best_mlp.pt checkpoints_audio_s43/best_mlp.pt
+COPY checkpoints_audio_v2b_s43/best_mlp.pt checkpoints_audio_v2b_s43/best_mlp.pt
 
 EXPOSE 8000
 

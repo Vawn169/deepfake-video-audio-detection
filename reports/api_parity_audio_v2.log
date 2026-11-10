@@ -1,0 +1,11 @@
+LA_E_5450657   bonafide api_logit=-7.7271 offline_logit=-7.7227 |d|=0.0044 nhan_api=bonafide nhan_offline=bonafide 0.19s
+LA_E_6580034   bonafide api_logit=-15.8128 offline_logit=-15.8345 |d|=0.0217 nhan_api=bonafide nhan_offline=bonafide 0.17s
+LA_E_8914589   bonafide api_logit=-31.8555 offline_logit=-31.8494 |d|=0.0061 nhan_api=bonafide nhan_offline=bonafide 0.21s
+LA_E_9087500   bonafide api_logit=-19.3981 offline_logit=-19.3956 |d|=0.0025 nhan_api=bonafide nhan_offline=bonafide 0.24s
+LA_E_3247387   bonafide api_logit=-22.5634 offline_logit=-22.5726 |d|=0.0092 nhan_api=bonafide nhan_offline=bonafide 0.11s
+LA_E_9497931   spoof    api_logit=18.4858 offline_logit=18.4658 |d|=0.0200 nhan_api=spoof nhan_offline=spoof 0.12s
+LA_E_4078843   spoof    api_logit=39.2749 offline_logit=39.2712 |d|=0.0037 nhan_api=spoof nhan_offline=spoof 0.11s
+LA_E_8992933   spoof    api_logit=-16.1579 offline_logit=-16.1688 |d|=0.0109 nhan_api=bonafide nhan_offline=bonafide 0.21s
+LA_E_5800793   spoof    api_logit=3.8940 offline_logit=3.8977 |d|=0.0037 nhan_api=bonafide nhan_offline=bonafide 0.14s
+LA_E_1345189   spoof    api_logit=8.9059 offline_logit=8.8738 |d|=0.0321 nhan_api=spoof nhan_offline=spoof 0.23s
+max |d logit| = 0.0321  mean |d logit| = 0.0114

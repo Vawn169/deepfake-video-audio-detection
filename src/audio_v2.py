@@ -14,7 +14,7 @@ ITW = '/mnt/d/in_the_wild/release_in_the_wild'
 RIRS = '/mnt/d/rirs_noises/RIRS_NOISES'
 FD = '/mnt/d/audio_feats_v2'
 LEDGER = os.path.join(ROOT, 'reports', 'eval_ledger.csv')
-SR, MAXLEN, FRAME = 16000, 64000, 320
+from audio_common import SR, MAXLEN, FRAME, trim  # dung chung voi API
 EPOCHS, BATCH, LR = 20, 256, 1e-3   # giong audio_train.py, ghi trong protocol
 PROTO = {'train': 'ASVspoof2019.LA.cm.train.trn.txt', 'dev': 'ASVspoof2019.LA.cm.dev.trl.txt',
          'eval': 'ASVspoof2019.LA.cm.eval.trl.txt'}
@@ -27,15 +27,6 @@ def items(split):
         return [(os.path.join(ITW, r['file']), r['file'], int(r['label'] == 'spoof')) for r in rows]
     rows = [l.split() for l in open(os.path.join(LA, 'ASVspoof2019_LA_cm_protocols', PROTO[split]))]
     return [(os.path.join(LA, f'ASVspoof2019_LA_{split}', 'flac', r[1] + '.flac'), r[1], int(r[-1] == 'spoof')) for r in rows]
-
-
-def trim(w):
-    n = len(w) // FRAME
-    if n < 2:
-        return w
-    en = 10 * np.log10(np.mean(w[:n * FRAME].reshape(n, FRAME) ** 2, axis=1) + 1e-12)
-    keep = np.where(en > en.max() - 40)[0]
-    return w[keep[0] * FRAME:(keep[-1] + 1) * FRAME]
 
 
 def _ffmpeg_roundtrip(w, codec, kbps):

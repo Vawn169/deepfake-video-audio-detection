@@ -11,16 +11,19 @@ sys.path.insert(0, HERE)
 from preprocess import make_detector, crop_face
 from dataset import get_transforms
 from model import build_model
+from audio_common import SR, MAXLEN, trim
 
 CKPT = os.path.join(ROOT, 'checkpoints_aug_s44', 'best_effnet_b0.pt')
 THRESH = 0.5951          # EER tren FF++ Val cua aug_s44 (reports/eval/checkpoints_aug_s44/summary.csv)
+THRESH_FPR5 = 0.5961     # bao nham 5% tren video that FF++ Val (docs/protocol.md, muc 2026-11-09)
 N_FRAMES, MARGIN, SIZE = 16, 0.3, 224
 MIN_FRAMES = 4           # so frame co mat toi thieu de cham diem (lua chon cua nguoi viet, chua kiem chung)
 
-AUDIO_CKPT = os.path.join(ROOT, 'checkpoints_audio_s43', 'best_mlp.pt')   # dev EER thap nhat (docs/protocol.md)
+AUDIO_CKPT = os.path.join(ROOT, 'checkpoints_audio_v2b_s43', 'best_mlp.pt')   # chon theo validation (docs/protocol.md, muc 2026-11-09)
+AUDIO_THRESH_FPR5 = 7.6671   # logit bao nham 5% tren bona fide ASVspoof dev sach + dev nhieu
 W2V_DIR = os.path.join(ROOT, 'models', 'wav2vec2-base')                   # chep tu cache HF, khong tai khi chay
-SR, MAXLEN = 16000, 64000   # giong audio_features.py: 4 giay dau, khong pad
 MIN_SAMPLES = 400           # wav2vec2 can toi thieu 400 mau (25 ms) de ra 1 frame
+READ_SECONDS = 60           # doc toi da 60 giay de cat im lang tren ca doan, roi moi lay 4 giay (nhu audio_v2.py)
 AUDIO_EXT = {'.wav', '.flac'}
 VIDEO_EXT = {'.mp4', '.mov', '.avi', '.mkv', '.webm'}
 
@@ -98,10 +101,10 @@ class Engine:
         n_detected = len(frames)
         if verify_face:
             frames = [(k, f) for k, f in frames if self.has_face(f)]
-        base = {'model_version': self.version, 'threshold': THRESH,
+        base = {'model_version': self.version, 'threshold': THRESH, 'threshold_fpr5': THRESH_FPR5,
                 'frames_read': read, 'frames_with_detection': n_detected, 'frames_used': len(frames)}
         if len(frames) < MIN_FRAMES:
-            base.update(status='no_reliable_face', score=None, label=None,
+            base.update(status='no_reliable_face', score=None, label=None, verdict='inconclusive',
                         note=f'Duoi {MIN_FRAMES} frame co khuon mat hop le, khong cham diem.',
                         processing_seconds=round(time.time() - t0, 3))
             return base
@@ -111,6 +114,7 @@ class Engine:
         score = float(probs.mean())
         best = int(np.argmax(probs))
         base.update(status='ok', score=round(score, 4), label='fake' if score >= THRESH else 'real',
+                    verdict='high_suspicion' if score >= THRESH_FPR5 else 'no_sign_detected',
                     frame_scores=[{'frame': int(k), 'prob_fake': round(float(p), 4)} for (k, _), p in zip(frames, probs)],
                     best_frame=int(frames[best][0]),
                     note='Ket qua chi mang tinh tham khao.')
@@ -130,7 +134,8 @@ class AudioEngine:
         self.layer, self.thresh = int(c['layer']), float(c['threshold'])   # nguong EER tren dev, tinh tren logit
         self.mean, self.std = c['mean'].astype(np.float32), c['std'].astype(np.float32)
         self.w2v = Wav2Vec2Model.from_pretrained(W2V_DIR).eval()
-        self.version = f"w2v2base-L{self.layer}-mlp-audio_s43-epoch{c['epoch']}"
+        self.trim = bool(c.get('trim'))   # checkpoint v2 hoc tren am thanh da cat im lang
+        self.version = f"w2v2base-L{self.layer}-mlp-{os.path.basename(os.path.dirname(AUDIO_CKPT)).replace('checkpoints_', '')}-epoch{c['epoch']}"
 
     @staticmethod
     def _ffmpeg(path):
@@ -142,7 +147,7 @@ class AudioEngine:
         if not probe.stdout.strip():
             return None
         r = subprocess.run(['ffmpeg', '-v', 'error', '-i', path, '-vn', '-ac', '1', '-ar', str(SR),
-                            '-t', str(MAXLEN / SR), '-f', 'f32le', 'pipe:1'], capture_output=True)
+                            '-t', str(READ_SECONDS), '-f', 'f32le', 'pipe:1'], capture_output=True)
         if r.returncode != 0:
             raise ValueError('ffmpeg khong tach duoc am thanh')
         return np.frombuffer(r.stdout, dtype=np.float32)
@@ -152,7 +157,7 @@ class AudioEngine:
         if ext in AUDIO_EXT:
             info = sf.info(path)
             if info.samplerate == SR and info.channels == 1:
-                w, _ = sf.read(path, dtype='float32', frames=MAXLEN)
+                w, _ = sf.read(path, dtype='float32', frames=READ_SECONDS * SR)
                 return w, 'audio_file', False
             return self._ffmpeg(path), 'audio_file', True
         return self._ffmpeg(path), 'video', True
@@ -161,9 +166,12 @@ class AudioEngine:
         t0 = time.time()
         w, source, converted = self.load_wave(path, ext)
         base = {'model_version': self.version, 'threshold_logit': round(self.thresh, 4),
+                'threshold_logit_fpr5': AUDIO_THRESH_FPR5, 'silence_trimmed': self.trim,
                 'source': source, 'converted_by_ffmpeg': converted}
+        if w is not None and self.trim:
+            w = trim(w)
         if w is None or len(w) < MIN_SAMPLES:
-            base.update(status='no_audio', score=None, label=None,
+            base.update(status='no_audio', score=None, label=None, verdict='inconclusive',
                         audio_seconds_used=0.0 if w is None else round(len(w) / SR, 3),
                         note='Khong co am thanh (hoac qua ngan), khong cham diem.',
                         processing_seconds=round(time.time() - t0, 3))
@@ -176,6 +184,7 @@ class AudioEngine:
             logit = float(self.mlp(torch.from_numpy(x).unsqueeze(0)).squeeze())
         base.update(status='ok', score=round(float(1 / (1 + np.exp(-logit))), 4), logit=round(logit, 4),
                     label='spoof' if logit >= self.thresh else 'bonafide',
+                    verdict='high_suspicion' if logit >= AUDIO_THRESH_FPR5 else 'no_sign_detected',
                     audio_seconds_used=round(len(w) / SR, 3),
                     note='Chi danh gia tren ASVspoof 2019 LA; am thanh ngoai mien nay chi mang tinh tham khao.',
                     processing_seconds=round(time.time() - t0, 3))

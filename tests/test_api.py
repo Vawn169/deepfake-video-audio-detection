@@ -34,18 +34,18 @@ def test_health(client):
     r = client.get('/health').json()
     assert r['status'] == 'ok'
     assert r['model_version'].startswith('effnet_b0-aug_s44')
-    assert r['audio_model_version'].startswith('w2v2base-L2-mlp-audio_s43')
+    assert r['audio_model_version'].startswith('w2v2base-L4-mlp-audio_v2b_s43')
 
 
 def test_video_without_face_is_not_scored(client, media):
     r = _post(client, '/predict?heatmap=false', media / 'noface_noaudio.mp4').json()
-    assert r['status'] == 'no_reliable_face'
+    assert r['status'] == 'no_reliable_face' and r['verdict'] == 'inconclusive'
     assert r['score'] is None and r['label'] is None
 
 
 def test_video_without_audio_track(client, media):
     r = _post(client, '/predict_audio', media / 'noface_noaudio.mp4').json()
-    assert r['status'] == 'no_audio' and r['source'] == 'video'
+    assert r['status'] == 'no_audio' and r['source'] == 'video' and r['verdict'] == 'inconclusive'
     assert r['score'] is None
 
 
@@ -54,6 +54,8 @@ def test_audio_16k_mono_read_directly(client, media):
     assert r['status'] == 'ok' and r['converted_by_ffmpeg'] is False
     assert r['label'] in ('spoof', 'bonafide') and 0.0 <= r['score'] <= 1.0
     assert r['label'] == ('spoof' if r['logit'] >= r['threshold_logit'] else 'bonafide')
+    assert r['verdict'] == ('high_suspicion' if r['logit'] >= r['threshold_logit_fpr5'] else 'no_sign_detected')
+    assert r['silence_trimmed'] is True
 
 
 def test_audio_other_rate_goes_through_ffmpeg(client, media):

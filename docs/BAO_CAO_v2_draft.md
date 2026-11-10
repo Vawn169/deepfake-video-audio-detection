@@ -1,4 +1,4 @@
-# Phát hiện Deepfake Video và Âm thanh — bản nháp báo cáo (cập nhật 08/11/2026)
+# Phát hiện Deepfake Video và Âm thanh — bản nháp báo cáo (cập nhật 10/11/2026)
 
 Bản nháp này thay cho phần kết quả của `reports/BAO_CAO_tong_hop_GVHD.docx` (bản chụp 28/10). Mỗi con số ghi kèm file nguồn trong repo. Phần đánh dấu **[chờ]** sẽ điền khi có kết quả.
 
@@ -103,12 +103,26 @@ Nhận xét:
 ## 8. API và triển khai
 `POST /predict` (video: điểm, nhãn, điểm từng frame, heatmap; dưới 4 frame mặt thì không chấm) và `POST /predict_audio` (wav/flac hoặc video qua ffmpeg; video không tiếng trả no_audio). Docker CPU (`--cpus=4 --memory=4g`), image 3,84 GB, chạy không cần mạng.
 Latency trong Docker (n = 20, bỏ 2 warm-up, `reports/latency_docker_cpu_*.csv`): video trung bình 1,675 s (p95 2,636 s); audio file flac 0,194 s; audio tách từ video 0,314 s.
+Từ 09/11 nhánh audio của API dùng checkpoint audio v2b_s43 (cắt im lặng, chọn theo validation). Mỗi kết quả có thêm `verdict` ba mức: `high_suspicion` (điểm ≥ ngưỡng báo nhầm 5% trên validation: video 0,5961, audio logit 7,6671), `no_sign_detected`, `inconclusive` (không chấm được). Parity audio: lệch 0,0321 so với đặc trưng offline float16, trùng hoàn toàn khi tính lại float32 (ghi trong protocol). Parity video max |d| 0,0044 (đo lại 10/11). Latency Docker audio v2 (cùng 20 file, 10/11): flac trung bình 0,151 s (p95 0,226 s); tách từ video 0,275 s (p95 0,338 s). RAM container khoảng 0,58 GB.
 
 ## 9. Thử trên dữ liệu ngoài đời (minh họa, không phải tỷ lệ lỗi)
 Clip CC trên Wikimedia Commons và clip của người làm và người thân (đã đồng ý): 1 ảnh thật được chấm đúng; 2/3 video thật bị nhánh video báo nhầm là giả (TikTok 0,72; phỏng vấn UFC 0,93); 3/3 giọng thật bị nhánh audio chấm spoof. Một video nghi do AI tạo hoàn toàn được chấm real 0,11 dựa trên 4 frame mặt; mô hình không được thiết kế cho loại này.
 
+## 9b. Bộ test thực tế R1–R4 (protocol 09/11; mỗi checkpoint chạy một lần; số liệu đo)
+Tỷ lệ báo nhầm ở ngưỡng EER của từng checkpoint, trung bình ± SD 3 seed; checkpoint API kèm khoảng tin cậy Wilson 95%.
+
+| Tập | Nội dung | Video (baseline / aug / V-A) | Audio (cũ / v2a / v2b) |
+|---|---|---|---|
+| R1 | 149 clip thật Commons; chấm được: video 111, audio 144 | báo nhầm 16,2% ± 3,3 / 10,5% ± 1,4 / 9,0% ± 4,1. API aug_s44: 10,8% [6,3–18,0] | báo nhầm 66,2% ± 5,7 / 43,1% ± 5,4 / 43,5% ± 1,1. API v2b_s43: 42,4% [34,6–50,5] |
+| R2 | R1 nén như cuộc gọi; chấm được: video 111, audio 144 (v2: 143) | báo nhầm 19,2% ± 8,1 / 10,8% ± 2,4 / 11,1% ± 6,1. API: 12,6% [7,7–20,1] | báo nhầm 75,0% ± 3,9 / 61,1% ± 2,8 / 56,2% ± 0,8. API: 55,2% [47,1–63,2] |
+| R3 | Celeb-DF 200 nén như cuộc gọi (199 chấm được) | AUC 0,7816 / 0,8319 / 0,8347 | — |
+| R4 | 5.000 In-the-Wild nén Opus 16 kbps | — | EER 33,5% / 26,0% / 25,3% (AUC v2b 0,8296) |
+
+Ở ngưỡng báo nhầm 5% (chọn trên validation): R3 video báo nhầm 15,2% [9,4–23,5], phát hiện 57,0%; R4 audio báo nhầm 42,0% [40,3–43,8], phát hiện 86,4%; R1 audio 45,8%, R2 audio 55,9%. Ngưỡng chọn trên dữ liệu phòng thí nghiệm không giữ được 5% ngoài đời. Augmentation giúp video rõ rệt; audio v2 tốt hơn bản cũ nhưng vẫn báo nhầm gần một nửa giọng thật, nên kết quả audio chỉ nên là tham khảo.
+
 ## 10. Hạn chế
-- Đánh giá chéo thấp hơn in-domain; nhánh audio của API hiện tại gần như không dùng được trên giọng nói ngoài đời (In-the-Wild EER 30%); bản v2 giảm còn khoảng 22% nhưng vẫn cao.
+- Đánh giá chéo thấp hơn in-domain; nhánh audio của API hiện tại gần như không dùng được trên giọng nói ngoài đời (In-the-Wild EER 30%); bản v2 giảm còn khoảng 22% nhưng vẫn cao; trên clip thật Commons, API audio v2 báo nhầm 42% (55% khi nén như cuộc gọi).
+- R1/R2 chỉ có 149 clip thật, không có giả; danh sách ứng viên nghiêng về vài từ khóa đầu; tính "thật" không kiểm chứng tuyệt đối.
 - Video chỉ học thay và chỉnh mặt kiểu FF++ (2019); không nhắm tới video tạo hoàn toàn bằng mô hình khuếch tán.
 - 3 seed audio dùng chung đặc trưng nên SD thấp có thể đánh giá thấp phương sai.
 - Grad-CAM mẫu nhỏ; hai video thật có heatmap ngoài mặt chưa giải thích được.

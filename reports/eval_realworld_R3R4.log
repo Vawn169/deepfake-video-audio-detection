@@ -1,0 +1,18 @@
+R3 video checkpoints_s42/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.101 | AUC 0.7637
+R3 video checkpoints_s43/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.2828 | AUC 0.7927
+R3 video checkpoints_s44/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.2828 | AUC 0.7883
+R3 video checkpoints_aug_s42/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.0808 | AUC 0.8288
+R3 video checkpoints_aug_s43/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.1212 | AUC 0.8464
+R3 video checkpoints_aug_s44/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.1515 | AUC 0.8204
+R3 video checkpoints_video_v2a_s42/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.1212 | AUC 0.8355
+R3 video checkpoints_video_v2a_s43/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.0505 | AUC 0.8584
+R3 video checkpoints_video_v2a_s44/best_effnet_b0.pt: du dieu kien 199/200 | bao nham 0.1414 | AUC 0.8102
+R4 audio checkpoints_audio_s42/best_mlp.pt: co tieng 5000/5000 | bao nham 0.7323 | EER 0.3352
+R4 audio checkpoints_audio_s43/best_mlp.pt: co tieng 5000/5000 | bao nham 0.8272 | EER 0.3376
+R4 audio checkpoints_audio_s44/best_mlp.pt: co tieng 5000/5000 | bao nham 0.7889 | EER 0.3326
+R4 audio checkpoints_audio_v2a_s42/best_mlp.pt: co tieng 5000/5000 | bao nham 0.1481 | EER 0.2594
+R4 audio checkpoints_audio_v2a_s43/best_mlp.pt: co tieng 5000/5000 | bao nham 0.1801 | EER 0.2746
+R4 audio checkpoints_audio_v2a_s44/best_mlp.pt: co tieng 5000/5000 | bao nham 0.2427 | EER 0.2444
+R4 audio checkpoints_audio_v2b_s42/best_mlp.pt: co tieng 5000/5000 | bao nham 0.3753 | EER 0.2488
+R4 audio checkpoints_audio_v2b_s43/best_mlp.pt: co tieng 5000/5000 | bao nham 0.4168 | EER 0.2611
+R4 audio checkpoints_audio_v2b_s44/best_mlp.pt: co tieng 5000/5000 | bao nham 0.4139 | EER 0.2478

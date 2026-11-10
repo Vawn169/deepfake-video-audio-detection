@@ -68,3 +68,13 @@ Video V-A (src/train_v2a.py, commit f3b4a3d trước khi train): điểm chọn 
 src/eval_de24.py viết và chạy thử (không ghi ledger) trước khi có dữ liệu. Báo cáo Word cũ đã sửa số (a9956c3); bản nháp mới docs/BAO_CAO_v2_draft.md.
 Test: 24 passed (thêm tests/test_v2.py).
 Chưa đổi API: checkpoint audio cho API chỉ đổi sau khi chọn theo validation và ghi vào protocol (Giai đoạn 4).
+
+# 2026-11-09 → 10: Ba việc sau khi bỏ DFDC (protocol 2b25e74, commit trước khi viết code).
+1. API audio v2: checkpoint audio_v2b_s43 (chọn theo validation), cắt im lặng, đọc tối đa 60 s rồi cắt 4 s (commit 2725488). Parity: 0,0321 so với đặc trưng float16 (vượt 0,02), 0,0000 khi tính float32; ghi lệch vào protocol. Docker build lại (02bab22b48c6, 3,84 GB). Latency Docker audio v2 (cùng 20 file, 10/11): flac mean 0,151 s p95 0,226 s; từ video mean 0,275 s p95 0,338 s; RAM 584 MiB. Parity video đo lại 0,0044. Test 24 passed.
+3. Verdict ba mức (high_suspicion / no_sign_detected / inconclusive), ngưỡng báo nhầm 5% trên validation: video 0,5961, audio logit 7,6671.
+2. Bộ test thực tế (reports/eval_realworld/):
+  R1 149 clip Commons thật (r1_114 file gốc lỗi CRC). Video API aug_s44 báo nhầm 10,8% [6,3–18,0], 111/149 đủ mặt. Audio API v2b_s43 42,4% [34,6–50,5] (ngưỡng 5%: 45,8%); bản cũ 66,2% trung bình.
+  R2 (R1 nén cuộc gọi): video API 12,6% [7,7–20,1]; audio API 55,2% [47,1–63,2]; r1_037 không chấm ở checkpoint cắt im lặng (lỗi giải mã Opus).
+  R3 Celeb-DF 200 cuộc gọi: AUC baseline 0,7816, aug 0,8319, V-A 0,8347; API ngưỡng 5%: báo nhầm 15,2%, phát hiện 57,0%.
+  R4 5.000 In-the-Wild Opus: EER cũ 33,51%, v2a 25,95%, v2b 25,26%; API ngưỡng 5%: báo nhầm 42,0%, phát hiện 86,4%.
+Tiếp theo: đồng bộ repo public, cập nhật slide/báo cáo Word, chờ Deepfake-Eval-2024 / DeepSpeak / AV-Deepfake1M.

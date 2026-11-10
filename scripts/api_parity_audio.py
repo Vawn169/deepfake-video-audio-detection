@@ -1,14 +1,15 @@
 import os, sys, time
 import numpy as np, torch
 sys.path.insert(0, 'src')
-from api_core import AudioEngine
+from api_core import AudioEngine, AUDIO_CKPT
 
 # 10 file eval (5 bonafide, 5 spoof, seed 0); diem offline lay tu dac trung da luu, khong danh gia lai eval
-z = np.load('data/audio_feats/eval.npz'); ids, y = list(z['ids']), z['y']
+c = torch.load(AUDIO_CKPT, map_location='cpu', weights_only=False)
+# dac trung offline cung loai voi checkpoint API: ban cat im lang (audio_v2.py) hoac ban goc (audio_features.py)
+z = np.load('/mnt/d/audio_feats_v2/eval_trim.npz' if c.get('trim') else 'data/audio_feats/eval.npz'); ids, y = list(z['ids']), z['y']
 rng = np.random.RandomState(0)
 pick = list(rng.choice(np.where(y == 0)[0], 5, replace=False)) + list(rng.choice(np.where(y == 1)[0], 5, replace=False))
 eng, diffs = AudioEngine(), []
-c = torch.load('checkpoints_audio_s43/best_mlp.pt', map_location='cpu', weights_only=False)
 for j in pick:
     with torch.no_grad():
         x = torch.from_numpy((z['X'][j, c['layer']].astype('float32') - c['mean']) / c['std']).unsqueeze(0)
