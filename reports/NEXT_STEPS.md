@@ -78,3 +78,15 @@ Chưa đổi API: checkpoint audio cho API chỉ đổi sau khi chọn theo vali
   R3 Celeb-DF 200 cuộc gọi: AUC baseline 0,7816, aug 0,8319, V-A 0,8347; API ngưỡng 5%: báo nhầm 15,2%, phát hiện 57,0%.
   R4 5.000 In-the-Wild Opus: EER cũ 33,51%, v2a 25,95%, v2b 25,26%; API ngưỡng 5%: báo nhầm 42,0%, phát hiện 86,4%.
 Tiếp theo: đồng bộ repo public, cập nhật slide/báo cáo Word, chờ Deepfake-Eval-2024 / DeepSpeak / AV-Deepfake1M.
+
+# 2026-11-10 → 17: V-B, V-SBI, bộ ngoài miền, V-C, audio v2c. TRẠNG THÁI API HIỆN TẠI: video vb_s44, audio v2c_s44.
+API (src/api_core.py): video checkpoints_video_vb_s44 (ngưỡng EER 0,6697, ngưỡng báo nhầm 5% 0,7163); audio checkpoints_audio_v2c_s44 (ngưỡng EER 6,8268, ngưỡng báo nhầm 5% 7,4202). Docker build lại 17/11 (.dockerignore đổi sang v2c_s44). Test 24 passed. Parity audio v2c: 0,0000 so với float32 (0,0566 so với float16), reports/api_parity_audio_v2c.log. Latency Docker audio v2c: flac 0,140 s (p95 0,199); từ video 0,256 s (p95 0,324).
+V-B (đổi mặt đời mới, reports/eval_vb/): Test-A 94,0%, Test-B 78,7%, Test-C 85,6%, Test-A-enh 48,0% ở ngưỡng báo nhầm 5%. V-SBI không cải thiện rõ (reports/eval_vb_V-SBI/).
+Ngoài miền (reports/eval_ood/, reports/eval_ood_vc/): MAVOS-DD 6.800, AV-Deepfake1M 6.000, LAV-DF 6.000, SocialDF 991 (Instagram). Video V-B AUC 0,512 / 0,568 / 0,449 / 0,651. Audio v2b 0,604 / 0,603 / 0,601 / 0,464.
+V-C (train thêm MAVOS + LAV-DF train): MAVOS 0,885, LAV-DF 0,748 (trong miền) nhưng AV1M 0,527, SocialDF 0,507, Celeb-DF 0,682 → không dùng cho API. v2c: MAVOS 0,969, AV1M 0,773, LAV-DF 0,782, SocialDF 0,419; In-the-Wild EER 20,0%; ASVspoof eval 10,5% → API.
+R1/R2 audio v2c (API ngưỡng 5%): báo nhầm 3,5% / 7,0% (v2b 45,8% / 55,9%). R4 v2c: EER 22,62% (v2b 25,26%), AUC 0,8513; API ngưỡng 5%: báo nhầm 12,0%, phát hiện 59,2% (v2b 42,0% / 86,4%).
+Fusion vb_s44 + v2c_s44 (reports/eval_ood_vc/fusion_v2c.csv): AUC MAVOS 0,687, AV1M 0,648, LAV-DF 0,639, SocialDF 0,641 (với v2b: 0,492 / 0,609 / 0,495 / 0,588).
+Grad-CAM vb_s44: reports/gradcam_vb/ (ảnh ở data/gradcam_out_vb, không công bố).
+Dọn dẹp 17/11: đã xóa LAV-DF.tar (phần cần dùng đã giải nén đủ 12.800 file) và cookie Instagram.
+Mega-MMDF: đã đọc điều khoản 17/11 (cần ký thỏa thuận cá nhân, không có video thật, 973 GB, cấm triển khai model train trên bộ này) → chưa xin.
+Tiếp theo: đồng bộ repo public (~/deepfake-video-public, chưa đồng bộ từ 10/11; xem danh sách loại trừ trong lần rà soát 17/11), báo cáo Word.

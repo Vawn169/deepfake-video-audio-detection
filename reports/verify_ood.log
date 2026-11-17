@@ -1,0 +1,6 @@
+LAV-DF metadata /mnt/d/datasets/lavdf/extracted/LAV-DF/metadata.json: 136304 muc, test 26100
+                    exists    size_ok     probe_ok    has_video    has_audio    decode_ok     GB  duration_median_s
+dataset                                                                                                            
+AV-Deepfake1M    6000/6000     0/6000    6000/6000    6000/6000    6000/6000    6000/6000   2.19               7.56
+LAV-DF test    26100/26100    0/26100  26100/26100  26100/26100  26100/26100  26100/26100   4.74               7.04
+MAVOS-DD         6800/6800  6800/6800    6800/6800    6800/6800    6800/6800    6800/6800  25.00              10.00

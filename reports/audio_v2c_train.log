@@ -1,0 +1,45 @@
+v2c: train (61880, 13, 768) (that 12265, gia 49615); val [24844, 24844, 1600]
+/home/van/deepfake-video/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang  0: 7.98%  20.42%  22.00%
+/home/van/deepfake-video/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang  1: 5.26%  15.53%  15.00%
+tang  2: 3.61%  12.99%  12.63%
+tang  3: 3.25%  12.25%  11.17%
+tang  4: 3.18%  12.16%  11.18%
+tang  5: 3.44%  12.64%  13.50%
+tang  6: 5.58%  14.80%  14.92%
+tang  7: 7.03%  16.36%  17.82%
+tang  8: 7.33%  17.31%  16.95%
+tang  9: 5.23%  15.14%  14.63%
+tang 10: 3.52%  12.83%  12.42%
+tang 11: 5.33%  16.45%  14.82%
+/home/van/deepfake-video/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 300 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=300).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+tang 12: 5.59%  17.66%  16.18%
+=> chon tang 4
+seed 42: epoch 18, EER 2.01% / 7.66% / 3.50%, nguong 6.8189
+seed 43: epoch 20, EER 1.85% / 8.04% / 3.82%, nguong 6.5142
+seed 44: epoch 20, EER 1.94% / 7.55% / 3.45%, nguong 6.8268

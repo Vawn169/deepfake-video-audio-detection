@@ -1,0 +1,80 @@
+Checkpoint checkpoints_video_vsbi_s42/best_effnet_b0.pt: epoch 10 (Val AUC luc huan luyen = 0.9707)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.7370
+FF++ c23 Val           | Videos: 694  | AUC: 0.9707 [0.9592, 0.9809] | EER: 0.0936 | Acc@ValThr: 0.9063 | F1@ValThr: 0.9393 (Acc@0.5: 0.9294)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9678 [0.9539, 0.9798] | EER: 0.0848 | Acc@ValThr: 0.9143 | F1@ValThr: 0.9444 (Acc@0.5: 0.9257)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8540 [0.7959, 0.9012] | EER: 0.2500 | Acc@ValThr: 0.7900 | F1@ValThr: 0.8037 (Acc@0.5: 0.7200)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7879 [0.7134, 0.8456] | EER: 0.2700 | Acc@ValThr: 0.6700 | F1@ValThr: 0.6163 (Acc@0.5: 0.7350)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8777 [0.8471, 0.9034] | EER: 0.2046 | Acc@ValThr: 0.6938 | F1@ValThr: 0.7674 (Acc@0.5: 0.8155)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vsbi_s42/summary.csv va nhat ky reports/eval_ledger.csv
+Checkpoint checkpoints_video_vsbi_s43/best_effnet_b0.pt: epoch 10 (Val AUC luc huan luyen = 0.9744)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.7385
+FF++ c23 Val           | Videos: 694  | AUC: 0.9744 [0.9604, 0.9850] | EER: 0.0801 | Acc@ValThr: 0.9193 | F1@ValThr: 0.9480 (Acc@0.5: 0.9294)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9715 [0.9589, 0.9823] | EER: 0.0723 | Acc@ValThr: 0.9257 | F1@ValThr: 0.9521 (Acc@0.5: 0.9329)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8333 [0.7730, 0.8813] | EER: 0.2400 | Acc@ValThr: 0.7800 | F1@ValThr: 0.7864 (Acc@0.5: 0.7050)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7562 [0.6853, 0.8183] | EER: 0.3150 | Acc@ValThr: 0.6300 | F1@ValThr: 0.5432 (Acc@0.5: 0.6900)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8704 [0.8390, 0.8975] | EER: 0.2082 | Acc@ValThr: 0.7325 | F1@ValThr: 0.8070 (Acc@0.5: 0.8298)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vsbi_s43/summary.csv va nhat ky reports/eval_ledger.csv
+Checkpoint checkpoints_video_vsbi_s44/best_effnet_b0.pt: epoch 10 (Val AUC luc huan luyen = 0.9746)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.7277
+FF++ c23 Val           | Videos: 694  | AUC: 0.9746 [0.9637, 0.9842] | EER: 0.0864 | Acc@ValThr: 0.9135 | F1@ValThr: 0.9441 (Acc@0.5: 0.9366)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9733 [0.9619, 0.9831] | EER: 0.0714 | Acc@ValThr: 0.9286 | F1@ValThr: 0.9541 (Acc@0.5: 0.9229)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8600 [0.8062, 0.9039] | EER: 0.2300 | Acc@ValThr: 0.7700 | F1@ValThr: 0.7890 (Acc@0.5: 0.7300)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7851 [0.7180, 0.8438] | EER: 0.2800 | Acc@ValThr: 0.6800 | F1@ValThr: 0.6404 (Acc@0.5: 0.7200)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8710 [0.8413, 0.8988] | EER: 0.2055 | Acc@ValThr: 0.7167 | F1@ValThr: 0.7916 (Acc@0.5: 0.8240)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vsbi_s44/summary.csv va nhat ky reports/eval_ledger.csv
+Nguong bao nham 5%: {'checkpoints_video_vsbi_s42/best_effnet_b0.pt': 0.8045, 'checkpoints_video_vsbi_s43/best_effnet_b0.pt': 0.7483, 'checkpoints_video_vsbi_s44/best_effnet_b0.pt': 0.8168}
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7d04440041e0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7d0444004560, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794761556.550127   10866 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+0/2184 video
+100/2184 video
+200/2184 video
+300/2184 video
+400/2184 video
+500/2184 video
+600/2184 video
+700/2184 video
+800/2184 video
+900/2184 video
+1000/2184 video
+1100/2184 video
+1200/2184 video
+1300/2184 video
+1400/2184 video
+1500/2184 video
+1600/2184 video
+1700/2184 video
+1800/2184 video
+1900/2184 video
+2000/2184 video
+2100/2184 video
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7d0444004560, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7d04440041e0, name=GPU WebGPU
+Khong du mat (<4 frame): {('R1', 'R1'): 38, ('R2', 'R2'): 38, ('call', 'ghost'): 2, ('call', 'hyperswap'): 2, ('call', 'inswapper'): 2, ('call', 'inswapper_gfpgan'): 3, ('call', 'real'): 2, ('call', 'roop'): 2, ('call', 'simswap'): 2, ('goc', 'ghost'): 1, ('goc', 'hyperswap'): 1, ('goc', 'inswapper'): 1, ('goc', 'inswapper_gfpgan'): 2, ('goc', 'real'): 1, ('goc', 'roop'): 1, ('goc', 'simswap'): 1}
+                           auc     eer  detected  false_alarm
+set        ver  family                                       
+Test-A     goc  V-SBI   0.9868  0.0552    0.9486       0.0551
+Test-A-enh goc  V-SBI   0.8463  0.2153    0.4369       0.0551
+Test-B     goc  V-SBI   0.9503  0.1146    0.7983       0.0551
+Test-C     goc  V-SBI   0.9612  0.1057    0.8485       0.0551
+Test-A     call V-SBI   0.9652  0.0994    0.9293       0.1256
+Test-A-enh call V-SBI   0.7917  0.2825    0.4962       0.1256
+Test-B     call V-SBI   0.9076  0.1667    0.7879       0.1256
+Test-C     call V-SBI   0.9326  0.1548    0.8473       0.1256
+R1         R1   V-SBI      NaN     NaN       NaN       0.1531
+R2         R2   V-SBI      NaN     NaN       NaN       0.1531

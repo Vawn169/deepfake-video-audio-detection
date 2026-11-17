@@ -1,0 +1,57 @@
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7c32640045f0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7c32640049a0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794666210.036375    5449 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+50/2354 | 0.61s/video | còn ~23 phút
+100/2354 | 0.65s/video | còn ~24 phút
+150/2354 | 0.65s/video | còn ~24 phút
+200/2354 | 0.66s/video | còn ~24 phút
+250/2354 | 0.65s/video | còn ~23 phút
+300/2354 | 0.66s/video | còn ~23 phút
+350/2354 | 0.68s/video | còn ~23 phút
+400/2354 | 0.69s/video | còn ~22 phút
+450/2354 | 0.70s/video | còn ~22 phút
+500/2354 | 0.71s/video | còn ~22 phút
+550/2354 | 0.72s/video | còn ~22 phút
+600/2354 | 0.73s/video | còn ~21 phút
+650/2354 | 0.74s/video | còn ~21 phút
+700/2354 | 0.75s/video | còn ~21 phút
+750/2354 | 0.74s/video | còn ~20 phút
+800/2354 | 0.74s/video | còn ~19 phút
+850/2354 | 0.74s/video | còn ~18 phút
+900/2354 | 0.73s/video | còn ~18 phút
+950/2354 | 0.74s/video | còn ~17 phút
+1000/2354 | 0.73s/video | còn ~17 phút
+1050/2354 | 0.73s/video | còn ~16 phút
+1100/2354 | 0.72s/video | còn ~15 phút
+1150/2354 | 0.72s/video | còn ~14 phút
+1200/2354 | 0.72s/video | còn ~14 phút
+1250/2354 | 0.71s/video | còn ~13 phút
+1300/2354 | 0.72s/video | còn ~13 phút
+1350/2354 | 0.72s/video | còn ~12 phút
+1400/2354 | 0.72s/video | còn ~11 phút
+1450/2354 | 0.72s/video | còn ~11 phút
+1500/2354 | 0.72s/video | còn ~10 phút
+1550/2354 | 0.72s/video | còn ~10 phút
+1600/2354 | 0.72s/video | còn ~9 phút
+1650/2354 | 0.72s/video | còn ~8 phút
+1700/2354 | 0.72s/video | còn ~8 phút
+1750/2354 | 0.72s/video | còn ~7 phút
+1800/2354 | 0.72s/video | còn ~7 phút
+1850/2354 | 0.71s/video | còn ~6 phút
+1900/2354 | 0.71s/video | còn ~5 phút
+1950/2354 | 0.72s/video | còn ~5 phút
+2000/2354 | 0.71s/video | còn ~4 phút
+2050/2354 | 0.71s/video | còn ~4 phút
+2100/2354 | 0.71s/video | còn ~3 phút
+2150/2354 | 0.71s/video | còn ~2 phút
+2200/2354 | 0.71s/video | còn ~2 phút
+2250/2354 | 0.71s/video | còn ~1 phút
+2300/2354 | 0.71s/video | còn ~1 phút
+2350/2354 | 0.71s/video | còn ~0 phút
+Xong

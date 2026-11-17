@@ -1,0 +1,13 @@
+04:51:23 bat dau preprocess_vc: .venv/bin/python -u src/preprocess_vc.py --workers 4
+06:18:13 xong preprocess_vc (0 lan tam dung lam mat). Max nhiet: 48C
+06:18:13 bat dau audio_v2c_feats_mavos: .venv/bin/python -u src/audio_v2c.py feats --sets mavos_train mavos_val
+06:21:34 xong audio_v2c_feats_mavos (0 lan tam dung lam mat). Max nhiet: 53C
+06:21:34 bat dau audio_v2c_train: .venv/bin/python -u src/audio_v2c.py train
+06:24:36 xong audio_v2c_train (0 lan tam dung lam mat). Max nhiet: 48C
+06:24:36 bat dau train_vc_s42: .venv/bin/python -u src/train_vc.py --seed 42 --out_dir checkpoints_video_vc_s42
+07:42:49 xong train_vc_s42 (0 lan tam dung lam mat). Max nhiet: 77C
+07:42:49 bat dau train_vc_s43: .venv/bin/python -u src/train_vc.py --seed 43 --out_dir checkpoints_video_vc_s43
+09:01:42 xong train_vc_s43 (0 lan tam dung lam mat). Max nhiet: 79C
+09:01:42 bat dau train_vc_s44: .venv/bin/python -u src/train_vc.py --seed 44 --out_dir checkpoints_video_vc_s44
+10:20:35 xong train_vc_s44 (0 lan tam dung lam mat). Max nhiet: 79C
+10:20:35 PIPELINE V-C XONG

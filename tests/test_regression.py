@@ -7,16 +7,17 @@ from conftest import ROOT, needs_models
 pytestmark = needs_models
 
 FF = os.path.join(ROOT, 'data', 'ff')
-VIDEO_CASES = [  # duong dan, diem API da ghi o Tuan 6
-    ('original_sequences/youtube/c23/videos/862.mp4', 0.072),
-    ('original_sequences/youtube/c23/videos/186.mp4', 0.0303),
-    ('manipulated_sequences/FaceSwap/c23/videos/280_249.mp4', 0.9999),
+VIDEO_CASES = [  # diem API cua vb_s44 (16/11; aug_s44 cu: 0.072, 0.0303, 0.9999). 186, 280_249 trung diem offline;
+    # 862: API loc landmark con 7/16 frame nen khac offline (0.691)
+    ('original_sequences/youtube/c23/videos/862.mp4', 0.5309),
+    ('original_sequences/youtube/c23/videos/186.mp4', 0.0017),
+    ('manipulated_sequences/FaceSwap/c23/videos/280_249.mp4', 0.9976),
 ]
 LA_EVAL = os.path.join(ROOT, 'data', 'asvspoof2019_LA', 'LA', 'ASVspoof2019_LA_eval', 'flac')
-AUDIO_CASES = [  # logit cua checkpoint audio_v2b_s43, tinh offline float32 tren CPU (reports/api_parity_audio_v2.log, 09/11)
-    ('LA_E_5450657', -7.7271),
-    ('LA_E_9497931', 18.4858),
-    ('LA_E_8992933', -16.1579),
+AUDIO_CASES = [  # logit cua checkpoint audio_v2c_s44, tinh offline float32 tren CPU (reports/api_parity_audio_v2c.log, 17/11; v2b_s43 cu: -7.7271, 18.4858, -16.1579)
+    ('LA_E_5450657', -7.9807),
+    ('LA_E_9497931', 30.7765),
+    ('LA_E_8992933', -16.8093),
 ]
 
 

@@ -40,8 +40,15 @@ def main():
     ap.add_argument('--name', required=True)
     ap.add_argument('--out', default=os.path.join(ROOT, 'reports', 'eval_realworld'))
     ap.add_argument('--no-ledger', action='store_true')
+    # chi cham audio bang cac checkpoint chi dinh (vd audio v2c, protocol 2026-11-17); --api_audio dung nguong bao nham 5% cua API
+    ap.add_argument('--audio_only', nargs='+')
+    ap.add_argument('--api_audio')
     a = ap.parse_args()
+    global AUDIO_ALL, API_AUDIO
     df = pd.read_csv(a.manifest)
+    if a.audio_only:
+        AUDIO_ALL, API_AUDIO = a.audio_only, a.api_audio or API_AUDIO
+        df = df[df.modality == 'audio']
     vids, auds = df[df.modality == 'video'].reset_index(drop=True), df[df.modality == 'audio'].reset_index(drop=True)
     names = {'video': f'{a.name} video', 'audio': f'{a.name} audio'}
     if not a.no_ledger:

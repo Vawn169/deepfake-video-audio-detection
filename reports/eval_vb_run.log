@@ -1,0 +1,105 @@
+943/943 video nen xong -> /mnt/d/faceswap/vb_call
+Checkpoint checkpoints_video_vb_s42/best_effnet_b0.pt: epoch 7 (Val AUC luc huan luyen = 0.9752)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.6666
+FF++ c23 Val           | Videos: 694  | AUC: 0.9752 [0.9651, 0.9843] | EER: 0.0729 | Acc@ValThr: 0.9265 | F1@ValThr: 0.9527 (Acc@0.5: 0.9308)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9694 [0.9575, 0.9799] | EER: 0.0848 | Acc@ValThr: 0.9157 | F1@ValThr: 0.9456 (Acc@0.5: 0.9186)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8483 [0.7854, 0.8938] | EER: 0.2300 | Acc@ValThr: 0.7650 | F1@ValThr: 0.7751 (Acc@0.5: 0.7400)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7777 [0.7054, 0.8359] | EER: 0.2600 | Acc@ValThr: 0.6750 | F1@ValThr: 0.6154 (Acc@0.5: 0.7300)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8794 [0.8511, 0.9061] | EER: 0.1912 | Acc@ValThr: 0.7210 | F1@ValThr: 0.7945 (Acc@0.5: 0.8040)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vb_s42/summary.csv va nhat ky reports/eval_ledger.csv
+Checkpoint checkpoints_video_vb_s43/best_effnet_b0.pt: epoch 7 (Val AUC luc huan luyen = 0.9757)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.6314
+FF++ c23 Val           | Videos: 694  | AUC: 0.9757 [0.9646, 0.9852] | EER: 0.0702 | Acc@ValThr: 0.9308 | F1@ValThr: 0.9556 (Acc@0.5: 0.9308)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9692 [0.9560, 0.9802] | EER: 0.0857 | Acc@ValThr: 0.9200 | F1@ValThr: 0.9488 (Acc@0.5: 0.9229)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8195 [0.7568, 0.8702] | EER: 0.2700 | Acc@ValThr: 0.7700 | F1@ValThr: 0.7830 (Acc@0.5: 0.7400)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7679 [0.6958, 0.8301] | EER: 0.3050 | Acc@ValThr: 0.6500 | F1@ValThr: 0.5570 (Acc@0.5: 0.6850)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8870 [0.8596, 0.9115] | EER: 0.1886 | Acc@ValThr: 0.7182 | F1@ValThr: 0.7902 (Acc@0.5: 0.8011)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vb_s43/summary.csv va nhat ky reports/eval_ledger.csv
+Checkpoint checkpoints_video_vb_s44/best_effnet_b0.pt: epoch 6 (Val AUC luc huan luyen = 0.9769)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.6697
+FF++ c23 Val           | Videos: 694  | AUC: 0.9769 [0.9676, 0.9859] | EER: 0.0729 | Acc@ValThr: 0.9265 | F1@ValThr: 0.9527 (Acc@0.5: 0.9308)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9663 [0.9525, 0.9781] | EER: 0.0777 | Acc@ValThr: 0.9200 | F1@ValThr: 0.9487 (Acc@0.5: 0.9157)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.8092 [0.7449, 0.8602] | EER: 0.2900 | Acc@ValThr: 0.7000 | F1@ValThr: 0.7222 (Acc@0.5: 0.7100)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.7685 [0.6980, 0.8313] | EER: 0.3200 | Acc@ValThr: 0.6900 | F1@ValThr: 0.6477 (Acc@0.5: 0.6750)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8933 [0.8670, 0.9190] | EER: 0.1921 | Acc@ValThr: 0.6924 | F1@ValThr: 0.7650 (Acc@0.5: 0.7926)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vb_s44/summary.csv va nhat ky reports/eval_ledger.csv
+Nguong bao nham 5%: {'checkpoints_s42/best_effnet_b0.pt': 0.6243, 'checkpoints_s43/best_effnet_b0.pt': 0.5866, 'checkpoints_s44/best_effnet_b0.pt': 0.5114, 'checkpoints_aug_s42/best_effnet_b0.pt': 0.735, 'checkpoints_aug_s43/best_effnet_b0.pt': 0.6263, 'checkpoints_aug_s44/best_effnet_b0.pt': 0.5961, 'checkpoints_video_v2a_s42/best_effnet_b0.pt': 0.592, 'checkpoints_video_v2a_s43/best_effnet_b0.pt': 0.7464, 'checkpoints_video_v2a_s44/best_effnet_b0.pt': 0.4892, 'checkpoints_video_vb_s42/best_effnet_b0.pt': 0.7271, 'checkpoints_video_vb_s43/best_effnet_b0.pt': 0.747, 'checkpoints_video_vb_s44/best_effnet_b0.pt': 0.7163}
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e22b4004af0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e22b4004ea0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794689634.684269  205426 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+0/2184 video
+100/2184 video
+200/2184 video
+300/2184 video
+400/2184 video
+500/2184 video
+600/2184 video
+700/2184 video
+800/2184 video
+900/2184 video
+1000/2184 video
+1100/2184 video
+1200/2184 video
+1300/2184 video
+1400/2184 video
+1500/2184 video
+1600/2184 video
+1700/2184 video
+1800/2184 video
+1900/2184 video
+2000/2184 video
+2100/2184 video
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e22b4004ea0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e22b4004af0, name=GPU WebGPU
+Khong du mat (<4 frame): {('R1', 'R1'): 38, ('R2', 'R2'): 38, ('call', 'ghost'): 2, ('call', 'hyperswap'): 2, ('call', 'inswapper'): 2, ('call', 'inswapper_gfpgan'): 3, ('call', 'real'): 2, ('call', 'roop'): 2, ('call', 'simswap'): 2, ('goc', 'ghost'): 1, ('goc', 'hyperswap'): 1, ('goc', 'inswapper'): 1, ('goc', 'inswapper_gfpgan'): 2, ('goc', 'real'): 1, ('goc', 'roop'): 1, ('goc', 'simswap'): 1}
+                             auc     eer  detected  false_alarm
+set        ver  family                                         
+Test-A     goc  baseline  0.8905  0.1851    0.6115       0.0767
+Test-A-enh goc  baseline  0.6903  0.3715    0.2298       0.0767
+Test-B     goc  baseline  0.8293  0.2464    0.4448       0.0767
+Test-C     goc  baseline  0.9215  0.1501    0.7550       0.0767
+Test-A     goc  aug       0.7886  0.2844    0.2920       0.0456
+Test-A-enh goc  aug       0.6370  0.4120    0.1035       0.0456
+Test-B     goc  aug       0.7411  0.3425    0.2218       0.0456
+Test-C     goc  aug       0.8246  0.2546    0.3485       0.0456
+Test-A     goc  V-A       0.7755  0.2904    0.3007       0.0528
+Test-A-enh goc  V-A       0.5808  0.4514    0.1061       0.0528
+Test-B     goc  V-A       0.7646  0.3045    0.2832       0.0528
+Test-C     goc  V-A       0.7855  0.2854    0.3258       0.0528
+Test-A     goc  V-B       0.9805  0.0618    0.9398       0.0624
+Test-A-enh goc  V-B       0.8393  0.2325    0.4798       0.0624
+Test-B     goc  V-B       0.9414  0.1323    0.7870       0.0624
+Test-C     goc  V-B       0.9524  0.1059    0.8561       0.0624
+Test-A     call baseline  0.7526  0.3124    0.4823       0.1521
+Test-A-enh call baseline  0.5584  0.4536    0.1756       0.1521
+Test-B     call baseline  0.7106  0.3345    0.4015       0.1521
+Test-C     call baseline  0.8130  0.2603    0.5725       0.1521
+Test-A     call aug       0.7109  0.3432    0.2841       0.0749
+Test-A-enh call aug       0.5723  0.4547    0.1221       0.0749
+Test-B     call aug       0.6888  0.3667    0.2601       0.0749
+Test-C     call aug       0.7496  0.3098    0.3486       0.0749
+Test-A     call V-A       0.7046  0.3543    0.3245       0.1039
+Test-A-enh call V-A       0.5252  0.4932    0.1399       0.1039
+Test-B     call V-A       0.7000  0.3555    0.3346       0.1039
+Test-C     call V-A       0.7149  0.3383    0.3486       0.1039
+Test-A     call V-B       0.9639  0.1043    0.9369       0.1715
+Test-A-enh call V-B       0.8035  0.2615    0.5725       0.1715
+Test-B     call V-B       0.8975  0.1907    0.7917       0.1715
+Test-C     call V-B       0.9294  0.1536    0.8550       0.1715
+R1         R1   V-B          NaN     NaN       NaN       0.0931
+R2         R2   V-B          NaN     NaN       NaN       0.0961

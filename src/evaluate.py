@@ -111,7 +111,7 @@ def main():
     ckpt = torch.load(args.ckpt, map_location=device, weights_only=False)
     model = build_model(pretrained=False).to(device)
     model.load_state_dict(ckpt['model_state_dict'])
-    print(f"Checkpoint {args.ckpt}: epoch {ckpt['epoch']} (Val AUC luc huan luyen = {ckpt['val_auc']:.4f})")
+    print(f"Checkpoint {args.ckpt}: epoch {ckpt['epoch']} (Val AUC luc huan luyen = {ckpt.get('val_auc', ckpt.get('val_aucs', {}).get('ffpp')):.4f})")
 
     # Val luon chay truoc de lay nguong EER (Val khong phai tap test).
     order = ['val'] + [k for k in args.datasets if k != 'val']
@@ -158,7 +158,7 @@ def main():
             'eer': round(eer, 4), 'val_threshold': round(val_thresh, 4),
             'acc_val_thresh': round(acc_vt, 4), 'f1_val_thresh': round(f1_vt, 4),
             'acc_05': round(acc_05, 4), 'f1_05': round(f1_05, 4),
-            'ckpt': args.ckpt, 'ckpt_epoch': ckpt['epoch'], 'ckpt_val_auc': round(float(ckpt['val_auc']), 4),
+            'ckpt': args.ckpt, 'ckpt_epoch': ckpt['epoch'], 'ckpt_val_auc': round(float(ckpt.get('val_auc', ckpt.get('val_aucs', {}).get('ffpp'))), 4),
             'git': gh, 'time': now,
         })
         safe = name.lower().replace(' ', '_').replace('+', 'p').replace('(', '').replace(')', '')

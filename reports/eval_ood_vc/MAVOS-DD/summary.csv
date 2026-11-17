@@ -1,0 +1,115 @@
+branch,ckpt,family,thr,coverage,table,subset,n_pos,n_neg,detected,detected_lo,detected_hi,detected_eerthr,false_alarm,false_alarm_lo,false_alarm_hi,false_alarm_eerthr,auc,eer
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,all,all,3992,2369,0.7693,0.756,0.7821,0.8294,0.1693,0.1547,0.1849,0.2596,0.8851,0.2024
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,echomimic,600,2369,0.9833,0.9696,0.9909,0.9867,0.1693,0.1547,0.1849,0.2596,0.9889,0.0438
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,hififace,559,2369,0.7424,0.7046,0.7769,0.8229,0.1693,0.1547,0.1849,0.2596,0.8772,0.2115
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,inswapper,554,2369,0.7834,0.7472,0.8157,0.8628,0.1693,0.1547,0.1849,0.2596,0.8962,0.1848
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,liveportrait,524,2369,0.3321,0.2931,0.3735,0.4408,0.1693,0.1547,0.1849,0.2596,0.6551,0.3913
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,memo,600,2369,0.9583,0.9392,0.9716,0.9733,0.1693,0.1547,0.1849,0.2596,0.9748,0.0744
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,real,0,2369,,,,,0.1693,0.1547,0.1849,0.2596,,
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,roop,555,2369,0.5676,0.526,0.6082,0.6937,0.1693,0.1547,0.1849,0.2596,0.7958,0.2796
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,group,sonic,600,2369,0.9467,0.9257,0.962,0.9683,0.1693,0.1547,0.1849,0.2596,0.9719,0.0782
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,arabic,515,2369,0.7243,0.6841,0.7611,0.7786,0.1693,0.1547,0.1849,0.2596,0.8468,0.2387
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,english,476,2369,0.7941,0.7555,0.828,0.8361,0.1693,0.1547,0.1849,0.2596,0.882,0.1845
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,german,478,2369,0.8096,0.772,0.8423,0.8745,0.1693,0.1547,0.1849,0.2596,0.9188,0.1826
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,hindi,498,2369,0.8072,0.7703,0.8395,0.8655,0.1693,0.1547,0.1849,0.2596,0.9075,0.1803
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,mandarin,499,2369,0.6553,0.6126,0.6957,0.7415,0.1693,0.1547,0.1849,0.2596,0.8484,0.2595
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,romanian,523,2369,0.8356,0.8014,0.8649,0.8853,0.1693,0.1547,0.1849,0.2596,0.9158,0.1637
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,russian,504,2369,0.7679,0.7291,0.8026,0.8353,0.1693,0.1547,0.1849,0.2596,0.8874,0.1953
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,language,spanish,499,2369,0.7615,0.7222,0.7968,0.8196,0.1693,0.1547,0.1849,0.2596,0.8749,0.2044
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,open_set,model_cu/ngon_ngu_cu,1716,2369,0.7646,0.7439,0.784,0.8124,0.1693,0.1547,0.1849,0.2596,0.8755,0.2076
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,open_set,model_cu/ngon_ngu_moi,562,2369,0.8203,0.7864,0.8498,0.8737,0.1693,0.1547,0.1849,0.2596,0.9175,0.1778
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,open_set,model_moi/ngon_ngu_cu,1300,2369,0.7462,0.7218,0.7691,0.8215,0.1693,0.1547,0.1849,0.2596,0.8767,0.2121
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9354,open_set,model_moi/ngon_ngu_moi,414,2369,0.7923,0.7506,0.8286,0.8647,0.1693,0.1547,0.1849,0.2596,0.907,0.19
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,all,all,3992,2369,0.7114,0.6972,0.7253,0.7813,0.0827,0.0723,0.0945,0.1659,0.8899,0.1979
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,echomimic,600,2369,0.9717,0.9551,0.9822,0.9833,0.0827,0.0723,0.0945,0.1659,0.9898,0.0356
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,hififace,559,2369,0.6351,0.5944,0.6739,0.7317,0.0827,0.0723,0.0945,0.1659,0.8764,0.2204
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,inswapper,554,2369,0.7076,0.6684,0.7439,0.796,0.0827,0.0723,0.0945,0.1659,0.906,0.1872
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,liveportrait,524,2369,0.3034,0.2656,0.3441,0.4084,0.0827,0.0723,0.0945,0.1659,0.6869,0.3769
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,memo,600,2369,0.9317,0.9086,0.9492,0.9567,0.0827,0.0723,0.0945,0.1659,0.972,0.0719
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,real,0,2369,,,,,0.0827,0.0723,0.0945,0.1659,,
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,roop,555,2369,0.4468,0.406,0.4884,0.5838,0.0827,0.0723,0.0945,0.1659,0.7973,0.2851
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,group,sonic,600,2369,0.9067,0.8807,0.9274,0.945,0.0827,0.0723,0.0945,0.1659,0.9688,0.0942
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,arabic,515,2369,0.6175,0.5748,0.6584,0.6971,0.0827,0.0723,0.0945,0.1659,0.8357,0.2605
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,english,476,2369,0.7458,0.7048,0.7828,0.8193,0.0827,0.0723,0.0945,0.1659,0.9057,0.1746
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,german,478,2369,0.7657,0.7257,0.8015,0.8159,0.0827,0.0723,0.0945,0.1659,0.921,0.1744
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,hindi,498,2369,0.7631,0.7238,0.7983,0.8414,0.0827,0.0723,0.0945,0.1659,0.9165,0.1587
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,mandarin,499,2369,0.6152,0.5718,0.6569,0.6974,0.0827,0.0723,0.0945,0.1659,0.8644,0.2259
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,romanian,523,2369,0.7782,0.7406,0.8117,0.847,0.0827,0.0723,0.0945,0.1659,0.9174,0.1602
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,russian,504,2369,0.7143,0.6733,0.752,0.7698,0.0827,0.0723,0.0945,0.1659,0.8843,0.1982
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,language,spanish,499,2369,0.6954,0.6536,0.7342,0.7655,0.0827,0.0723,0.0945,0.1659,0.877,0.2091
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,open_set,model_cu/ngon_ngu_cu,1716,2369,0.7296,0.7081,0.7501,0.7867,0.0827,0.0723,0.0945,0.1659,0.8866,0.1983
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,open_set,model_cu/ngon_ngu_moi,562,2369,0.7847,0.7488,0.8167,0.8345,0.0827,0.0723,0.0945,0.1659,0.9208,0.167
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,open_set,model_moi/ngon_ngu_cu,1300,2369,0.6477,0.6213,0.6732,0.7385,0.0827,0.0723,0.0945,0.1659,0.8727,0.2178
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9354,open_set,model_moi/ngon_ngu_moi,414,2369,0.7367,0.6923,0.7768,0.8213,0.0827,0.0723,0.0945,0.1659,0.9158,0.1724
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,all,all,3992,2369,0.7528,0.7391,0.7659,0.7893,0.1351,0.1219,0.1494,0.1756,0.881,0.1986
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,echomimic,600,2369,0.9733,0.9571,0.9835,0.9767,0.1351,0.1219,0.1494,0.1756,0.9896,0.0409
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,hififace,559,2369,0.6887,0.6492,0.7257,0.7478,0.1351,0.1219,0.1494,0.1756,0.8598,0.2239
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,inswapper,554,2369,0.7437,0.7057,0.7783,0.7888,0.1351,0.1219,0.1494,0.1756,0.889,0.1974
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,liveportrait,524,2369,0.3359,0.2968,0.3774,0.4065,0.1351,0.1219,0.1494,0.1756,0.655,0.3929
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,memo,600,2369,0.9583,0.9392,0.9716,0.9633,0.1351,0.1219,0.1494,0.1756,0.9768,0.0598
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,real,0,2369,,,,,0.1351,0.1219,0.1494,0.1756,,
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,roop,555,2369,0.5459,0.5043,0.5869,0.609,0.1351,0.1219,0.1494,0.1756,0.7869,0.2763
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,group,sonic,600,2369,0.95,0.9295,0.9648,0.9683,0.1351,0.1219,0.1494,0.1756,0.9736,0.0818
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,arabic,515,2369,0.6913,0.6501,0.7296,0.732,0.1351,0.1219,0.1494,0.1756,0.852,0.2237
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,english,476,2369,0.7731,0.7334,0.8085,0.8193,0.1351,0.1219,0.1494,0.1756,0.8918,0.1773
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,german,478,2369,0.7741,0.7345,0.8093,0.8096,0.1351,0.1219,0.1494,0.1756,0.9029,0.1855
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,hindi,498,2369,0.7892,0.7512,0.8227,0.8273,0.1351,0.1219,0.1494,0.1756,0.9023,0.1731
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,mandarin,499,2369,0.6413,0.5983,0.6821,0.6754,0.1351,0.1219,0.1494,0.1756,0.8303,0.2632
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,romanian,523,2369,0.8528,0.8198,0.8806,0.8738,0.1351,0.1219,0.1494,0.1756,0.9221,0.1457
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,russian,504,2369,0.7421,0.7021,0.7783,0.7956,0.1351,0.1219,0.1494,0.1756,0.8765,0.199
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,language,spanish,499,2369,0.7575,0.718,0.7931,0.7816,0.1351,0.1219,0.1494,0.1756,0.8708,0.2102
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,open_set,model_cu/ngon_ngu_cu,1716,2369,0.7622,0.7415,0.7818,0.7873,0.1351,0.1219,0.1494,0.1756,0.8796,0.2004
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,open_set,model_cu/ngon_ngu_moi,562,2369,0.7811,0.7451,0.8134,0.8238,0.1351,0.1219,0.1494,0.1756,0.9006,0.1759
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,open_set,model_moi/ngon_ngu_cu,1300,2369,0.7185,0.6934,0.7422,0.77,0.1351,0.1219,0.1494,0.1756,0.8667,0.2093
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9354,open_set,model_moi/ngon_ngu_moi,414,2369,0.7826,0.7404,0.8196,0.8116,0.1351,0.1219,0.1494,0.1756,0.9052,0.1821
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,all,all,1901,4899,0.6297,0.6077,0.6511,,0.0022,0.0013,0.004,,0.9712,0.0884
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,echomimic,323,4899,0.8483,0.8051,0.8833,,0.0022,0.0013,0.004,,0.9956,0.0281
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,hififace,121,4899,0.0579,0.0283,0.1146,,0.0022,0.0013,0.004,,0.8536,0.2328
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,inswapper,0,600,,,,,0.0,0.0,0.0064,,,
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,liveportrait,309,4899,0.8479,0.8036,0.8836,,0.0022,0.0013,0.004,,0.997,0.0262
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,memo,221,4899,0.8371,0.7827,0.88,,0.0022,0.0013,0.004,,0.9958,0.02
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,real,600,4899,0.5817,0.5418,0.6205,,0.0022,0.0013,0.004,,0.9907,0.0449
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,roop,98,4899,0.0612,0.0284,0.1272,,0.0022,0.0013,0.004,,0.8398,0.246
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,group,sonic,229,4899,0.4978,0.4336,0.5621,,0.0022,0.0013,0.004,,0.9457,0.1273
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,arabic,226,4899,0.6283,0.5637,0.6887,,0.0022,0.0013,0.004,,0.9768,0.0757
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,english,252,4899,0.4286,0.369,0.4903,,0.0022,0.0013,0.004,,0.9747,0.0833
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,german,188,4899,0.6277,0.5566,0.6936,,0.0022,0.0013,0.004,,0.9691,0.0969
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,hindi,204,4899,0.4804,0.4128,0.5487,,0.0022,0.0013,0.004,,0.9451,0.1317
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,mandarin,292,4899,0.7397,0.6865,0.7867,,0.0022,0.0013,0.004,,0.9653,0.0836
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,romanian,226,4899,0.6195,0.5547,0.6803,,0.0022,0.0013,0.004,,0.9733,0.0886
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,russian,281,4899,0.6904,0.6341,0.7416,,0.0022,0.0013,0.004,,0.9754,0.0754
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,1.0,language,spanish,232,4899,0.7802,0.7226,0.8287,,0.0022,0.0013,0.004,,0.9872,0.0473
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,all,all,1901,4899,0.657,0.6354,0.678,,0.0043,0.0028,0.0065,,0.9645,0.0998
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,echomimic,323,4899,0.8607,0.8187,0.8942,,0.0043,0.0028,0.0065,,0.9941,0.0303
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,hififace,121,4899,0.0661,0.0339,0.1251,,0.0043,0.0028,0.0065,,0.8308,0.24
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,inswapper,0,600,,,,,0.0033,0.0009,0.0121,,,
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,liveportrait,309,4899,0.8511,0.8071,0.8865,,0.0043,0.0028,0.0065,,0.9931,0.0319
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,memo,221,4899,0.8824,0.8332,0.9184,,0.0043,0.0028,0.0065,,0.994,0.0351
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,real,600,4899,0.6267,0.5873,0.6644,,0.0043,0.0028,0.0065,,0.9858,0.0591
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,roop,98,4899,0.0612,0.0284,0.1272,,0.0043,0.0028,0.0065,,0.8078,0.2745
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,group,sonic,229,4899,0.5371,0.4725,0.6006,,0.0043,0.0028,0.0065,,0.9371,0.1399
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,arabic,226,4899,0.6239,0.5592,0.6845,,0.0043,0.0028,0.0065,,0.966,0.0881
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,english,252,4899,0.5159,0.4544,0.5769,,0.0043,0.0028,0.0065,,0.9626,0.099
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,german,188,4899,0.6064,0.5351,0.6734,,0.0043,0.0028,0.0065,,0.9645,0.111
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,hindi,204,4899,0.5196,0.4513,0.5872,,0.0043,0.0028,0.0065,,0.9372,0.1482
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,mandarin,292,4899,0.7705,0.719,0.8151,,0.0043,0.0028,0.0065,,0.9583,0.107
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,romanian,226,4899,0.6416,0.5772,0.7013,,0.0043,0.0028,0.0065,,0.9686,0.096
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,russian,281,4899,0.7402,0.6859,0.788,,0.0043,0.0028,0.0065,,0.9728,0.085
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,1.0,language,spanish,232,4899,0.7759,0.718,0.8248,,0.0043,0.0028,0.0065,,0.9825,0.0669
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,all,all,1901,4899,0.6328,0.6109,0.6542,,0.0024,0.0014,0.0043,,0.9724,0.0805
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,echomimic,323,4899,0.8328,0.7883,0.8695,,0.0024,0.0014,0.0043,,0.9949,0.0272
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,hififace,121,4899,0.0826,0.0455,0.1455,,0.0024,0.0014,0.0043,,0.8603,0.2153
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,inswapper,0,600,,,,,0.0,0.0,0.0064,,,
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,liveportrait,309,4899,0.8414,0.7965,0.8779,,0.0024,0.0014,0.0043,,0.9964,0.0299
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,memo,221,4899,0.8597,0.8078,0.8994,,0.0024,0.0014,0.0043,,0.9938,0.0225
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,real,600,4899,0.5817,0.5418,0.6205,,0.0024,0.0014,0.0043,,0.99,0.042
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,roop,98,4899,0.0714,0.035,0.1402,,0.0024,0.0014,0.0043,,0.8536,0.2364
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,group,sonic,229,4899,0.5153,0.4508,0.5792,,0.0024,0.0014,0.0043,,0.9515,0.1168
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,arabic,226,4899,0.5973,0.5323,0.6591,,0.0024,0.0014,0.0043,,0.976,0.0754
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,english,252,4899,0.4563,0.396,0.518,,0.0024,0.0014,0.0043,,0.9757,0.0802
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,german,188,4899,0.5851,0.5137,0.6531,,0.0024,0.0014,0.0043,,0.9688,0.0992
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,hindi,204,4899,0.5049,0.4368,0.5728,,0.0024,0.0014,0.0043,,0.9543,0.1226
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,mandarin,292,4899,0.7603,0.7081,0.8057,,0.0024,0.0014,0.0043,,0.9613,0.0855
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,romanian,226,4899,0.6372,0.5727,0.6971,,0.0024,0.0014,0.0043,,0.9761,0.0762
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,russian,281,4899,0.694,0.6378,0.7449,,0.0024,0.0014,0.0043,,0.9782,0.0715
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,1.0,language,spanish,232,4899,0.7716,0.7134,0.8209,,0.0024,0.0014,0.0043,,0.9875,0.0483

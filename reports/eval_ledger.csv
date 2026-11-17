@@ -63,7 +63,7 @@ time,ckpt,dataset,auc
 2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,FF++ c40 Test,0.8745
 2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.8303
 2026-11-08 02:02:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7632
-2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,In-the-Wild EER,0.2160
+2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,In-the-Wild EER,0.216
 2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,In-the-Wild AUC,0.8611
 2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,In-the-Wild EER,0.2351
 2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,In-the-Wild AUC,0.8392
@@ -73,14 +73,14 @@ time,ckpt,dataset,auc
 2026-11-08 02:31:10,checkpoints_audio_v2a_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9653
 2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.0831
 2026-11-08 02:31:10,checkpoints_audio_v2a_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9744
-2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.0830
+2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.083
 2026-11-08 02:31:10,checkpoints_audio_v2a_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9745
-2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,In-the-Wild EER,0.2270
+2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,In-the-Wild EER,0.227
 2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,In-the-Wild AUC,0.8594
 2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,In-the-Wild EER,0.2298
 2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,In-the-Wild AUC,0.8584
 2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,In-the-Wild EER,0.2201
-2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,In-the-Wild AUC,0.8680
+2026-11-08 02:32:18,checkpoints_audio_v2b_s44/best_mlp.pt,In-the-Wild AUC,0.868
 2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,ASVspoof2019 LA eval EER,0.1113
 2026-11-08 02:32:18,checkpoints_audio_v2b_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9585
 2026-11-08 02:32:18,checkpoints_audio_v2b_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.1102
@@ -141,3 +141,359 @@ time,ckpt,dataset,auc
 2026-11-10 00:15:59,checkpoints_audio_v2b_s42/best_mlp.pt,R2 audio,0.5664
 2026-11-10 00:15:59,checkpoints_audio_v2b_s43/best_mlp.pt,R2 audio,0.5524
 2026-11-10 00:15:59,checkpoints_audio_v2b_s44/best_mlp.pt,R2 audio,0.5664
+2026-11-15 03:50:48,checkpoints_video_vb_s42/best_effnet_b0.pt,FF++ c23 Val,0.9752
+2026-11-15 03:50:48,checkpoints_video_vb_s42/best_effnet_b0.pt,FF++ c23 Test,0.9694
+2026-11-15 03:50:48,checkpoints_video_vb_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.8483
+2026-11-15 03:50:48,checkpoints_video_vb_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7777
+2026-11-15 03:50:48,checkpoints_video_vb_s42/best_effnet_b0.pt,FF++ c40 Test,0.8794
+2026-11-15 03:51:48,checkpoints_video_vb_s43/best_effnet_b0.pt,FF++ c23 Val,0.9757
+2026-11-15 03:51:48,checkpoints_video_vb_s43/best_effnet_b0.pt,FF++ c23 Test,0.9692
+2026-11-15 03:51:48,checkpoints_video_vb_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.8195
+2026-11-15 03:51:48,checkpoints_video_vb_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7679
+2026-11-15 03:51:48,checkpoints_video_vb_s43/best_effnet_b0.pt,FF++ c40 Test,0.887
+2026-11-15 03:52:48,checkpoints_video_vb_s44/best_effnet_b0.pt,FF++ c23 Val,0.9769
+2026-11-15 03:52:48,checkpoints_video_vb_s44/best_effnet_b0.pt,FF++ c23 Test,0.9663
+2026-11-15 03:52:48,checkpoints_video_vb_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.8092
+2026-11-15 03:52:48,checkpoints_video_vb_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7685
+2026-11-15 03:52:48,checkpoints_video_vb_s44/best_effnet_b0.pt,FF++ c40 Test,0.8933
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-A,0.8945
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-A-enh,0.7213
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-B,0.828
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-C,0.9071
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-A,0.8913
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-A-enh,0.6569
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-B,0.8367
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-C,0.9268
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-A,0.8858
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-A-enh,0.6926
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-B,0.8233
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-C,0.9306
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-A,0.7932
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-A-enh,0.6504
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-B,0.7388
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-C,0.8301
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-A,0.7821
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-A-enh,0.6065
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-B,0.7354
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-C,0.8146
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-A,0.7906
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-A-enh,0.6542
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-B,0.7492
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-C,0.829
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-A,0.7979
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-A-enh,0.6189
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-B,0.7876
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-C,0.7991
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-A,0.7729
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-A-enh,0.6071
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-B,0.7632
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-C,0.7891
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-A,0.7558
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-A-enh,0.5165
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-B,0.7431
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-C,0.7683
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-A,0.9814
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-A-enh,0.8548
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-B,0.9432
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-C,0.9549
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-A,0.9806
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-A-enh,0.8357
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-B,0.9413
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-C,0.9515
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-A,0.9794
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-A-enh,0.8275
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-B,0.9398
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-C,0.9509
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-A call,0.7412
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-A-enh call,0.5932
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-B call,0.7196
+2026-11-15 04:22:04,checkpoints_s42/best_effnet_b0.pt,Test-C call,0.7998
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-A call,0.7775
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-A-enh call,0.551
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-B call,0.7191
+2026-11-15 04:22:04,checkpoints_s43/best_effnet_b0.pt,Test-C call,0.8276
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-A call,0.7392
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-A-enh call,0.531
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-B call,0.693
+2026-11-15 04:22:04,checkpoints_s44/best_effnet_b0.pt,Test-C call,0.8116
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-A call,0.7168
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-A-enh call,0.6008
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-B call,0.6951
+2026-11-15 04:22:04,checkpoints_aug_s42/best_effnet_b0.pt,Test-C call,0.7502
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-A call,0.7057
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-A-enh call,0.5367
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-B call,0.6842
+2026-11-15 04:22:04,checkpoints_aug_s43/best_effnet_b0.pt,Test-C call,0.7432
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-A call,0.7103
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-A-enh call,0.5794
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-B call,0.6871
+2026-11-15 04:22:04,checkpoints_aug_s44/best_effnet_b0.pt,Test-C call,0.7553
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-A call,0.719
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-A-enh call,0.5508
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-B call,0.7166
+2026-11-15 04:22:04,checkpoints_video_v2a_s42/best_effnet_b0.pt,Test-C call,0.7304
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-A call,0.7069
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-A-enh call,0.5469
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-B call,0.7005
+2026-11-15 04:22:04,checkpoints_video_v2a_s43/best_effnet_b0.pt,Test-C call,0.7196
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-A call,0.6878
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-A-enh call,0.4779
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-B call,0.683
+2026-11-15 04:22:04,checkpoints_video_v2a_s44/best_effnet_b0.pt,Test-C call,0.6948
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-A call,0.9654
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-A-enh call,0.8185
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-B call,0.8942
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,Test-C call,0.9253
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-A call,0.9645
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-A-enh call,0.8042
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-B call,0.9008
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,Test-C call,0.9334
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-A call,0.9617
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-A-enh call,0.7879
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-B call,0.8976
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,Test-C call,0.9295
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,R1 video,0.0811
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,R1 video,0.0901
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,R1 video,0.1081
+2026-11-15 04:22:04,checkpoints_video_vb_s42/best_effnet_b0.pt,R2 video,0.0811
+2026-11-15 04:22:04,checkpoints_video_vb_s43/best_effnet_b0.pt,R2 video,0.0991
+2026-11-15 04:22:04,checkpoints_video_vb_s44/best_effnet_b0.pt,R2 video,0.1081
+2026-11-15 23:49:30,checkpoints_video_vsbi_s42/best_effnet_b0.pt,FF++ c23 Val,0.9707
+2026-11-15 23:49:30,checkpoints_video_vsbi_s42/best_effnet_b0.pt,FF++ c23 Test,0.9678
+2026-11-15 23:49:30,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.854
+2026-11-15 23:49:30,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7879
+2026-11-15 23:49:30,checkpoints_video_vsbi_s42/best_effnet_b0.pt,FF++ c40 Test,0.8777
+2026-11-15 23:50:31,checkpoints_video_vsbi_s43/best_effnet_b0.pt,FF++ c23 Val,0.9744
+2026-11-15 23:50:31,checkpoints_video_vsbi_s43/best_effnet_b0.pt,FF++ c23 Test,0.9715
+2026-11-15 23:50:31,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.8333
+2026-11-15 23:50:31,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7562
+2026-11-15 23:50:31,checkpoints_video_vsbi_s43/best_effnet_b0.pt,FF++ c40 Test,0.8704
+2026-11-15 23:51:31,checkpoints_video_vsbi_s44/best_effnet_b0.pt,FF++ c23 Val,0.9746
+2026-11-15 23:51:31,checkpoints_video_vsbi_s44/best_effnet_b0.pt,FF++ c23 Test,0.9733
+2026-11-15 23:51:31,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.86
+2026-11-15 23:51:31,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.7851
+2026-11-15 23:51:31,checkpoints_video_vsbi_s44/best_effnet_b0.pt,FF++ c40 Test,0.871
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-A,0.9852
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-A-enh,0.8259
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-B,0.9448
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-C,0.9617
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-A,0.9866
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-A-enh,0.8419
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-B,0.9497
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-C,0.9578
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-A,0.9885
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-A-enh,0.8712
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-B,0.9565
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-C,0.9642
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-A call,0.9657
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-A-enh call,0.7789
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-B call,0.9052
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,Test-C call,0.9316
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-A call,0.9642
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-A-enh call,0.7827
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-B call,0.9082
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,Test-C call,0.9323
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-A call,0.9657
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-A-enh call,0.8134
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-B call,0.9095
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,Test-C call,0.9339
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,R1 video,0.1441
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,R1 video,0.2072
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,R1 video,0.1081
+2026-11-16 00:17:27,checkpoints_video_vsbi_s42/best_effnet_b0.pt,R2 video,0.1351
+2026-11-16 00:17:27,checkpoints_video_vsbi_s43/best_effnet_b0.pt,R2 video,0.2162
+2026-11-16 00:17:27,checkpoints_video_vsbi_s44/best_effnet_b0.pt,R2 video,0.1081
+2026-11-16 21:38:58,checkpoints_s42/best_effnet_b0.pt,MAVOS-DD video,0.5067
+2026-11-16 21:38:58,checkpoints_s43/best_effnet_b0.pt,MAVOS-DD video,0.4529
+2026-11-16 21:38:58,checkpoints_s44/best_effnet_b0.pt,MAVOS-DD video,0.4399
+2026-11-16 21:38:58,checkpoints_aug_s42/best_effnet_b0.pt,MAVOS-DD video,0.4518
+2026-11-16 21:38:58,checkpoints_aug_s43/best_effnet_b0.pt,MAVOS-DD video,0.4656
+2026-11-16 21:38:58,checkpoints_aug_s44/best_effnet_b0.pt,MAVOS-DD video,0.4362
+2026-11-16 21:38:58,checkpoints_video_v2a_s42/best_effnet_b0.pt,MAVOS-DD video,0.4497
+2026-11-16 21:38:58,checkpoints_video_v2a_s43/best_effnet_b0.pt,MAVOS-DD video,0.4478
+2026-11-16 21:38:58,checkpoints_video_v2a_s44/best_effnet_b0.pt,MAVOS-DD video,0.4241
+2026-11-16 21:38:58,checkpoints_video_vb_s42/best_effnet_b0.pt,MAVOS-DD video,0.5052
+2026-11-16 21:38:58,checkpoints_video_vb_s43/best_effnet_b0.pt,MAVOS-DD video,0.5203
+2026-11-16 21:38:58,checkpoints_video_vb_s44/best_effnet_b0.pt,MAVOS-DD video,0.5118
+2026-11-16 21:38:58,checkpoints_video_vsbi_s42/best_effnet_b0.pt,MAVOS-DD video,0.5435
+2026-11-16 21:38:58,checkpoints_video_vsbi_s43/best_effnet_b0.pt,MAVOS-DD video,0.5686
+2026-11-16 21:38:58,checkpoints_video_vsbi_s44/best_effnet_b0.pt,MAVOS-DD video,0.5738
+2026-11-16 21:38:58,checkpoints_audio_s42/best_mlp.pt,MAVOS-DD audio,0.4039
+2026-11-16 21:38:58,checkpoints_audio_s43/best_mlp.pt,MAVOS-DD audio,0.376
+2026-11-16 21:38:58,checkpoints_audio_s44/best_mlp.pt,MAVOS-DD audio,0.3833
+2026-11-16 21:38:58,checkpoints_audio_v2a_s42/best_mlp.pt,MAVOS-DD audio,0.5427
+2026-11-16 21:38:58,checkpoints_audio_v2a_s43/best_mlp.pt,MAVOS-DD audio,0.5058
+2026-11-16 21:38:58,checkpoints_audio_v2a_s44/best_mlp.pt,MAVOS-DD audio,0.554
+2026-11-16 21:38:58,checkpoints_audio_v2b_s42/best_mlp.pt,MAVOS-DD audio,0.6005
+2026-11-16 21:38:58,checkpoints_audio_v2b_s43/best_mlp.pt,MAVOS-DD audio,0.5984
+2026-11-16 21:38:58,checkpoints_audio_v2b_s44/best_mlp.pt,MAVOS-DD audio,0.6117
+2026-11-16 21:38:58,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt,MAVOS-DD fusion,0.4919
+2026-11-17 01:45:15,checkpoints_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5405
+2026-11-17 01:45:15,checkpoints_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.5321
+2026-11-17 01:45:15,checkpoints_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5257
+2026-11-17 01:45:15,checkpoints_aug_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5504
+2026-11-17 01:45:15,checkpoints_aug_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.5474
+2026-11-17 01:45:15,checkpoints_aug_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5423
+2026-11-17 01:45:15,checkpoints_video_v2a_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5456
+2026-11-17 01:45:15,checkpoints_video_v2a_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.5514
+2026-11-17 01:45:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5364
+2026-11-17 01:45:15,checkpoints_video_vb_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5609
+2026-11-17 01:45:15,checkpoints_video_vb_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.5723
+2026-11-17 01:45:15,checkpoints_video_vb_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5694
+2026-11-17 01:45:15,checkpoints_video_vsbi_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5689
+2026-11-17 01:45:15,checkpoints_video_vsbi_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.562
+2026-11-17 01:45:15,checkpoints_video_vsbi_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5632
+2026-11-17 01:45:15,checkpoints_audio_s42/best_mlp.pt,AV-Deepfake1M audio,0.6255
+2026-11-17 01:45:15,checkpoints_audio_s43/best_mlp.pt,AV-Deepfake1M audio,0.6197
+2026-11-17 01:45:15,checkpoints_audio_s44/best_mlp.pt,AV-Deepfake1M audio,0.6324
+2026-11-17 01:45:15,checkpoints_audio_v2a_s42/best_mlp.pt,AV-Deepfake1M audio,0.598
+2026-11-17 01:45:15,checkpoints_audio_v2a_s43/best_mlp.pt,AV-Deepfake1M audio,0.5904
+2026-11-17 01:45:15,checkpoints_audio_v2a_s44/best_mlp.pt,AV-Deepfake1M audio,0.6018
+2026-11-17 01:45:15,checkpoints_audio_v2b_s42/best_mlp.pt,AV-Deepfake1M audio,0.6002
+2026-11-17 01:45:15,checkpoints_audio_v2b_s43/best_mlp.pt,AV-Deepfake1M audio,0.5997
+2026-11-17 01:45:15,checkpoints_audio_v2b_s44/best_mlp.pt,AV-Deepfake1M audio,0.6099
+2026-11-17 01:45:15,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt,AV-Deepfake1M fusion,0.6092
+2026-11-17 01:45:15,checkpoints_s42/best_effnet_b0.pt,LAV-DF video,0.434
+2026-11-17 01:45:15,checkpoints_s43/best_effnet_b0.pt,LAV-DF video,0.4014
+2026-11-17 01:45:15,checkpoints_s44/best_effnet_b0.pt,LAV-DF video,0.4313
+2026-11-17 01:45:15,checkpoints_aug_s42/best_effnet_b0.pt,LAV-DF video,0.4205
+2026-11-17 01:45:15,checkpoints_aug_s43/best_effnet_b0.pt,LAV-DF video,0.4315
+2026-11-17 01:45:15,checkpoints_aug_s44/best_effnet_b0.pt,LAV-DF video,0.4236
+2026-11-17 01:45:15,checkpoints_video_v2a_s42/best_effnet_b0.pt,LAV-DF video,0.4629
+2026-11-17 01:45:15,checkpoints_video_v2a_s43/best_effnet_b0.pt,LAV-DF video,0.4483
+2026-11-17 01:45:15,checkpoints_video_v2a_s44/best_effnet_b0.pt,LAV-DF video,0.4825
+2026-11-17 01:45:15,checkpoints_video_vb_s42/best_effnet_b0.pt,LAV-DF video,0.4528
+2026-11-17 01:45:15,checkpoints_video_vb_s43/best_effnet_b0.pt,LAV-DF video,0.4535
+2026-11-17 01:45:15,checkpoints_video_vb_s44/best_effnet_b0.pt,LAV-DF video,0.4394
+2026-11-17 01:45:15,checkpoints_video_vsbi_s42/best_effnet_b0.pt,LAV-DF video,0.4364
+2026-11-17 01:45:15,checkpoints_video_vsbi_s43/best_effnet_b0.pt,LAV-DF video,0.4519
+2026-11-17 01:45:15,checkpoints_video_vsbi_s44/best_effnet_b0.pt,LAV-DF video,0.4552
+2026-11-17 01:45:15,checkpoints_audio_s42/best_mlp.pt,LAV-DF audio,0.6268
+2026-11-17 01:45:15,checkpoints_audio_s43/best_mlp.pt,LAV-DF audio,0.6159
+2026-11-17 01:45:15,checkpoints_audio_s44/best_mlp.pt,LAV-DF audio,0.6244
+2026-11-17 01:45:15,checkpoints_audio_v2a_s42/best_mlp.pt,LAV-DF audio,0.5835
+2026-11-17 01:45:15,checkpoints_audio_v2a_s43/best_mlp.pt,LAV-DF audio,0.5674
+2026-11-17 01:45:15,checkpoints_audio_v2a_s44/best_mlp.pt,LAV-DF audio,0.5738
+2026-11-17 01:45:15,checkpoints_audio_v2b_s42/best_mlp.pt,LAV-DF audio,0.5996
+2026-11-17 01:45:15,checkpoints_audio_v2b_s43/best_mlp.pt,LAV-DF audio,0.5954
+2026-11-17 01:45:15,checkpoints_audio_v2b_s44/best_mlp.pt,LAV-DF audio,0.6092
+2026-11-17 01:45:15,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt,LAV-DF fusion,0.4952
+2026-11-17 03:40:00,checkpoints_s42/best_effnet_b0.pt,SocialDF video,0.5968
+2026-11-17 03:40:00,checkpoints_s43/best_effnet_b0.pt,SocialDF video,0.5801
+2026-11-17 03:40:00,checkpoints_s44/best_effnet_b0.pt,SocialDF video,0.5892
+2026-11-17 03:40:00,checkpoints_aug_s42/best_effnet_b0.pt,SocialDF video,0.6115
+2026-11-17 03:40:00,checkpoints_aug_s43/best_effnet_b0.pt,SocialDF video,0.5415
+2026-11-17 03:40:00,checkpoints_aug_s44/best_effnet_b0.pt,SocialDF video,0.6162
+2026-11-17 03:40:00,checkpoints_video_v2a_s42/best_effnet_b0.pt,SocialDF video,0.6228
+2026-11-17 03:40:00,checkpoints_video_v2a_s43/best_effnet_b0.pt,SocialDF video,0.5624
+2026-11-17 03:40:00,checkpoints_video_v2a_s44/best_effnet_b0.pt,SocialDF video,0.5965
+2026-11-17 03:40:00,checkpoints_video_vb_s42/best_effnet_b0.pt,SocialDF video,0.6339
+2026-11-17 03:40:00,checkpoints_video_vb_s43/best_effnet_b0.pt,SocialDF video,0.6521
+2026-11-17 03:40:00,checkpoints_video_vb_s44/best_effnet_b0.pt,SocialDF video,0.6684
+2026-11-17 03:40:00,checkpoints_video_vsbi_s42/best_effnet_b0.pt,SocialDF video,0.6503
+2026-11-17 03:40:00,checkpoints_video_vsbi_s43/best_effnet_b0.pt,SocialDF video,0.6009
+2026-11-17 03:40:00,checkpoints_video_vsbi_s44/best_effnet_b0.pt,SocialDF video,0.6579
+2026-11-17 03:40:00,checkpoints_audio_s42/best_mlp.pt,SocialDF audio,0.5222
+2026-11-17 03:40:00,checkpoints_audio_s43/best_mlp.pt,SocialDF audio,0.5443
+2026-11-17 03:40:00,checkpoints_audio_s44/best_mlp.pt,SocialDF audio,0.5267
+2026-11-17 03:40:00,checkpoints_audio_v2a_s42/best_mlp.pt,SocialDF audio,0.4894
+2026-11-17 03:40:00,checkpoints_audio_v2a_s43/best_mlp.pt,SocialDF audio,0.4791
+2026-11-17 03:40:00,checkpoints_audio_v2a_s44/best_mlp.pt,SocialDF audio,0.4772
+2026-11-17 03:40:00,checkpoints_audio_v2b_s42/best_mlp.pt,SocialDF audio,0.4727
+2026-11-17 03:40:00,checkpoints_audio_v2b_s43/best_mlp.pt,SocialDF audio,0.4601
+2026-11-17 03:40:00,checkpoints_audio_v2b_s44/best_mlp.pt,SocialDF audio,0.4582
+2026-11-17 03:40:00,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt,SocialDF fusion,0.588
+2026-11-17 11:51:35,checkpoints_video_vc_s42/best_effnet_b0.pt,FF++ c23 Val,0.9577
+2026-11-17 11:51:35,checkpoints_video_vc_s42/best_effnet_b0.pt,FF++ c23 Test,0.9542
+2026-11-17 11:51:35,checkpoints_video_vc_s42/best_effnet_b0.pt,Celeb-DF v2 (200),0.7002
+2026-11-17 11:51:35,checkpoints_video_vc_s42/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.6491
+2026-11-17 11:51:35,checkpoints_video_vc_s42/best_effnet_b0.pt,FF++ c40 Test,0.8465
+2026-11-17 11:52:32,checkpoints_video_vc_s43/best_effnet_b0.pt,FF++ c23 Val,0.9512
+2026-11-17 11:52:32,checkpoints_video_vc_s43/best_effnet_b0.pt,FF++ c23 Test,0.9524
+2026-11-17 11:52:32,checkpoints_video_vc_s43/best_effnet_b0.pt,Celeb-DF v2 (200),0.6754
+2026-11-17 11:52:32,checkpoints_video_vc_s43/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.6037
+2026-11-17 11:52:32,checkpoints_video_vc_s43/best_effnet_b0.pt,FF++ c40 Test,0.8361
+2026-11-17 11:53:33,checkpoints_video_vc_s44/best_effnet_b0.pt,FF++ c23 Val,0.9522
+2026-11-17 11:53:33,checkpoints_video_vc_s44/best_effnet_b0.pt,FF++ c23 Test,0.9502
+2026-11-17 11:53:33,checkpoints_video_vc_s44/best_effnet_b0.pt,Celeb-DF v2 (200),0.6707
+2026-11-17 11:53:33,checkpoints_video_vc_s44/best_effnet_b0.pt,Celeb-DF CRF30 (200),0.6221
+2026-11-17 11:53:33,checkpoints_video_vc_s44/best_effnet_b0.pt,FF++ c40 Test,0.8211
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-A,0.9660
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-A-enh,0.8895
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-B,0.9213
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-C,0.9434
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-A,0.9703
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-A-enh,0.9220
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-B,0.9384
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-C,0.9440
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-A,0.9617
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-A-enh,0.9145
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-B,0.9228
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-C,0.9388
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-A call,0.9374
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-A-enh call,0.8317
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-B call,0.8721
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,Test-C call,0.9041
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-A call,0.9392
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-A-enh call,0.8504
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-B call,0.8847
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,Test-C call,0.9102
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-A call,0.9282
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-A-enh call,0.8513
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-B call,0.8685
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,Test-C call,0.8928
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,R1 video,0.1712
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,R1 video,0.1081
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,R1 video,0.1081
+2026-11-17 12:19:02,checkpoints_video_vc_s42/best_effnet_b0.pt,R2 video,0.1081
+2026-11-17 12:19:02,checkpoints_video_vc_s43/best_effnet_b0.pt,R2 video,0.0541
+2026-11-17 12:19:02,checkpoints_video_vc_s44/best_effnet_b0.pt,R2 video,0.0360
+2026-11-17 12:19:17,checkpoints_audio_v2c_s42/best_mlp.pt,In-the-Wild EER,0.1985
+2026-11-17 12:19:17,checkpoints_audio_v2c_s42/best_mlp.pt,In-the-Wild AUC,0.8775
+2026-11-17 12:19:17,checkpoints_audio_v2c_s43/best_mlp.pt,In-the-Wild EER,0.2028
+2026-11-17 12:19:17,checkpoints_audio_v2c_s43/best_mlp.pt,In-the-Wild AUC,0.8782
+2026-11-17 12:19:17,checkpoints_audio_v2c_s44/best_mlp.pt,In-the-Wild EER,0.1988
+2026-11-17 12:19:17,checkpoints_audio_v2c_s44/best_mlp.pt,In-the-Wild AUC,0.8774
+2026-11-17 12:19:17,checkpoints_audio_v2c_s42/best_mlp.pt,ASVspoof2019 LA eval EER,0.1049
+2026-11-17 12:19:17,checkpoints_audio_v2c_s42/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9619
+2026-11-17 12:19:17,checkpoints_audio_v2c_s43/best_mlp.pt,ASVspoof2019 LA eval EER,0.1052
+2026-11-17 12:19:17,checkpoints_audio_v2c_s43/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9608
+2026-11-17 12:19:17,checkpoints_audio_v2c_s44/best_mlp.pt,ASVspoof2019 LA eval EER,0.1048
+2026-11-17 12:19:17,checkpoints_audio_v2c_s44/best_mlp.pt,ASVspoof2019 LA eval AUC,0.9610
+2026-11-17 12:20:02,checkpoints_video_vc_s42/best_effnet_b0.pt,MAVOS-DD video,0.8851
+2026-11-17 12:20:02,checkpoints_video_vc_s43/best_effnet_b0.pt,MAVOS-DD video,0.8899
+2026-11-17 12:20:02,checkpoints_video_vc_s44/best_effnet_b0.pt,MAVOS-DD video,0.8810
+2026-11-17 12:20:02,checkpoints_audio_v2c_s42/best_mlp.pt,MAVOS-DD audio,0.9712
+2026-11-17 12:20:02,checkpoints_audio_v2c_s43/best_mlp.pt,MAVOS-DD audio,0.9645
+2026-11-17 12:20:02,checkpoints_audio_v2c_s44/best_mlp.pt,MAVOS-DD audio,0.9724
+2026-11-17 12:20:02,checkpoints_video_vc_s42/best_effnet_b0.pt,AV-Deepfake1M video,0.5270
+2026-11-17 12:20:02,checkpoints_video_vc_s43/best_effnet_b0.pt,AV-Deepfake1M video,0.5258
+2026-11-17 12:20:02,checkpoints_video_vc_s44/best_effnet_b0.pt,AV-Deepfake1M video,0.5290
+2026-11-17 12:20:02,checkpoints_audio_v2c_s42/best_mlp.pt,AV-Deepfake1M audio,0.7792
+2026-11-17 12:20:02,checkpoints_audio_v2c_s43/best_mlp.pt,AV-Deepfake1M audio,0.7649
+2026-11-17 12:20:02,checkpoints_audio_v2c_s44/best_mlp.pt,AV-Deepfake1M audio,0.7751
+2026-11-17 12:20:02,checkpoints_video_vc_s42/best_effnet_b0.pt,LAV-DF video,0.7531
+2026-11-17 12:20:02,checkpoints_video_vc_s43/best_effnet_b0.pt,LAV-DF video,0.7394
+2026-11-17 12:20:02,checkpoints_video_vc_s44/best_effnet_b0.pt,LAV-DF video,0.7505
+2026-11-17 12:20:02,checkpoints_audio_v2c_s42/best_mlp.pt,LAV-DF audio,0.7829
+2026-11-17 12:20:02,checkpoints_audio_v2c_s43/best_mlp.pt,LAV-DF audio,0.7807
+2026-11-17 12:20:02,checkpoints_audio_v2c_s44/best_mlp.pt,LAV-DF audio,0.7823
+2026-11-17 12:20:02,checkpoints_video_vc_s42/best_effnet_b0.pt,SocialDF video,0.5470
+2026-11-17 12:20:02,checkpoints_video_vc_s43/best_effnet_b0.pt,SocialDF video,0.5236
+2026-11-17 12:20:02,checkpoints_video_vc_s44/best_effnet_b0.pt,SocialDF video,0.4518
+2026-11-17 12:20:02,checkpoints_audio_v2c_s42/best_mlp.pt,SocialDF audio,0.4213
+2026-11-17 12:20:02,checkpoints_audio_v2c_s43/best_mlp.pt,SocialDF audio,0.4149
+2026-11-17 12:20:02,checkpoints_audio_v2c_s44/best_mlp.pt,SocialDF audio,0.4220
+2026-11-17 15:40:16,checkpoints_audio_v2c_s42/best_mlp.pt,R1 audio,0.0417
+2026-11-17 15:40:16,checkpoints_audio_v2c_s43/best_mlp.pt,R1 audio,0.0417
+2026-11-17 15:40:16,checkpoints_audio_v2c_s44/best_mlp.pt,R1 audio,0.0347
+2026-11-17 15:40:57,checkpoints_audio_v2c_s42/best_mlp.pt,R2 audio,0.0699
+2026-11-17 15:40:57,checkpoints_audio_v2c_s43/best_mlp.pt,R2 audio,0.0769
+2026-11-17 15:40:57,checkpoints_audio_v2c_s44/best_mlp.pt,R2 audio,0.0769
+2026-11-17 15:56:09,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2c_s44/best_mlp.pt,MAVOS-DD fusion v2c,0.6871
+2026-11-17 15:56:09,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2c_s44/best_mlp.pt,AV-Deepfake1M fusion v2c,0.6479
+2026-11-17 15:56:09,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2c_s44/best_mlp.pt,LAV-DF fusion v2c,0.6392
+2026-11-17 15:56:09,checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2c_s44/best_mlp.pt,SocialDF fusion v2c,0.6409
+2026-11-17 15:56:18,checkpoints_audio_v2c_s42/best_mlp.pt,R4 audio,0.2260
+2026-11-17 15:56:18,checkpoints_audio_v2c_s43/best_mlp.pt,R4 audio,0.2228
+2026-11-17 15:56:18,checkpoints_audio_v2c_s44/best_mlp.pt,R4 audio,0.2298

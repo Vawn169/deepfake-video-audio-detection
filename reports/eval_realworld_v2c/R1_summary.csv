@@ -1,0 +1,4 @@
+set,part,ckpt,n,n_scored,coverage,threshold,false_alarm,false_alarm_ci_low,false_alarm_ci_high,n_false_alarm,fpr5_false_alarm,fpr5_false_alarm_ci_low,fpr5_false_alarm_ci_high,fpr5_n_false_alarm
+R1,audio,checkpoints_audio_v2c_s42/best_mlp.pt,149,144,0.9664,6.8189,0.0417,0.0192,0.0879,144,,,,
+R1,audio,checkpoints_audio_v2c_s43/best_mlp.pt,149,144,0.9664,6.5142,0.0417,0.0192,0.0879,144,,,,
+R1,audio,checkpoints_audio_v2c_s44/best_mlp.pt,149,144,0.9664,6.8268,0.0347,0.0149,0.0787,144,0.0347,0.0149,0.0787,144.0

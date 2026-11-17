@@ -1,0 +1,8 @@
+In-the-Wild seed 42: EER 19.85%  AUC 0.8775 | nguong val: bo sot spoof 49.96%, bao nham bona-fide 6.49%
+In-the-Wild seed 43: EER 20.28%  AUC 0.8782 | nguong val: bo sot spoof 47.30%, bao nham bona-fide 6.72%
+In-the-Wild seed 44: EER 19.88%  AUC 0.8774 | nguong val: bo sot spoof 47.04%, bao nham bona-fide 6.88%
+In-the-Wild TRUNG BINH: EER 20.00% +- 0.24% | AUC 0.8777 +- 0.0005
+ASVspoof2019 LA eval seed 42: EER 10.49%  AUC 0.9619 | nguong val: bo sot spoof 24.03%, bao nham bona-fide 2.03%
+ASVspoof2019 LA eval seed 43: EER 10.52%  AUC 0.9608 | nguong val: bo sot spoof 20.28%, bao nham bona-fide 2.79%
+ASVspoof2019 LA eval seed 44: EER 10.48%  AUC 0.9610 | nguong val: bo sot spoof 22.69%, bao nham bona-fide 2.05%
+ASVspoof2019 LA eval TRUNG BINH: EER 10.50% +- 0.02% | AUC 0.9612 +- 0.0006

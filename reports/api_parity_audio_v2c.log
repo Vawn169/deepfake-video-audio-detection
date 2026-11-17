@@ -1,0 +1,23 @@
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+LA_E_5450657   bonafide api_logit=-7.9807 offline_logit=-7.9946 |d|=0.0139 nhan_api=bonafide nhan_offline=bonafide 0.17s
+LA_E_6580034   bonafide api_logit=-15.7045 offline_logit=-15.7271 |d|=0.0226 nhan_api=bonafide nhan_offline=bonafide 0.15s
+LA_E_8914589   bonafide api_logit=-27.8940 offline_logit=-27.8911 |d|=0.0029 nhan_api=bonafide nhan_offline=bonafide 0.19s
+LA_E_9087500   bonafide api_logit=-16.4832 offline_logit=-16.4676 |d|=0.0156 nhan_api=bonafide nhan_offline=bonafide 0.21s
+LA_E_3247387   bonafide api_logit=-25.1108 offline_logit=-25.1185 |d|=0.0077 nhan_api=bonafide nhan_offline=bonafide 0.10s
+LA_E_9497931   spoof    api_logit=30.7765 offline_logit=30.7199 |d|=0.0566 nhan_api=spoof nhan_offline=spoof 0.10s
+LA_E_4078843   spoof    api_logit=51.2941 offline_logit=51.2972 |d|=0.0031 nhan_api=spoof nhan_offline=spoof 0.12s
+LA_E_8992933   spoof    api_logit=-16.8093 offline_logit=-16.7991 |d|=0.0102 nhan_api=bonafide nhan_offline=bonafide 0.21s
+LA_E_5800793   spoof    api_logit=8.9970 offline_logit=9.0109 |d|=0.0139 nhan_api=spoof nhan_offline=spoof 0.15s
+LA_E_1345189   spoof    api_logit=13.2534 offline_logit=13.2290 |d|=0.0244 nhan_api=spoof nhan_offline=spoof 0.21s
+max |d logit| = 0.0566  mean |d logit| = 0.0171
+LA_E_5450657   bonafide api_logit=-7.9807 offline_float32=-7.9807 |d|=0.0000
+LA_E_6580034   bonafide api_logit=-15.7045 offline_float32=-15.7045 |d|=0.0000
+LA_E_8914589   bonafide api_logit=-27.8940 offline_float32=-27.8940 |d|=0.0000
+LA_E_9087500   bonafide api_logit=-16.4832 offline_float32=-16.4832 |d|=0.0000
+LA_E_3247387   bonafide api_logit=-25.1108 offline_float32=-25.1108 |d|=0.0000
+LA_E_9497931   spoof    api_logit=30.7765 offline_float32=30.7765 |d|=0.0000
+LA_E_4078843   spoof    api_logit=51.2941 offline_float32=51.2941 |d|=0.0000
+LA_E_8992933   spoof    api_logit=-16.8093 offline_float32=-16.8093 |d|=0.0000
+LA_E_5800793   spoof    api_logit=8.9970 offline_float32=8.9970 |d|=0.0000
+LA_E_1345189   spoof    api_logit=13.2534 offline_float32=13.2534 |d|=0.0000
+max |d logit| = 0.0000  mean |d logit| = 0.0000

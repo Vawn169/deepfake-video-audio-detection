@@ -1,0 +1,47 @@
+Nguong bao nham 5%: {'checkpoints_video_vc_s42/best_effnet_b0.pt': 0.7069, 'checkpoints_video_vc_s43/best_effnet_b0.pt': 0.8315, 'checkpoints_video_vc_s44/best_effnet_b0.pt': 0.7605}
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7f5928004af0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7f5928004ea0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794891278.029487 1570897 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+0/2184 video
+100/2184 video
+200/2184 video
+300/2184 video
+400/2184 video
+500/2184 video
+600/2184 video
+700/2184 video
+800/2184 video
+900/2184 video
+1000/2184 video
+1100/2184 video
+1200/2184 video
+1300/2184 video
+1400/2184 video
+1500/2184 video
+1600/2184 video
+1700/2184 video
+1800/2184 video
+1900/2184 video
+2000/2184 video
+2100/2184 video
+Khong du mat (<4 frame): {('R1', 'R1'): 38, ('R2', 'R2'): 38, ('call', 'ghost'): 2, ('call', 'hyperswap'): 2, ('call', 'inswapper'): 2, ('call', 'inswapper_gfpgan'): 3, ('call', 'real'): 2, ('call', 'roop'): 2, ('call', 'simswap'): 2, ('goc', 'ghost'): 1, ('goc', 'hyperswap'): 1, ('goc', 'inswapper'): 1, ('goc', 'inswapper_gfpgan'): 2, ('goc', 'real'): 1, ('goc', 'roop'): 1, ('goc', 'simswap'): 1}
+                           auc     eer  detected  false_alarm
+set        ver  family                                       
+Test-A     goc  V-C     0.9660  0.0870    0.8722       0.0599
+Test-A-enh goc  V-C     0.9087  0.1538    0.6288       0.0599
+Test-B     goc  V-C     0.9275  0.1373    0.7043       0.0599
+Test-C     goc  V-C     0.9421  0.1292    0.7879       0.0599
+Test-A     call V-C     0.9349  0.1285    0.8308       0.0942
+Test-A-enh call V-C     0.8445  0.2219    0.5191       0.0942
+Test-B     call V-C     0.8751  0.1876    0.6439       0.0942
+Test-C     call V-C     0.9024  0.1847    0.7405       0.0942
+R1         R1   V-C        NaN     NaN       NaN       0.1291
+R2         R2   V-C        NaN     NaN       NaN       0.0661
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7f5928004ea0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7f5928004af0, name=GPU WebGPU

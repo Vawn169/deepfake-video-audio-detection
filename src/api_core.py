@@ -13,14 +13,14 @@ from dataset import get_transforms
 from model import build_model
 from audio_common import SR, MAXLEN, trim
 
-CKPT = os.path.join(ROOT, 'checkpoints_aug_s44', 'best_effnet_b0.pt')
-THRESH = 0.5951          # EER tren FF++ Val cua aug_s44 (reports/eval/checkpoints_aug_s44/summary.csv)
-THRESH_FPR5 = 0.5961     # bao nham 5% tren video that FF++ Val (docs/protocol.md, muc 2026-11-09)
+CKPT = os.path.join(ROOT, 'checkpoints_video_vb_s44', 'best_effnet_b0.pt')   # V-B, chon theo Val (docs/protocol.md, muc 2026-11-16)
+THRESH = 0.6697          # EER tren FF++ Val cua vb_s44 (reports/eval/checkpoints_video_vb_s44/summary.csv)
+THRESH_FPR5 = 0.7163     # bao nham 5% tren video that FF++ Val cua vb_s44 (docs/protocol.md, muc 2026-11-16)
 N_FRAMES, MARGIN, SIZE = 16, 0.3, 224
 MIN_FRAMES = 4           # so frame co mat toi thieu de cham diem (lua chon cua nguoi viet, chua kiem chung)
 
-AUDIO_CKPT = os.path.join(ROOT, 'checkpoints_audio_v2b_s43', 'best_mlp.pt')   # chon theo validation (docs/protocol.md, muc 2026-11-09)
-AUDIO_THRESH_FPR5 = 7.6671   # logit bao nham 5% tren bona fide ASVspoof dev sach + dev nhieu
+AUDIO_CKPT = os.path.join(ROOT, 'checkpoints_audio_v2c_s44', 'best_mlp.pt')   # chon theo validation (docs/protocol.md, muc 2026-11-17)
+AUDIO_THRESH_FPR5 = 7.4202   # logit bao nham 5% tren bona fide ASVspoof dev sach + dev nhieu (v2c_s44)
 W2V_DIR = os.path.join(ROOT, 'models', 'wav2vec2-base')                   # chep tu cache HF, khong tai khi chay
 MIN_SAMPLES = 400           # wav2vec2 can toi thieu 400 mau (25 ms) de ra 1 frame
 READ_SECONDS = 60           # doc toi da 60 giay de cat im lang tren ca doan, roi moi lay 4 giay (nhu audio_v2.py)
@@ -35,7 +35,7 @@ class Engine:
         self.model = build_model(pretrained=False)
         self.model.load_state_dict(ck['model_state_dict'])
         self.model.eval()
-        self.version = f"effnet_b0-aug_s44-epoch{ck['epoch']}"
+        self.version = f"effnet_b0-vb_s44-epoch{ck['epoch']}"
         self.tf = get_transforms(train=False)
         self.detector = make_detector(os.path.join(ROOT, 'models', 'blaze_face_short_range.tflite'))
         self.landmarker = vision.FaceLandmarker.create_from_options(vision.FaceLandmarkerOptions(
@@ -103,6 +103,11 @@ class Engine:
             frames = [(k, f) for k, f in frames if self.has_face(f)]
         base = {'model_version': self.version, 'threshold': THRESH, 'threshold_fpr5': THRESH_FPR5,
                 'frames_read': read, 'frames_with_detection': n_detected, 'frames_used': len(frames)}
+        if read == 0:   # 17/11: file hong / khong giai ma duoc thi bao rieng, khong nham la 'it mat'
+            base.update(status='unreadable', score=None, label=None, verdict='inconclusive',
+                        note='Khong doc duoc frame nao tu file (file hong hoac dinh dang khong ho tro), khong cham diem.',
+                        processing_seconds=round(time.time() - t0, 3))
+            return base
         if len(frames) < MIN_FRAMES:
             base.update(status='no_reliable_face', score=None, label=None, verdict='inconclusive',
                         note=f'Duoi {MIN_FRAMES} frame co khuon mat hop le, khong cham diem.',
@@ -186,6 +191,7 @@ class AudioEngine:
                     label='spoof' if logit >= self.thresh else 'bonafide',
                     verdict='high_suspicion' if logit >= AUDIO_THRESH_FPR5 else 'no_sign_detected',
                     audio_seconds_used=round(len(w) / SR, 3),
-                    note='Chi danh gia tren ASVspoof 2019 LA; am thanh ngoai mien nay chi mang tinh tham khao.',
+                    note=('Train tren ASVspoof 2019 LA, MAVOS-DD, LAV-DF. Nguong de dat: it bao nham giong that nhung bo sot nhieu giong gia '
+                          'ngoai mien; chi mang tinh tham khao.'),
                     processing_seconds=round(time.time() - t0, 3))
         return base

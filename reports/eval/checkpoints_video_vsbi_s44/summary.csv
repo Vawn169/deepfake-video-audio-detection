@@ -1,0 +1,6 @@
+dataset,num_videos,auc,auc_ci95_low,auc_ci95_high,eer,val_threshold,acc_val_thresh,f1_val_thresh,acc_05,f1_05,ckpt,ckpt_epoch,ckpt_val_auc,git,time
+FF++ c23 Val,694,0.9746,0.9637,0.9842,0.0864,0.7277,0.9135,0.9441,0.9366,0.9605,checkpoints_video_vsbi_s44/best_effnet_b0.pt,10,0.9746,88f905a,2026-11-15 23:51:31
+FF++ c23 Test,700,0.9733,0.9619,0.9831,0.0714,0.7277,0.9286,0.9541,0.9229,0.9521,checkpoints_video_vsbi_s44/best_effnet_b0.pt,10,0.9746,88f905a,2026-11-15 23:51:31
+Celeb-DF v2 (200),200,0.86,0.8062,0.9039,0.23,0.7277,0.77,0.789,0.73,0.7823,checkpoints_video_vsbi_s44/best_effnet_b0.pt,10,0.9746,88f905a,2026-11-15 23:51:31
+Celeb-DF CRF30 (200),200,0.7851,0.718,0.8438,0.28,0.7277,0.68,0.6404,0.72,0.7407,checkpoints_video_vsbi_s44/best_effnet_b0.pt,10,0.9746,88f905a,2026-11-15 23:51:31
+FF++ c40 Test,699,0.871,0.8413,0.8988,0.2055,0.7277,0.7167,0.7916,0.824,0.8864,checkpoints_video_vsbi_s44/best_effnet_b0.pt,10,0.9746,88f905a,2026-11-15 23:51:31

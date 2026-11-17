@@ -1,0 +1,9 @@
+Train frames: 78172 (4969 videos) | pos_weight: 0.168
+Val FF++: 694 videos | Val moi: 410 videos
+
+--- V-B TRAIN seed 42 tren cuda (10 EPOCHS) ---
+Epoch 01/10 (174.2s) | Train Loss: 0.1472 | Val AUC: 0.9423 | ValMoi AUC: 0.9684 | Score: 0.9554 [*BEST*]
+Epoch 02/10 (152.9s) | Train Loss: 0.1023 | Val AUC: 0.9645 | ValMoi AUC: 0.9817 | Score: 0.9731 [*BEST*]
+Epoch 03/10 (151.8s) | Train Loss: 0.0831 | Val AUC: 0.9568 | ValMoi AUC: 0.9826 | Score: 0.9697
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 20 leaked semaphore objects to clean up at shutdown: {'/loky-79627-sl2ch9__', '/loky-79627-py85kc7g', '/loky-79627-hcudofdr', '/loky-79627-pvq8q06x', '/loky-79627-pz8v8vdn', '/loky-79627-gksstn0d', '/loky-79627-kegq77oq', '/loky-79627-j1tehc39', '/loky-79627-ss4eid9w', '/loky-79627-gdwqqx6j', '/loky-79627-1mv1bitk', '/loky-79627-oyfymr21', '/loky-79627-y2vj9tad', '/loky-79627-6m_fa3b2', '/loky-79627-8lv3rkoy', '/loky-79627-0skge4t1', '/loky-79627-n6cdpr4b', '/loky-79627-6zc3azh5', '/loky-79627-jbuctsjw', '/loky-79627-8ccireot'}
+  warnings.warn(

@@ -1,0 +1,2 @@
+21:38:52 bat dau: --sets MAVOS-DD AV-Deepfake1M LAV-DF
+/home/van/faceswap/eval_ood_run.sh: line 11: /mnt/d/datasets/gpu_temp_eval_ood.csv: Input/output error

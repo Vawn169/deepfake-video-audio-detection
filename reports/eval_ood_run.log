@@ -1,0 +1,1603 @@
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  73%|███████▎  | 155/211 [00:00<00:00, 1545.28it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 1964.87it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+MAVOS-DD: 6800 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d9c0044b0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d9c004860, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8da8004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8da8004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d94004d00, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d940050b0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8da4004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8da4004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794839952.388146   17482 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+[ WARN:16@20.930] global cap_ffmpeg_impl.hpp:1699 grabFrame packet read max attempts exceeded, if your video have multiple streams (video, audio) try to increase attempt limit by setting environment variable OPENCV_FFMPEG_READ_ATTEMPTS (current value is 4096)
+  0/6800
+  500/6800
+  1000/6800
+  1500/6800
+[h264 @ 0x7e8e08402d00] Invalid NAL unit size (29183 > 24285).
+[h264 @ 0x7e8e08402d00] missing picture in access unit with size 24289
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b6c5f3c40] stream 1, offset 0x4368ad: partial file
+[h264 @ 0x7e8e0aaae300] Invalid NAL unit size (29183 > 24285).
+[h264 @ 0x7e8e0aaae300] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b6c5f3c40] stream 0, offset 0x436a11: partial file
+[h264 @ 0x7e8e08402d00] Invalid NAL unit size (31206 > 14961).
+[h264 @ 0x7e8e08402d00] missing picture in access unit with size 14965
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b6c5f3c40] stream 1, offset 0x449500: partial file
+[h264 @ 0x7e8e08070b80] Invalid NAL unit size (31206 > 14961).
+[h264 @ 0x7e8e08070b80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b6c5f3c40] stream 1, offset 0x449643: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8ddb731680] stream 0, offset 0x3bf823: partial file
+  2000/6800
+  2500/6800
+  3000/6800
+  3500/6800
+  4000/6800
+[h264 @ 0x7e8e0127b380] Invalid NAL unit size (14887 > 11989).
+[h264 @ 0x7e8e0127b380] missing picture in access unit with size 11993
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e003676c0] stream 1, offset 0x145770: partial file
+[h264 @ 0x7e8e02b6f280] Invalid NAL unit size (14887 > 11989).
+[h264 @ 0x7e8e02b6f280] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e003676c0] stream 1, offset 0x1458fe: partial file
+[h264 @ 0x7e8e0127b380] Invalid NAL unit size (21740 > 1442).
+[h264 @ 0x7e8e0127b380] missing picture in access unit with size 1446
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e003676c0] stream 1, offset 0x159b68: partial file
+[h264 @ 0x7e8937895e80] Invalid NAL unit size (21740 > 1442).
+[h264 @ 0x7e8937895e80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e003676c0] stream 0, offset 0x159cbf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b2e3d4880] stream 0, offset 0xaf7471: partial file
+[h264 @ 0x7e8a8703a3c0] Invalid NAL unit size (19824 > 19736).
+[h264 @ 0x7e8a8703a3c0] missing picture in access unit with size 19740
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b2e3d4880] stream 1, offset 0xb8f435: partial file
+[h264 @ 0x7e89f1e6eb00] Invalid NAL unit size (19824 > 19736).
+[h264 @ 0x7e89f1e6eb00] Error splitting the input into NAL units.
+[h264 @ 0x7e897da84d00] Invalid NAL unit size (37777 > 22269).
+[h264 @ 0x7e897da84d00] missing picture in access unit with size 22273
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8a42abbec0] stream 1, offset 0xcd3af: partial file
+[h264 @ 0x7e8dd8227540] Invalid NAL unit size (37777 > 22269).
+[h264 @ 0x7e8dd8227540] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8a42abbec0] stream 0, offset 0xcd4e4: partial file
+[h264 @ 0x7e8e008c41c0] Invalid NAL unit size (7514 > 757).
+[h264 @ 0x7e8e008c41c0] missing picture in access unit with size 761
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x63b91: partial file
+[h264 @ 0x7e8e02b6f280] Invalid NAL unit size (7514 > 757).
+[h264 @ 0x7e8e02b6f280] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 0, offset 0x63d21: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x4a18c: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 0, offset 0x4a319: partial file
+[h264 @ 0x7e8e008c41c0] Invalid NAL unit size (14977 > 14810).
+[h264 @ 0x7e8e008c41c0] missing picture in access unit with size 14814
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x721d3: partial file
+[h264 @ 0x7e8bb69b5a80] Invalid NAL unit size (14977 > 14810).
+[h264 @ 0x7e8bb69b5a80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 0, offset 0x72341: partial file
+[h264 @ 0x7e8e008c41c0] Invalid NAL unit size (32815 > 17394).
+[h264 @ 0x7e8e008c41c0] missing picture in access unit with size 17398
+[h264 @ 0x7e8937895e80] Invalid NAL unit size (32815 > 17394).
+[h264 @ 0x7e8937895e80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x1a927c: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 0, offset 0x1a93fa: partial file
+[h264 @ 0x7e8e008c41c0] Invalid NAL unit size (14977 > 14810).
+[h264 @ 0x7e8e008c41c0] missing picture in access unit with size 14814
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x721d3: partial file
+[h264 @ 0x7e8bb69b5a80] Invalid NAL unit size (14977 > 14810).
+[h264 @ 0x7e8bb69b5a80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 0, offset 0x72341: partial file
+[h264 @ 0x7e8e008c41c0] Invalid NAL unit size (54337 > 28360).
+[h264 @ 0x7e8e008c41c0] missing picture in access unit with size 28364
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x3171e8: partial file
+[h264 @ 0x7e8e01081d80] Invalid NAL unit size (54337 > 28360).
+[h264 @ 0x7e8e01081d80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e00d25ec0] stream 1, offset 0x317393: partial file
+[h264 @ 0x7e8ad5a64ec0] Invalid NAL unit size (13182 > 2643).
+[h264 @ 0x7e8ad5a64ec0] missing picture in access unit with size 2647
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b5deeeec0] stream 1, offset 0x1c51a2: partial file
+[h264 @ 0x7e8b2c3be140] Invalid NAL unit size (13182 > 2643).
+[h264 @ 0x7e8b2c3be140] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b5deeeec0] stream 0, offset 0x1c5326: partial file
+[h264 @ 0x7e8afe77cf00] Invalid NAL unit size (35484 > 16217).
+[h264 @ 0x7e8afe77cf00] missing picture in access unit with size 16221
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 1, offset 0xa1bba: partial file
+[h264 @ 0x7e89eae5cf00] Invalid NAL unit size (35484 > 16217).
+[h264 @ 0x7e89eae5cf00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 0, offset 0xa1d22: partial file
+[h264 @ 0x7e8996e00ec0] Invalid NAL unit size (22102 > 2037).
+[h264 @ 0x7e8996e00ec0] missing picture in access unit with size 2041
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87d1afdf40] stream 1, offset 0x296e81: partial file
+[h264 @ 0x7e8e02b6f280] Invalid NAL unit size (22102 > 2037).
+[h264 @ 0x7e8e02b6f280] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87d1afdf40] stream 0, offset 0x29703b: partial file
+[h264 @ 0x7e8b1e404980] Invalid NAL unit size (71286 > 3008).
+[h264 @ 0x7e8b1e404980] missing picture in access unit with size 3012
+[h264 @ 0x7e899b03e380] Invalid NAL unit size (71286 > 3008).
+[h264 @ 0x7e899b03e380] Error splitting the input into NAL units.
+[h264 @ 0x7e8b1e404980] Invalid NAL unit size (56443 > 29693).
+[h264 @ 0x7e8b1e404980] missing picture in access unit with size 29697
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 1, offset 0x6a068: partial file
+[h264 @ 0x7e8b1e9ad7c0] Invalid NAL unit size (56443 > 29693).
+[h264 @ 0x7e8b1e9ad7c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 0, offset 0x6a21f: partial file
+[h264 @ 0x7e8a96ed7dc0] Invalid NAL unit size (36950 > 31883).
+[h264 @ 0x7e8a96ed7dc0] missing picture in access unit with size 31887
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b0faa4080] stream 1, offset 0x39de9: partial file
+[h264 @ 0x7e8e081a3a80] Invalid NAL unit size (36950 > 31883).
+[h264 @ 0x7e8e081a3a80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b0faa4080] stream 0, offset 0x39efd: partial file
+[h264 @ 0x7e8b1e404980] Invalid NAL unit size (51332 > 26646).
+[h264 @ 0x7e8b1e404980] missing picture in access unit with size 26650
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 1, offset 0x43806c: partial file
+[h264 @ 0x7e8ba2806180] Invalid NAL unit size (51332 > 26646).
+[h264 @ 0x7e8ba2806180] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 0, offset 0x43820b: partial file
+[h264 @ 0x7e8b1e404980] Invalid NAL unit size (16749 > 8022).
+[h264 @ 0x7e8b1e404980] missing picture in access unit with size 8026
+[h264 @ 0x7e8b890b6140] Invalid NAL unit size (16749 > 8022).
+[h264 @ 0x7e8b890b6140] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 1, offset 0x3dfb95: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8c09bc0] stream 0, offset 0x3dfd3f: partial file
+[h264 @ 0x7e8b1e404980] Invalid NAL unit size (63844 > 4946).
+[h264 @ 0x7e8b1e404980] missing picture in access unit with size 4950
+[h264 @ 0x7e8ba2806180] Invalid NAL unit size (63844 > 4946).
+[h264 @ 0x7e8ba2806180] Error splitting the input into NAL units.
+[h264 @ 0x7e8a03ca1a40] reference picture missing during reorder
+[h264 @ 0x7e8a03ca1a40] reference picture missing during reorder
+[h264 @ 0x7e8a03ca1a40] Missing reference picture, default is 65738
+[h264 @ 0x7e8a03ca1a40] Missing reference picture, default is 65738
+[h264 @ 0x7e8a96ed7dc0] Invalid NAL unit size (37566 > 18).
+[h264 @ 0x7e8a96ed7dc0] missing picture in access unit with size 22
+[h264 @ 0x7e8b36381180] Invalid NAL unit size (37566 > 18).
+[h264 @ 0x7e8b36381180] Error splitting the input into NAL units.
+[h264 @ 0x7e8af670a300] reference picture missing during reorder
+[h264 @ 0x7e8af670a300] reference picture missing during reorder
+[h264 @ 0x7e8af670a300] Missing reference picture, default is 65592
+[h264 @ 0x7e8af670a300] Missing reference picture, default is 65592
+[h264 @ 0x7e8aafd92e80] reference picture missing during reorder
+[h264 @ 0x7e8aafd92e80] Missing reference picture, default is 65600
+[h264 @ 0x7e8e081a3a80] mmco: unref short failure
+[h264 @ 0x7e8a96ed7dc0] Invalid NAL unit size (43314 > 7694).
+[h264 @ 0x7e8a96ed7dc0] missing picture in access unit with size 7698
+[h264 @ 0x7e8a386aa440] Invalid NAL unit size (43314 > 7694).
+[h264 @ 0x7e8a386aa440] Error splitting the input into NAL units.
+[h264 @ 0x7e8aafd92e80] reference picture missing during reorder
+[h264 @ 0x7e8aafd92e80] reference picture missing during reorder
+[h264 @ 0x7e8aafd92e80] Missing reference picture, default is 65884
+[h264 @ 0x7e8aafd92e80] Missing reference picture, default is 65884
+[h264 @ 0x7e8a7fff9380] reference picture missing during reorder
+[h264 @ 0x7e8a7fff9380] Missing reference picture, default is 65892
+[h264 @ 0x7e8accf9f040] mmco: unref short failure
+[h264 @ 0x7e8ddbc7bc40] Invalid NAL unit size (38327 > 8951).
+[h264 @ 0x7e8ddbc7bc40] missing picture in access unit with size 8955
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 1, offset 0x18fc4a: partial file
+[h264 @ 0x7e8883884400] Invalid NAL unit size (38327 > 8951).
+[h264 @ 0x7e8883884400] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 1, offset 0x18fdcf: partial file
+[h264 @ 0x7e8bab1e7d00] Invalid NAL unit size (8636 > 5719).
+[h264 @ 0x7e8bab1e7d00] missing picture in access unit with size 5723
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e055cb540] stream 1, offset 0x229d7c: partial file
+[h264 @ 0x7e8e07db7800] Invalid NAL unit size (8636 > 5719).
+[h264 @ 0x7e8e07db7800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8e055cb540] stream 0, offset 0x229ef8: partial file
+[h264 @ 0x7e8e0804fc80] Invalid NAL unit size (44611 > 19836).
+[h264 @ 0x7e8e0804fc80] missing picture in access unit with size 19840
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x175314: partial file
+[h264 @ 0x7e884bc53b00] Invalid NAL unit size (44611 > 19836).
+[h264 @ 0x7e884bc53b00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 0, offset 0x17557c: partial file
+[h264 @ 0x7e8ddbc7bc40] Invalid NAL unit size (11298 > 3858).
+[h264 @ 0x7e8ddbc7bc40] missing picture in access unit with size 3862
+[h264 @ 0x7e8a028dfb80] Invalid NAL unit size (11298 > 3858).
+[h264 @ 0x7e8a028dfb80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 1, offset 0x122172: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd815c400] stream 1, offset 0x1222b9: partial file
+[h264 @ 0x7e8ddbc7bc40] Invalid NAL unit size (35987 > 1847).
+[h264 @ 0x7e8ddbc7bc40] missing picture in access unit with size 1851
+[h264 @ 0x7e89eae5cf00] Invalid NAL unit size (35987 > 1847).
+[h264 @ 0x7e89eae5cf00] Error splitting the input into NAL units.
+[h264 @ 0x7e8a00716b00] reference picture missing during reorder
+[h264 @ 0x7e8a00716b00] reference picture missing during reorder
+[h264 @ 0x7e8a00716b00] Missing reference picture, default is 65710
+[h264 @ 0x7e8a00716b00] Missing reference picture, default is 65710
+[h264 @ 0x7e8a028dfb80] reference picture missing during reorder
+[h264 @ 0x7e8a028dfb80] Missing reference picture, default is 65720
+[h264 @ 0x7e8b8a66e880] mmco: unref short failure
+[h264 @ 0x7e8e0804fc80] Invalid NAL unit size (5831 > 3481).
+[h264 @ 0x7e8e0804fc80] missing picture in access unit with size 3485
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x2aea20: partial file
+[h264 @ 0x7e8bafd1a480] Invalid NAL unit size (5831 > 3481).
+[h264 @ 0x7e8bafd1a480] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x2aeb95: partial file
+[h264 @ 0x7e8e0804fc80] Invalid NAL unit size (5565 > 5204).
+[h264 @ 0x7e8e0804fc80] missing picture in access unit with size 5208
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x28e25b: partial file
+[h264 @ 0x7e8b0dfb8740] Invalid NAL unit size (5565 > 5204).
+[h264 @ 0x7e8b0dfb8740] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 0, offset 0x28e436: partial file
+[h264 @ 0x7e8e0804fc80] Invalid NAL unit size (49143 > 26489).
+[h264 @ 0x7e8e0804fc80] missing picture in access unit with size 26493
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x1a4acb: partial file
+[h264 @ 0x7e8b353ec9c0] Invalid NAL unit size (49143 > 26489).
+[h264 @ 0x7e8b353ec9c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89b2f5f600] stream 1, offset 0x1a4cd1: partial file
+[h264 @ 0x7e89969b4b80] Invalid NAL unit size (29707 > 27661).
+[h264 @ 0x7e89969b4b80] missing picture in access unit with size 27665
+[h264 @ 0x7e8a8d9f2d80] Invalid NAL unit size (29707 > 27661).
+[h264 @ 0x7e8a8d9f2d80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87d1c96c80] stream 1, offset 0x1bceea: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87d1c96c80] stream 0, offset 0x1bd030: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89c8d75140] stream 0, offset 0x3c0464: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e89c8d75140] stream 1, offset 0x3c3f44: partial file
+  4500/6800
+  5000/6800
+  5500/6800
+  6000/6800
+  6500/6800
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8da4004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8d9c004860, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8d940050b0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8da8004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8da4004490, name=GPU WebGPUINFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8d9c0044b0, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8d94004d00, name=GPU WebGPU
+
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7e8da8004490, name=GPU WebGPU
+MAVOS-DD: bao phu mat 0.935, co tieng 1.000
+                     auc     eer  detected  false_alarm
+branch family                                          
+video  baseline   0.4665  0.5252    0.2471       0.2060
+       aug        0.4512  0.5368    0.1616       0.1451
+       V-A        0.4405  0.5428    0.1721       0.1584
+       V-B        0.5124  0.4959    0.2227       0.1173
+       V-SBI      0.5620  0.4547    0.3047       0.1639
+audio  audio cu   0.3877  0.5747    0.7507       0.8469
+       audio v2a  0.5342  0.4715    0.5629       0.5149
+       audio v2b  0.6035  0.4175    0.6854       0.5349
+                                                                                                          0
+branch                                                                                               fusion
+ckpt                       checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt
+family                                                                                                  API
+coverage                                                                                             0.9354
+n                                                                                                      6361
+auc_mean                                                                                             0.4919
+auc_video_only                                                                                          0.5
+auc_audio_only                                                                                       0.4968
+or_rule_detected                                                                                     0.6606
+or_rule_detected_lo                                                                                  0.6467
+or_rule_detected_hi                                                                                  0.6742
+or_rule_false_alarm                                                                                  0.6291
+or_rule_false_alarm_lo                                                                               0.6066
+or_rule_false_alarm_hi                                                                               0.6511
+video_only_detected                                                                                  0.2038
+video_only_detected_lo                                                                               0.1923
+video_only_detected_hi                                                                               0.2157
+video_only_false_alarm                                                                               0.1247
+video_only_false_alarm_lo                                                                            0.1103
+video_only_false_alarm_hi                                                                            0.1407
+audio_only_detected                                                                                  0.5729
+audio_only_detected_lo                                                                               0.5584
+audio_only_detected_hi                                                                               0.5872
+audio_only_false_alarm                                                                               0.5839
+audio_only_false_alarm_lo                                                                             0.561
+audio_only_false_alarm_hi                                                                            0.6064
+AV-Deepfake1M: 6000 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8cf0042cf0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8cf00430a0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8df4028af0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8df4011910, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8dd002ebb0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8dd002ef60, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d50034f40, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7e8d500352f0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+  0/6000
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc676600] stream 0, offset 0x18292: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc676600] stream 1, offset 0x184f3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc676600] stream 0, offset 0x187a1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x302bc: partial file
+[h264 @ 0x7e8b901f0900] Invalid NAL unit size (307 > 163).
+[h264 @ 0x7e8b901f0900] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x30526: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b91566dc0] stream 1, offset 0x2013b: partial file
+[h264 @ 0x7e8b93498f80] Invalid NAL unit size (150 > 6).
+[h264 @ 0x7e8b93498f80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b91566dc0] stream 0, offset 0x203dc: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2eae40] stream 1, offset 0x28449: partial file
+[h264 @ 0x7e8dcd834f80] Invalid NAL unit size (1143 > 94).
+[h264 @ 0x7e8dcd834f80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2eae40] stream 0, offset 0x286ee: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x804e: partial file
+[h264 @ 0x7e8dcc2db880] Invalid NAL unit size (314 > 284).
+[h264 @ 0x7e8dcc2db880] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x38272: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 1, offset 0x38daf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x38fbc: partial file
+[h264 @ 0x7e8d779f5000] Invalid NAL unit size (1782 > 1547).
+[h264 @ 0x7e8d779f5000] missing picture in access unit with size 1551
+[h264 @ 0x7e8b9033aec0] Invalid NAL unit size (589 > 450).
+[h264 @ 0x7e8b9033aec0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74907300] stream 1, offset 0x811b: partial file
+[h264 @ 0x7e8d779f5c40] Invalid NAL unit size (1782 > 1547).
+[h264 @ 0x7e8d779f5c40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b91108800] stream 1, offset 0x20209: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74907300] stream 0, offset 0x8397: partial file
+[h264 @ 0x7e8d779f5000] Invalid NAL unit size (1017 > 428).
+[h264 @ 0x7e8d779f5000] missing picture in access unit with size 432
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74907300] stream 1, offset 0x5427d: partial file
+[h264 @ 0x7e8d7418d000] Invalid NAL unit size (1017 > 428).
+[h264 @ 0x7e8d7418d000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74907300] stream 0, offset 0x544dd: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x4019e: partial file
+[h264 @ 0x7e87cb430640] Invalid NAL unit size (238 > 146).
+[h264 @ 0x7e87cb430640] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x40464: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x1812d: partial file
+[h264 @ 0x7e8b90006180] Invalid NAL unit size (788 > 535).
+[h264 @ 0x7e8b90006180] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x1836d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2eae40] stream 0, offset 0x8090: partial file
+[h264 @ 0x7e8dcc667c00] Invalid NAL unit size (1104 > 1008).
+[h264 @ 0x7e8dcc667c00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2eae40] stream 1, offset 0x84ad: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814f380] stream 1, offset 0x60124: partial file
+[h264 @ 0x7e8dd8ca9140] Invalid NAL unit size (732 > 488).
+[h264 @ 0x7e8dd8ca9140] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814f380] stream 0, offset 0x60368: partial file
+[h264 @ 0x7e8dce233d40] Invalid NAL unit size (901 > 731).
+[h264 @ 0x7e8dce233d40] missing picture in access unit with size 735
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x10684: partial file
+[h264 @ 0x7e8dce2364c0] Invalid NAL unit size (901 > 731).
+[h264 @ 0x7e8dce2364c0] Error splitting the input into NAL units.
+[h264 @ 0x7e8ba3ffaf00] Invalid NAL unit size (1060 > 274).
+[h264 @ 0x7e8ba3ffaf00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x28342: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x8050: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x8229: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x83e8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x812e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x8b40: partial file
+[h264 @ 0x7e8dcc49d4c0] Invalid NAL unit size (455 > 405).
+[h264 @ 0x7e8dcc49d4c0] missing picture in access unit with size 409
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x284ac: partial file
+[h264 @ 0x7e8dcd95a3c0] Invalid NAL unit size (455 > 405).
+[h264 @ 0x7e8dcd95a3c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x28fc2: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x8da7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x3012b: partial file
+[h264 @ 0x7e8dcc705340] Invalid NAL unit size (953 > 702).
+[h264 @ 0x7e8dcc705340] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x14f3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x1829f: partial file
+[h264 @ 0x7e87aa21d440] Invalid NAL unit size (680 > 57).
+[h264 @ 0x7e87aa21d440] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x30382: partial file
+[h264 @ 0x7e8dcc19f900] Invalid NAL unit size (472 > 363).
+[h264 @ 0x7e8dcc19f900] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x187fa: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x3063f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x86d0: partial file
+[h264 @ 0x7e87ad6eac00] Invalid NAL unit size (973 > 307).
+[h264 @ 0x7e87ad6eac00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x8987: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x1812a: partial file
+[h264 @ 0x7e8b902392c0] Invalid NAL unit size (638 > 247).
+[h264 @ 0x7e8b902392c0] missing picture in access unit with size 251
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x101b7: partial file
+[h264 @ 0x7e8b921979c0] Invalid NAL unit size (638 > 247).
+[h264 @ 0x7e8b921979c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x18ae6: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x103c1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x181ae: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x18539: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x186d7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x20340: partial file
+[h264 @ 0x7e8dcc2367c0] Invalid NAL unit size (454 > 357).
+[h264 @ 0x7e8dcc2367c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x20627: partial file
+[h264 @ 0x7e87df068600] Invalid NAL unit size (1167 > 824).
+[h264 @ 0x7e87df068600] missing picture in access unit with size 828
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x10972: partial file
+[h264 @ 0x7e8d742bba80] Invalid NAL unit size (1167 > 824).
+[h264 @ 0x7e8d742bba80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x10a86: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x18817: partial file
+[h264 @ 0x7e8dcc71f780] Invalid NAL unit size (661 > 200).
+[h264 @ 0x7e8dcc71f780] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 1, offset 0x18bba: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x9020d: partial file
+[h264 @ 0x7e8804f2d7c0] Invalid NAL unit size (446 > 19).
+[h264 @ 0x7e8804f2d7c0] Error splitting the input into NAL units.
+[h264 @ 0x7e8b90007c80] Invalid NAL unit size (625 > 364).
+[h264 @ 0x7e8b90007c80] missing picture in access unit with size 368
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x8135: partial file
+[h264 @ 0x7e8b90671280] Invalid NAL unit size (625 > 364).
+[h264 @ 0x7e8b90671280] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x12d4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x100ca: partial file
+[h264 @ 0x7e8dcc990a40] Invalid NAL unit size (337 > 183).
+[h264 @ 0x7e8dcc990a40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x10324: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x1823b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x18cdc: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x18f76: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x1005f: partial file
+[h264 @ 0x7e8dd8228c80] Invalid NAL unit size (396 > 349).
+[h264 @ 0x7e8dd8228c80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x10316: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x8713: partial file
+[h264 @ 0x7e8dcc6c61c0] Invalid NAL unit size (885 > 165).
+[h264 @ 0x7e8dcc6c61c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x8991: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x1020f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 0, offset 0x8239: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 0, offset 0x863a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 1, offset 0x87ea: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 0, offset 0x100ce: partial file
+[h264 @ 0x7e8d742adc80] Invalid NAL unit size (282 > 124).
+[h264 @ 0x7e8d742adc80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x180e5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 1, offset 0x1021f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x1842f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x186f4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd856e780] stream 0, offset 0x7f1d8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd856e780] stream 0, offset 0x7f342: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd856e780] stream 1, offset 0x7f479: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x10048: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x10049: partial file
+[h264 @ 0x7e8dcfa62e80] Invalid NAL unit size (93 > 68).
+[h264 @ 0x7e8dcfa62e80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x10967: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x10c98: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x102ec: partial file
+[h264 @ 0x7e8dcc028540] Invalid NAL unit size (201 > 68).
+[h264 @ 0x7e8dcc028540] missing picture in access unit with size 72
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x201d4: partial file
+[h264 @ 0x7e8dcc2d6940] Invalid NAL unit size (201 > 68).
+[h264 @ 0x7e8dcc2d6940] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x1862d: partial file
+[h264 @ 0x7e8dcc09c1c0] Invalid NAL unit size (609 > 116).
+[h264 @ 0x7e8dcc09c1c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x18898: partial file
+[h264 @ 0x7e87bb2e87c0] Invalid NAL unit size (665 > 34).
+[h264 @ 0x7e87bb2e87c0] missing picture in access unit with size 38
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x8807: partial file
+[h264 @ 0x7e8d742a0080] Invalid NAL unit size (665 > 34).
+[h264 @ 0x7e8d742a0080] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x89e5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x20323: partial file
+[h264 @ 0x7e8d779f5c40] Invalid NAL unit size (857 > 102).
+[h264 @ 0x7e8d779f5c40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x2059b: partial file
+[h264 @ 0x7e8ddb08d240] Invalid NAL unit size (1000 > 39).
+[h264 @ 0x7e8ddb08d240] missing picture in access unit with size 43
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x83f1: partial file
+[h264 @ 0x7e8b8bcf1200] Invalid NAL unit size (1000 > 39).
+[h264 @ 0x7e8b8bcf1200] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x85db: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x20166: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x20433: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x20761: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x61344: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x61490: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 1, offset 0x618a3: partial file
+[h264 @ 0x7e8d742a0080] Invalid NAL unit size (962 > 213).
+[h264 @ 0x7e8d742a0080] missing picture in access unit with size 217
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x59554: partial file
+[h264 @ 0x7e8d7403d300] Invalid NAL unit size (962 > 213).
+[h264 @ 0x7e8d7403d300] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 1, offset 0x59a6e: partial file
+[h264 @ 0x7e8b901f0900] Invalid NAL unit size (609 > 74).
+[h264 @ 0x7e8b901f0900] missing picture in access unit with size 78
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x8247: partial file
+[h264 @ 0x7e8b9070dc40] Invalid NAL unit size (609 > 74).
+[h264 @ 0x7e8b9070dc40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x84de: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x829b: partial file
+[h264 @ 0x7e8d7449a880] Invalid NAL unit size (1014 > 395).
+[h264 @ 0x7e8d7449a880] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x850f: partial file
+[h264 @ 0x7e8b901f0900] Invalid NAL unit size (715 > 148).
+[h264 @ 0x7e8b901f0900] missing picture in access unit with size 152
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x10267: partial file
+[h264 @ 0x7e8b92a68840] Invalid NAL unit size (715 > 148).
+[h264 @ 0x7e8b92a68840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x10503: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x1838d: partial file
+[h264 @ 0x7e87eadd1640] Invalid NAL unit size (457 > 57).
+[h264 @ 0x7e87eadd1640] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x18631: partial file
+[h264 @ 0x7e8b90ab4e40] Invalid NAL unit size (1059 > 686).
+[h264 @ 0x7e8b90ab4e40] missing picture in access unit with size 690
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x80f7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x81a5: partial file
+[h264 @ 0x7e8771c40400] Invalid NAL unit size (1059 > 686).
+[h264 @ 0x7e8771c40400] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x8506: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 1, offset 0x87e0: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x8426: partial file
+[h264 @ 0x7e8d746c59c0] Invalid NAL unit size (698 > 95).
+[h264 @ 0x7e8d746c59c0] missing picture in access unit with size 99
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x1028b: partial file
+[h264 @ 0x7e87eb129980] Invalid NAL unit size (698 > 95).
+[h264 @ 0x7e87eb129980] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 1, offset 0x10404: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x180aa: partial file
+[h264 @ 0x7e8b90ab4e40] Invalid NAL unit size (1059 > 686).
+[h264 @ 0x7e8b90ab4e40] missing picture in access unit with size 690
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x81a5: partial file
+[h264 @ 0x7e8771c40400] Invalid NAL unit size (1059 > 686).
+[h264 @ 0x7e8771c40400] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 1, offset 0x18393: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7415ab40] stream 0, offset 0x185d6: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x8426: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x80f0: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x83b4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x8552: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x280bf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x289ba: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x28b09: partial file
+[h264 @ 0x7e8dd8757640] Invalid NAL unit size (1211 > 762).
+[h264 @ 0x7e8dd8757640] missing picture in access unit with size 766
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x2090a: partial file
+[h264 @ 0x7e8dda356300] Invalid NAL unit size (1211 > 762).
+[h264 @ 0x7e8dda356300] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 1, offset 0x20c70: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74e2b840] stream 0, offset 0x1825b: partial file
+[h264 @ 0x7e8d74179180] Invalid NAL unit size (1320 > 765).
+[h264 @ 0x7e8d74179180] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74e2b840] stream 1, offset 0x18669: partial file
+[h264 @ 0x7e8b900f6440] Invalid NAL unit size (2101 > 896).
+[h264 @ 0x7e8b900f6440] missing picture in access unit with size 900
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x204e5: partial file
+[h264 @ 0x7e87800930c0] Invalid NAL unit size (2101 > 896).
+[h264 @ 0x7e87800930c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x20689: partial file
+[h264 @ 0x7e87df86b300] Invalid NAL unit size (292 > 127).
+[h264 @ 0x7e87df86b300] missing picture in access unit with size 131
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74e2b840] stream 0, offset 0x30276: partial file
+[h264 @ 0x7e87e8d4d840] Invalid NAL unit size (292 > 127).
+[h264 @ 0x7e87e8d4d840] Error splitting the input into NAL units.
+[h264 @ 0x7e87df86b300] Invalid NAL unit size (292 > 127).
+[h264 @ 0x7e87df86b300] missing picture in access unit with size 131
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74e2b840] stream 0, offset 0x30276: partial file
+[h264 @ 0x7e87e8d4d840] Invalid NAL unit size (292 > 127).
+[h264 @ 0x7e87e8d4d840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74e2b840] stream 1, offset 0x30dca: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x808e: partial file
+[h264 @ 0x7e87ed18a340] Invalid NAL unit size (1023 > 929).
+[h264 @ 0x7e87ed18a340] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x8319: partial file
+[h264 @ 0x7e8dd82dfa00] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8dd82dfa00] missing picture in access unit with size 1025
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x8ab1: partial file
+[h264 @ 0x7e8affff3000] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8affff3000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x8d71: partial file
+[h264 @ 0x7e8dd82dfa00] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8dd82dfa00] missing picture in access unit with size 1025
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x8ab1: partial file
+[h264 @ 0x7e8affff3000] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8affff3000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x8d71: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x202c4: partial file
+[h264 @ 0x7e8dcc480d00] Invalid NAL unit size (281 > 100).
+[h264 @ 0x7e8dcc480d00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x20543: partial file
+[h264 @ 0x7e8dd82dfa00] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8dd82dfa00] missing picture in access unit with size 1025
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x8ab1: partial file
+[h264 @ 0x7e8affff3000] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8affff3000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x8d71: partial file
+[h264 @ 0x7e8787ac6c00] Invalid NAL unit size (1309 > 943).
+[h264 @ 0x7e8787ac6c00] missing picture in access unit with size 947
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x28876: partial file
+[h264 @ 0x7e8dcc10cec0] Invalid NAL unit size (1309 > 943).
+[h264 @ 0x7e8dcc10cec0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x28cbb: partial file
+[h264 @ 0x7e8dd82dfa00] Invalid NAL unit size (586 > 234).
+[h264 @ 0x7e8dd82dfa00] missing picture in access unit with size 238
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x2055b: partial file
+[h264 @ 0x7e8affff3000] Invalid NAL unit size (586 > 234).
+[h264 @ 0x7e8affff3000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x207dd: partial file
+[h264 @ 0x7e8dd82dfa00] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8dd82dfa00] missing picture in access unit with size 1025
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x8ab1: partial file
+[h264 @ 0x7e8affff3000] Invalid NAL unit size (1576 > 1021).
+[h264 @ 0x7e8affff3000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x8d71: partial file
+[h264 @ 0x7e8b90305ec0] Invalid NAL unit size (1027 > 968).
+[h264 @ 0x7e8b90305ec0] missing picture in access unit with size 972
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x8726: partial file
+[h264 @ 0x7e8b902ca580] Invalid NAL unit size (1027 > 968).
+[h264 @ 0x7e8b902ca580] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x8c53: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x28089: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x28401: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x28cf4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0xc3d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0xc54: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x8288: partial file
+[h264 @ 0x7e8d74477800] Invalid NAL unit size (438 > 421).
+[h264 @ 0x7e8d74477800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x8531: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x101be: partial file
+[h264 @ 0x7e8dd8240400] Invalid NAL unit size (724 > 326).
+[h264 @ 0x7e8dd8240400] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x1003e: partial file
+[h264 @ 0x7e88013dae00] Invalid NAL unit size (937 > 923).
+[h264 @ 0x7e88013dae00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x1020a: partial file
+[h264 @ 0x7e8d75472840] Invalid NAL unit size (565 > 91).
+[h264 @ 0x7e8d75472840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x10454: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 1, offset 0x10799: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x104f8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x4805d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x48253: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 1, offset 0x483bc: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x201e9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x205f7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x21096: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x1831e: partial file
+[h264 @ 0x7e8dd9a0dc80] Invalid NAL unit size (505 > 325).
+[h264 @ 0x7e8dd9a0dc80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x185d1: partial file
+[h264 @ 0x7e8b3cf085c0] Invalid NAL unit size (293 > 38).
+[h264 @ 0x7e8b3cf085c0] missing picture in access unit with size 42
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x83af: partial file
+[h264 @ 0x7e8b3dd11bc0] Invalid NAL unit size (293 > 38).
+[h264 @ 0x7e8b3dd11bc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x864f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 1, offset 0x8c8ea: partial file
+[h264 @ 0x7e8dcd7f0cc0] Invalid NAL unit size (188 > 74).
+[h264 @ 0x7e8dcd7f0cc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x8cae7: partial file
+[h264 @ 0x7e8b90007c80] Invalid NAL unit size (448 > 103).
+[h264 @ 0x7e8b90007c80] missing picture in access unit with size 107
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x81ae: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x8473: partial file
+[h264 @ 0x7e8b902bf080] Invalid NAL unit size (448 > 103).
+[h264 @ 0x7e8b902bf080] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x86f8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x30175: partial file
+[h264 @ 0x7e87dc3f0c40] Invalid NAL unit size (125 > 77).
+[h264 @ 0x7e87dc3f0c40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x30175: partial file
+[h264 @ 0x7e87dc3f0c40] Invalid NAL unit size (125 > 77).
+[h264 @ 0x7e87dc3f0c40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x77aae: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x78134: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x303ba: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x783b1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x103c0: partial file
+[h264 @ 0x7e8d7663b600] Invalid NAL unit size (1668 > 756).
+[h264 @ 0x7e8d7663b600] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x10653: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x201a7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 1, offset 0x202bd: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x20561: partial file
+[h264 @ 0x7e8ddb08d240] Invalid NAL unit size (903 > 743).
+[h264 @ 0x7e8ddb08d240] missing picture in access unit with size 747
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8a63fdea80] stream 1, offset 0x180d0: partial file
+[h264 @ 0x7e8b3ebe4700] Invalid NAL unit size (903 > 743).
+[h264 @ 0x7e8b3ebe4700] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8a63fdea80] stream 0, offset 0x18366: partial file
+[h264 @ 0x7e8ddb08d240] missing picture in access unit with size 1
+[h264 @ 0x7e87df068600] Invalid NAL unit size (786 > 336).
+[h264 @ 0x7e87df068600] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8a63fdea80] stream 1, offset 0x50105: partial file
+[h264 @ 0x7e8dd83ee100] no frame!
+[h264 @ 0x7e87db39f700] Invalid NAL unit size (1859 > 252).
+[h264 @ 0x7e87db39f700] missing picture in access unit with size 256
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x10677: partial file
+[h264 @ 0x7e8b915d8200] Invalid NAL unit size (1859 > 252).
+[h264 @ 0x7e8b915d8200] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x1087b: partial file
+[h264 @ 0x7e87db39f700] Invalid NAL unit size (1076 > 631).
+[h264 @ 0x7e87db39f700] missing picture in access unit with size 635
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x181ed: partial file
+[h264 @ 0x7e8b906ba200] Invalid NAL unit size (1076 > 631).
+[h264 @ 0x7e8b906ba200] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x18437: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x5467c: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x54b18: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x5500c: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 1, offset 0x202b8: partial file
+[h264 @ 0x7e8dcc239100] Invalid NAL unit size (825 > 750).
+[h264 @ 0x7e8dcc239100] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x18232: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 1, offset 0x185a2: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x187be: partial file
+[h264 @ 0x7e87eb129980] Invalid NAL unit size (455 > 271).
+[h264 @ 0x7e87eb129980] missing picture in access unit with size 275
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x8301: partial file
+[h264 @ 0x7e8d75ba2500] Invalid NAL unit size (455 > 271).
+[h264 @ 0x7e8d75ba2500] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x8584: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x3816e: partial file
+[h264 @ 0x7e8d75ba2500] Invalid NAL unit size (808 > 490).
+[h264 @ 0x7e8d75ba2500] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x38432: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x10064: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x102b4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x4021e: partial file
+[h264 @ 0x7e87eadd8d40] Invalid NAL unit size (307 > 242).
+[h264 @ 0x7e87eadd8d40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x40438: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 1, offset 0x103fd: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x8064: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 0, offset 0x87f7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc242980] stream 1, offset 0x8a67: partial file
+[h264 @ 0x7e8dd8438ec0] Invalid NAL unit size (625 > 67).
+[h264 @ 0x7e8dd8438ec0] missing picture in access unit with size 71
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x10769: partial file
+[h264 @ 0x7e8b1eb7bc40] Invalid NAL unit size (625 > 67).
+[h264 @ 0x7e8b1eb7bc40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x10a13: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x3009d: partial file
+[h264 @ 0x7e8ba1970680] Invalid NAL unit size (130 > 21).
+[h264 @ 0x7e8ba1970680] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x30380: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x300a5: partial file
+[h264 @ 0x7e8b90ecf9c0] Invalid NAL unit size (358 > 215).
+[h264 @ 0x7e8b90ecf9c0] missing picture in access unit with size 219
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x703a7: partial file
+[h264 @ 0x7e8b907089c0] Invalid NAL unit size (358 > 215).
+[h264 @ 0x7e8b907089c0] Error splitting the input into NAL units.
+[h264 @ 0x7e8dcc0a1840] Invalid NAL unit size (883 > 558).
+[h264 @ 0x7e8dcc0a1840] missing picture in access unit with size 562
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x7848a: partial file
+[h264 @ 0x7e8b90ab4e40] Invalid NAL unit size (1198 > 84).
+[h264 @ 0x7e8b90ab4e40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x8175: partial file
+[h264 @ 0x7e8dcc23db40] Invalid NAL unit size (883 > 558).
+[h264 @ 0x7e8dcc23db40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x78716: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x835c: partial file
+[h264 @ 0x7e8dcc0a1840] Invalid NAL unit size (883 > 558).
+[h264 @ 0x7e8dcc0a1840] missing picture in access unit with size 562
+[h264 @ 0x7e8dcc23db40] Invalid NAL unit size (883 > 558).
+[h264 @ 0x7e8dcc23db40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0x8175: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x835c: partial file
+[h264 @ 0x7e8b90ecf9c0] Invalid NAL unit size (1100 > 70).
+[h264 @ 0x7e8b90ecf9c0] missing picture in access unit with size 74
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x818ed: partial file
+[h264 @ 0x7e8b907089c0] Invalid NAL unit size (1100 > 70).
+[h264 @ 0x7e8b907089c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x81d56: partial file
+[h264 @ 0x7e8b90ecf9c0] Invalid NAL unit size (1100 > 70).
+[h264 @ 0x7e8b90ecf9c0] missing picture in access unit with size 74
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x818ed: partial file
+[h264 @ 0x7e8b907089c0] Invalid NAL unit size (1100 > 70).
+[h264 @ 0x7e8b907089c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x81d56: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x90cde: partial file
+[h264 @ 0x7e8b90ab4e40] Invalid NAL unit size (249 > 247).
+[h264 @ 0x7e8b90ab4e40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x90ecf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 1, offset 0xc05: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x201eb: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x207c8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x20996: partial file
+[h264 @ 0x7e8d7413c1c0] Invalid NAL unit size (1601 > 447).
+[h264 @ 0x7e8d7413c1c0] missing picture in access unit with size 451
+[h264 @ 0x7e87eb11fcc0] Invalid NAL unit size (1601 > 447).
+[h264 @ 0x7e87eb11fcc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x304b2: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x306cc: partial file
+[h264 @ 0x7e8dce23f940] Invalid NAL unit size (1601 > 1207).
+[h264 @ 0x7e8dce23f940] missing picture in access unit with size 1211
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x201ba: partial file
+[h264 @ 0x7e8801b3b800] Invalid NAL unit size (1601 > 1207).
+[h264 @ 0x7e8801b3b800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x20446: partial file
+[h264 @ 0x7e8dce23f940] Invalid NAL unit size (735 > 492).
+[h264 @ 0x7e8dce23f940] missing picture in access unit with size 496
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x38123: partial file
+[h264 @ 0x7e8dccfcecc0] Invalid NAL unit size (735 > 492).
+[h264 @ 0x7e8dccfcecc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x383f0: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dda0d42c0] stream 1, offset 0x30494: partial file
+[h264 @ 0x7e8dd8393000] Invalid NAL unit size (587 > 44).
+[h264 @ 0x7e8dd8393000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dda0d42c0] stream 0, offset 0x3072a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x80c4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x8146: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x8219: partial file
+[h264 @ 0x7e8ba3f40600] Invalid NAL unit size (304 > 170).
+[h264 @ 0x7e8ba3f40600] missing picture in access unit with size 174
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 1, offset 0x8283: partial file
+[h264 @ 0x7e8dd8196640] Invalid NAL unit size (304 > 170).
+[h264 @ 0x7e8dd8196640] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8192cc0] stream 0, offset 0x850b: partial file
+[h264 @ 0x7e8d76dd7a80] Invalid NAL unit size (770 > 737).
+[h264 @ 0x7e8d76dd7a80] missing picture in access unit with size 741
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x18589: partial file
+[h264 @ 0x7e8d75464400] Invalid NAL unit size (770 > 737).
+[h264 @ 0x7e8d75464400] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x1885b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x8177: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801b32780] stream 0, offset 0x18091: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x83a2: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x851b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x8177: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x83a2: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x851b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 1, offset 0x839e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x100ca: partial file
+[h264 @ 0x7e8dcc227900] Invalid NAL unit size (423 > 269).
+[h264 @ 0x7e8dcc227900] Error splitting the input into NAL units.
+[h264 @ 0x7e8ba217c840] Invalid NAL unit size (473 > 138).
+[h264 @ 0x7e8ba217c840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x85e6: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x10dd3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x81c1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x862a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x88ce: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x81c1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x862a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x88ce: partial file
+[h264 @ 0x7e8d74783480] Invalid NAL unit size (1071 > 644).
+[h264 @ 0x7e8d74783480] missing picture in access unit with size 648
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x386fc: partial file
+[h264 @ 0x7e87ad6ea680] Invalid NAL unit size (1071 > 644).
+[h264 @ 0x7e87ad6ea680] Error splitting the input into NAL units.
+[h264 @ 0x7e8dcc6c61c0] Invalid NAL unit size (242 > 186).
+[h264 @ 0x7e8dcc6c61c0] missing picture in access unit with size 190
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x8292: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x203ea: partial file
+[h264 @ 0x7e8800ca7480] Invalid NAL unit size (242 > 186).
+[h264 @ 0x7e8800ca7480] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x84ab: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x9038: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x20932: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x10110: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x109c8: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x10c27: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x81f4: partial file
+[h264 @ 0x7e8b900114c0] Invalid NAL unit size (991 > 539).
+[h264 @ 0x7e8b900114c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x81f4: partial file
+[h264 @ 0x7e8b900114c0] Invalid NAL unit size (991 > 539).
+[h264 @ 0x7e8b900114c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x8490: partial file
+[h264 @ 0x7e8dda039f40] Invalid NAL unit size (745 > 233).
+[h264 @ 0x7e8dda039f40] missing picture in access unit with size 237
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 0, offset 0x109b5: partial file
+[h264 @ 0x7e8b8bcf29c0] Invalid NAL unit size (745 > 233).
+[h264 @ 0x7e8b8bcf29c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1eb7c980] stream 1, offset 0x10d9d: partial file
+[h264 @ 0x7e8d7663b600] Invalid NAL unit size (266 > 214).
+[h264 @ 0x7e8d7663b600] missing picture in access unit with size 218
+[h264 @ 0x7e8b90005500] Invalid NAL unit size (180 > 119).
+[h264 @ 0x7e8b90005500] missing picture in access unit with size 123
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x3816f: partial file
+[h264 @ 0x7e87c8a042c0] Invalid NAL unit size (245 > 151).
+[h264 @ 0x7e87c8a042c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 1, offset 0x20239: partial file
+[h264 @ 0x7e87df068600] Invalid NAL unit size (266 > 214).
+[h264 @ 0x7e87df068600] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x201de: partial file
+[h264 @ 0x7e8b902bbc00] Invalid NAL unit size (180 > 119).
+[h264 @ 0x7e8b902bbc00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 0, offset 0x204cf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x212e3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x80d0: partial file
+[h264 @ 0x7e8b92036300] Invalid NAL unit size (176 > 144).
+[h264 @ 0x7e8b92036300] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x8b2f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b3c7283c0] stream 0, offset 0x30358: partial file
+[h264 @ 0x7e8dd854fa00] Invalid NAL unit size (566 > 402).
+[h264 @ 0x7e8dd854fa00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b3c7283c0] stream 1, offset 0x30643: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd856e780] stream 0, offset 0x10043: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x100f7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x409f2: partial file
+[h264 @ 0x7e8b91566a80] Invalid NAL unit size (1174 > 101).
+[h264 @ 0x7e8b91566a80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x1e86: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x1e86: partial file
+[h264 @ 0x7e8d74441000] Invalid NAL unit size (755 > 357).
+[h264 @ 0x7e8d74441000] missing picture in access unit with size 361
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d75119940] stream 1, offset 0x281be: partial file
+[h264 @ 0x7e8d744ade40] Invalid NAL unit size (755 > 357).
+[h264 @ 0x7e8d744ade40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x20a83: partial file
+[h264 @ 0x7e8b90095000] Invalid NAL unit size (1698 > 1119).
+[h264 @ 0x7e8b90095000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d75119940] stream 0, offset 0x28433: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x2106c: partial file
+[h264 @ 0x7e8d74441000] Invalid NAL unit size (449 > 155).
+[h264 @ 0x7e8d74441000] missing picture in access unit with size 159
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d75119940] stream 1, offset 0x10156: partial file
+[h264 @ 0x7e87b9689240] Invalid NAL unit size (449 > 155).
+[h264 @ 0x7e87b9689240] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d75119940] stream 0, offset 0x102de: partial file
+[h264 @ 0x7e87db39f700] Invalid NAL unit size (1325 > 617).
+[h264 @ 0x7e87db39f700] missing picture in access unit with size 621
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x30db7: partial file
+[h264 @ 0x7e8b90095000] Invalid NAL unit size (1325 > 617).
+[h264 @ 0x7e8b90095000] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x3124c: partial file
+[h264 @ 0x7e8b8b20e180] Invalid NAL unit size (853 > 276).
+[h264 @ 0x7e8b8b20e180] missing picture in access unit with size 280
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814f380] stream 1, offset 0x38271: partial file
+[h264 @ 0x7e8dd846fb40] Invalid NAL unit size (853 > 276).
+[h264 @ 0x7e8dd846fb40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814f380] stream 0, offset 0x384eb: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8801abdc80] stream 0, offset 0x8073: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8807fe8cc0] stream 0, offset 0x86bf: partial file
+[h264 @ 0x7e8b902bf080] Invalid NAL unit size (900 > 117).
+[h264 @ 0x7e8b902bf080] Error splitting the input into NAL units.
+[h264 @ 0x7e87e8d4d840] Invalid NAL unit size (767 > 554).
+[h264 @ 0x7e87e8d4d840] missing picture in access unit with size 558
+[h264 @ 0x7e87e89c3240] Invalid NAL unit size (767 > 554).
+[h264 @ 0x7e87e89c3240] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x8105: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8807fe8cc0] stream 1, offset 0x1055: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x18485: partial file
+[h264 @ 0x7e8d7460edc0] Invalid NAL unit size (1232 > 123).
+[h264 @ 0x7e8d7460edc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x1003a: partial file
+[h264 @ 0x7e88013d8900] Invalid NAL unit size (144 > 134).
+[h264 @ 0x7e88013d8900] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x186cc: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 1, offset 0x10607: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x18158: partial file
+[h264 @ 0x7e8d74148e40] Invalid NAL unit size (282 > 185).
+[h264 @ 0x7e8d74148e40] missing picture in access unit with size 189
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x82b3: partial file
+[h264 @ 0x7e87e9834a00] Invalid NAL unit size (282 > 185).
+[h264 @ 0x7e87e9834a00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x84b3: partial file
+[h264 @ 0x7e8b901f7100] Invalid NAL unit size (399 > 189).
+[h264 @ 0x7e8b901f7100] missing picture in access unit with size 193
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 0, offset 0x10619: partial file
+[h264 @ 0x7e8b90667640] Invalid NAL unit size (399 > 189).
+[h264 @ 0x7e8b90667640] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b9019f780] stream 1, offset 0x115d1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x18289: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 1, offset 0x183eb: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b1e938fc0] stream 0, offset 0x1867d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x10153: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x10571: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x10808: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x18158: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x182b9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 1, offset 0x188f3: partial file
+[h264 @ 0x7e8d74148e40] Invalid NAL unit size (224 > 64).
+[h264 @ 0x7e8d74148e40] missing picture in access unit with size 68
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x302d1: partial file
+[h264 @ 0x7e8d74804b00] Invalid NAL unit size (224 > 64).
+[h264 @ 0x7e8d74804b00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x30476: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x10696: partial file
+[h264 @ 0x7e879a458680] Invalid NAL unit size (917 > 178).
+[h264 @ 0x7e879a458680] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x108bf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x10153: partial file
+[h264 @ 0x7e8b9029f0c0] Invalid NAL unit size (1730 > 1439).
+[h264 @ 0x7e8b9029f0c0] Error splitting the input into NAL units.
+[h264 @ 0x7e8dcc09c1c0] Invalid NAL unit size (1890 > 92).
+[h264 @ 0x7e8dcc09c1c0] missing picture in access unit with size 96
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x937a: partial file
+[h264 @ 0x7e8dcd95a3c0] Invalid NAL unit size (1890 > 92).
+[h264 @ 0x7e8dcd95a3c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x9586: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x103e3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 1, offset 0x10696: partial file
+[h264 @ 0x7e879a458680] Invalid NAL unit size (917 > 178).
+[h264 @ 0x7e879a458680] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x10153: partial file
+[h264 @ 0x7e8b9029f0c0] Invalid NAL unit size (1730 > 1439).
+[h264 @ 0x7e8b9029f0c0] Error splitting the input into NAL units.
+[h264 @ 0x7e87df06ce00] Invalid NAL unit size (578 > 341).
+[h264 @ 0x7e87df06ce00] missing picture in access unit with size 345
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d748078c0] stream 0, offset 0x811d: partial file
+[h264 @ 0x7e8d74d8e840] Invalid NAL unit size (578 > 341).
+[h264 @ 0x7e8d74d8e840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc67f040] stream 0, offset 0x108bf: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x103e3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d748078c0] stream 1, offset 0x859a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x8033: partial file
+[h264 @ 0x7e8d742d8300] Invalid NAL unit size (1155 > 333).
+[h264 @ 0x7e8d742d8300] missing picture in access unit with size 337
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x8366: partial file
+[h264 @ 0x7e87df068600] Invalid NAL unit size (1155 > 333).
+[h264 @ 0x7e87df068600] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x855d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x1012b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x103f4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x1061e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x1012b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x18125: partial file
+[h264 @ 0x7e8dcc48ce80] Invalid NAL unit size (129 > 107).
+[h264 @ 0x7e8dcc48ce80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x103f4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x1061e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x18390: partial file
+[h264 @ 0x7e8d742d8300] Invalid NAL unit size (1256 > 58).
+[h264 @ 0x7e8d742d8300] missing picture in access unit with size 62
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 0, offset 0x204de: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x11db: partial file
+[h264 @ 0x7e8d75392f80] Invalid NAL unit size (1256 > 58).
+[h264 @ 0x7e8d75392f80] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74490540] stream 1, offset 0x20876: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 0, offset 0x18232: partial file
+[h264 @ 0x7e8b907089c0] Invalid NAL unit size (847 > 624).
+[h264 @ 0x7e8b907089c0] missing picture in access unit with size 628
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 0, offset 0x810f: partial file
+[h264 @ 0x7e8b911514c0] Invalid NAL unit size (847 > 624).
+[h264 @ 0x7e8b911514c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x8033: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 1, offset 0x84b4: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x8106: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x83bb: partial file
+[h264 @ 0x7e8b907089c0] Invalid NAL unit size (324 > 136).
+[h264 @ 0x7e8b907089c0] missing picture in access unit with size 140
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 0, offset 0x100ec: partial file
+[h264 @ 0x7e8b901f9dc0] Invalid NAL unit size (324 > 136).
+[h264 @ 0x7e8b901f9dc0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 1, offset 0x1076b: partial file
+[h264 @ 0x7e8dd815c100] Invalid NAL unit size (671 > 625).
+[h264 @ 0x7e8dd815c100] missing picture in access unit with size 629
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8494f80] stream 1, offset 0x18476: partial file
+[h264 @ 0x7e8b8b211880] Invalid NAL unit size (671 > 625).
+[h264 @ 0x7e8b8b211880] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8494f80] stream 0, offset 0x186e5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x18397: partial file
+[h264 @ 0x7e8dce23f940] Invalid NAL unit size (505 > 214).
+[h264 @ 0x7e8dce23f940] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x18607: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x10068: partial file
+[h264 @ 0x7e8dcc0a1840] Invalid NAL unit size (122 > 66).
+[h264 @ 0x7e8dcc0a1840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x10217: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x200c5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x205de: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x20852: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87dfc1d280] stream 0, offset 0x20051: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87dfc1d280] stream 0, offset 0x20180: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87dfc1d280] stream 1, offset 0x20296: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x200c5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x205de: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x20852: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x2028d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x20c29: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x21ede: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x382ab: partial file
+[h264 @ 0x7e8d746c59c0] Invalid NAL unit size (364 > 190).
+[h264 @ 0x7e8d746c59c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x3854f: partial file
+[h264 @ 0x7e8dcc028540] Invalid NAL unit size (885 > 679).
+[h264 @ 0x7e8dcc028540] missing picture in access unit with size 683
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 0, offset 0x280fe: partial file
+[h264 @ 0x7e8dcc23db40] Invalid NAL unit size (885 > 679).
+[h264 @ 0x7e8dcc23db40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc6b95c0] stream 1, offset 0x283e0: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x813b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x8417: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x878e: partial file
+[h264 @ 0x7e8d744b2b00] Invalid NAL unit size (432 > 261).
+[h264 @ 0x7e8d744b2b00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x7060b: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x70ce5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x280c9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x284d9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x28756: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 0, offset 0x886f1: partial file
+[h264 @ 0x7e8d74804b00] Invalid NAL unit size (832 > 431).
+[h264 @ 0x7e8d74804b00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0x88a85: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dce9e6ac0] stream 0, offset 0x3025f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 0, offset 0x3003e: partial file
+[h264 @ 0x7e8b91bdb4c0] Invalid NAL unit size (377 > 363).
+[h264 @ 0x7e8b91bdb4c0] Error splitting the input into NAL units.
+[h264 @ 0x7e8d7412a0c0] Invalid NAL unit size (769 > 649).
+[h264 @ 0x7e8d7412a0c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dce9e6ac0] stream 0, offset 0x308e5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b900cbc80] stream 1, offset 0x30212: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dce9e6ac0] stream 1, offset 0x30e99: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd92ed600] stream 0, offset 0x100d0: partial file
+[h264 @ 0x7e8dd815eec0] Invalid NAL unit size (533 > 373).
+[h264 @ 0x7e8dd815eec0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd92ed600] stream 1, offset 0x10690: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x824d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 1, offset 0x1009d: partial file
+[h264 @ 0x7e8dcc98df40] Invalid NAL unit size (836 > 727).
+[h264 @ 0x7e8dcc98df40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x89b7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc2cc180] stream 0, offset 0x1030a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x8bb5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x4009f: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x40470: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x824d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x89b7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x8bb5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8494f80] stream 1, offset 0x80ed: partial file
+[h264 @ 0x7e8ba2e667c0] Invalid NAL unit size (447 > 258).
+[h264 @ 0x7e8ba2e667c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 1, offset 0x814c: partial file
+[h264 @ 0x7e87e815b4c0] Invalid NAL unit size (344 > 305).
+[h264 @ 0x7e87e815b4c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87b8640f40] stream 0, offset 0x83d9: partial file
+[h264 @ 0x7e8b90193880] Invalid NAL unit size (141 > 55).
+[h264 @ 0x7e8b90193880] missing picture in access unit with size 59
+[h264 @ 0x7e8d742a0080] Invalid NAL unit size (1817 > 1494).
+[h264 @ 0x7e8d742a0080] missing picture in access unit with size 1498
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 0, offset 0x81d9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87ed563100] stream 1, offset 0x8181: partial file
+[h264 @ 0x7e8dcc1d1b00] Invalid NAL unit size (201 > 139).
+[h264 @ 0x7e8dcc1d1b00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 1, offset 0x101ee: partial file
+[h264 @ 0x7e8b901f0900] Invalid NAL unit size (141 > 55).
+[h264 @ 0x7e8b901f0900] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 1, offset 0x8173: partial file
+[h264 @ 0x7e875031fc40] Invalid NAL unit size (1817 > 1494).
+[h264 @ 0x7e875031fc40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 1, offset 0x86d7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87ed563100] stream 0, offset 0x83d5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 0, offset 0x8355: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 0, offset 0x10454: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 0, offset 0x88e1: partial file
+[h264 @ 0x7e8d742a0080] Invalid NAL unit size (1817 > 1494).
+[h264 @ 0x7e8d742a0080] missing picture in access unit with size 1498
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 1, offset 0x8173: partial file
+[h264 @ 0x7e875031fc40] Invalid NAL unit size (1817 > 1494).
+[h264 @ 0x7e875031fc40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 0, offset 0x8355: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 0, offset 0x100ab: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 0, offset 0x1026d: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87382e6240] stream 1, offset 0x104ed: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87ed563100] stream 0, offset 0x5d9da: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87ed563100] stream 1, offset 0x5f12e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 0, offset 0x81d9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 1, offset 0x86d7: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd814a080] stream 0, offset 0x88e1: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bcb1e100] stream 1, offset 0xd6a: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87ed563100] stream 1, offset 0x5f12e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0xfa9: partial file
+[h264 @ 0x7e88008cc800] Invalid NAL unit size (578 > 331).
+[h264 @ 0x7e88008cc800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x84b3: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x8953: partial file
+[h264 @ 0x7e8b9384a600] Invalid NAL unit size (621 > 164).
+[h264 @ 0x7e8b9384a600] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x105a0: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x10ef3: partial file
+[h264 @ 0x7e8b908eebc0] Invalid NAL unit size (931 > 677).
+[h264 @ 0x7e8b908eebc0] missing picture in access unit with size 681
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x28985: partial file
+[h264 @ 0x7e8b900eb440] Invalid NAL unit size (931 > 677).
+[h264 @ 0x7e8b900eb440] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x28c07: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0xa4c06: partial file
+[h264 @ 0x7e87d8dd16c0] Invalid NAL unit size (411 > 399).
+[h264 @ 0x7e87d8dd16c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d74524580] stream 1, offset 0xd2d: partial file
+[h264 @ 0x7e8dd854fa00] Invalid NAL unit size (716 > 113).
+[h264 @ 0x7e8dd854fa00] missing picture in access unit with size 117
+[h264 @ 0x7e88008cc800] Invalid NAL unit size (785 > 523).
+[h264 @ 0x7e88008cc800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 0, offset 0x10136: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b3c7283c0] stream 1, offset 0x828b: partial file
+[h264 @ 0x7e8b3dd13540] Invalid NAL unit size (716 > 113).
+[h264 @ 0x7e8b3dd13540] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b3c7283c0] stream 0, offset 0x84ec: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e879b4784c0] stream 1, offset 0x10955: partial file
+[h264 @ 0x7e8b906ba200] Invalid NAL unit size (910 > 400).
+[h264 @ 0x7e8b906ba200] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 0, offset 0x84cd9: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b90171700] stream 1, offset 0x84f76: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x866b: partial file
+[h264 @ 0x7e8b88f35100] Invalid NAL unit size (955 > 419).
+[h264 @ 0x7e8b88f35100] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x890a: partial file
+[h264 @ 0x7e8d7460edc0] Invalid NAL unit size (1176 > 904).
+[h264 @ 0x7e8d7460edc0] missing picture in access unit with size 908
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x20140: partial file
+[h264 @ 0x7e8d740396c0] Invalid NAL unit size (1176 > 904).
+[h264 @ 0x7e8d740396c0] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 1, offset 0x866b: partial file
+[h264 @ 0x7e8b88f35100] Invalid NAL unit size (955 > 419).
+[h264 @ 0x7e8b88f35100] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8195b40] stream 0, offset 0x890a: partial file
+[h264 @ 0x7e8b9384a600] Invalid NAL unit size (209 > 93).
+[h264 @ 0x7e8b9384a600] missing picture in access unit with size 97
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bc2f4fc0] stream 1, offset 0x6021f: partial file
+[h264 @ 0x7e8804491800] Invalid NAL unit size (209 > 93).
+[h264 @ 0x7e8804491800] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e87bc2f4fc0] stream 0, offset 0x6042e: partial file
+[h264 @ 0x7e8d7460edc0] Invalid NAL unit size (2282 > 1992).
+[h264 @ 0x7e8d7460edc0] missing picture in access unit with size 1996
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 0, offset 0x18152: partial file
+[h264 @ 0x7e8d75a44b40] Invalid NAL unit size (2282 > 1992).
+[h264 @ 0x7e8d75a44b40] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8d7407bb80] stream 1, offset 0x18596: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x20039: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 1, offset 0x2031e: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dcc0c1440] stream 0, offset 0x204ea: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b902a10c0] stream 0, offset 0x81ca: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8155b00] stream 0, offset 0x8172: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b902a10c0] stream 0, offset 0x85d5: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8155b00] stream 0, offset 0x82cc: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b902a10c0] stream 1, offset 0x8776: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8155b00] stream 1, offset 0x9080: partial file
+[h264 @ 0x7e8dd814c180] Invalid NAL unit size (1291 > 450).
+[h264 @ 0x7e8dd814c180] missing picture in access unit with size 454
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8155b00] stream 1, offset 0x40d3c: partial file
+[h264 @ 0x7e8dd845c840] Invalid NAL unit size (1291 > 450).
+[h264 @ 0x7e8dd845c840] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8dd8155b00] stream 0, offset 0x40fbb: partial file
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7e8b902a10c0] stream 0, offset 0x7664f: partial file
+[h264 @ 0x7e8b9067c840] Invalid NAL unit size (320 > 188).
+[h264 @ 0x7e8b9067c840] Error splitting the input into NAL units.
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 37/211 [00:00<00:00, 364.83it/s]Loading weights:  39%|███▉      | 83/211 [00:00<00:00, 420.18it/s]Loading weights:  60%|█████▉    | 126/211 [00:00<00:00, 390.75it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 517.33it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+AV-Deepfake1M: 6000 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x788a24004530, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x788a240048e0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889e4004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889e4004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889f0004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889f0004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889e8004c80, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7889e8005030, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794854340.795186    5000 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+  0/6000
+[h264 @ 0x788a3852fc00] Invalid NAL unit size (825 > 517).
+[h264 @ 0x788a3852fc00] missing picture in access unit with size 521
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x78883f5e01c0] stream 0, offset 0x10164: partial file
+[h264 @ 0x7887675d6c00] Invalid NAL unit size (825 > 517).
+[h264 @ 0x7887675d6c00] Error splitting the input into NAL units.
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x78883f5e01c0] stream 1, offset 0x1040f: partial file
+/usr/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-4383-le54o64d'}
+  warnings.warn(
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 30/211 [00:00<00:00, 275.43it/s]Loading weights:  34%|███▍      | 72/211 [00:00<00:00, 347.10it/s]Loading weights:  51%|█████     | 107/211 [00:00<00:00, 325.09it/s]Loading weights:  69%|██████▉   | 146/211 [00:00<00:00, 333.12it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 411.98it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+AV-Deepfake1M: 6000 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db898004530, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8980048e0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8a8004c80, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8a8005030, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8a0004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8a0004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db89c004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db89c004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794854732.800179  132768 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+  0/6000
+  500/6000
+  1000/6000
+  1500/6000
+  2000/6000
+  2500/6000
+  3000/6000
+  3500/6000
+  4000/6000
+  4500/6000
+  5000/6000
+  5500/6000
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db89c004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8980048e0, name=CpuAccelerator
+INFO: INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db898004530, name=GPU WebGPU
+[accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db89c004490, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8a8005030, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8a8004c80, name=GPU WebGPUINFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8a0004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8a0004490, name=GPU WebGPU
+
+AV-Deepfake1M: bao phu mat 1.000, co tieng 1.000
+                     auc     eer  detected  false_alarm
+branch family                                          
+video  baseline   0.5328  0.4777    0.0889       0.0890
+       aug        0.5467  0.4697    0.0291       0.0217
+       V-A        0.5445  0.4709    0.0863       0.0661
+       V-B        0.5675  0.4554    0.0732       0.0532
+       V-SBI      0.5647  0.4596    0.1289       0.0957
+audio  audio cu   0.6259  0.4094    0.9396       0.8572
+       audio v2a  0.5967  0.4292    0.4467       0.3260
+       audio v2b  0.6033  0.4265    0.5684       0.4236
+                                                                                                          0
+branch                                                                                               fusion
+ckpt                       checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt
+family                                                                                                  API
+coverage                                                                                                1.0
+n                                                                                                      6000
+auc_mean                                                                                             0.6092
+auc_video_only                                                                                       0.6034
+auc_audio_only                                                                                       0.5739
+or_rule_detected                                                                                     0.5687
+or_rule_detected_lo                                                                                  0.5541
+or_rule_detected_hi                                                                                  0.5831
+or_rule_false_alarm                                                                                  0.4453
+or_rule_false_alarm_lo                                                                               0.4204
+or_rule_false_alarm_hi                                                                               0.4706
+video_only_detected                                                                                  0.0882
+video_only_detected_lo                                                                               0.0803
+video_only_detected_hi                                                                               0.0969
+video_only_false_alarm                                                                                0.046
+video_only_false_alarm_lo                                                                            0.0365
+video_only_false_alarm_hi                                                                            0.0578
+audio_only_detected                                                                                  0.5231
+audio_only_detected_lo                                                                               0.5085
+audio_only_detected_hi                                                                               0.5377
+audio_only_false_alarm                                                                                0.422
+audio_only_false_alarm_lo                                                                            0.3972
+audio_only_false_alarm_hi                                                                            0.4472
+LAV-DF: 6000 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8e8032910, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8e80314d0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db7580044d0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db758004880, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db880003bd0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db880003f80, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db898001550, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7db8980018d0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+  0/6000
+  500/6000
+  1000/6000
+  1500/6000
+  2000/6000
+  2500/6000
+  3000/6000
+  3500/6000
+  4000/6000
+  4500/6000
+  5000/6000
+  5500/6000
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8980018d0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db898001550, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db880003f80, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db880003bd0, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db758004880, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db7580044d0, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8e80314d0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7db8e8032910, name=GPU WebGPU
+LAV-DF: bao phu mat 1.000, co tieng 1.000
+                     auc     eer  detected  false_alarm
+branch family                                          
+video  baseline   0.4222  0.5519    0.8392       0.8903
+       aug        0.4252  0.5540    0.1937       0.2989
+       V-A        0.4646  0.5243    0.1903       0.2352
+       V-B        0.4486  0.5353    0.2649       0.3446
+       V-SBI      0.4478  0.5376    0.4354       0.5092
+audio  audio cu   0.6224  0.4099    0.9311       0.8739
+       audio v2a  0.5749  0.4407    0.4288       0.3352
+       audio v2b  0.6014  0.4282    0.5913       0.4470
+                                                                                                          0
+branch                                                                                               fusion
+ckpt                       checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt
+family                                                                                                  API
+coverage                                                                                             0.9997
+n                                                                                                      5998
+auc_mean                                                                                             0.4952
+auc_video_only                                                                                       0.3774
+auc_audio_only                                                                                        0.586
+or_rule_detected                                                                                     0.7095
+or_rule_detected_lo                                                                                  0.6961
+or_rule_detected_hi                                                                                  0.7226
+or_rule_false_alarm                                                                                  0.7485
+or_rule_false_alarm_lo                                                                               0.7259
+or_rule_false_alarm_hi                                                                               0.7698
+video_only_detected                                                                                  0.3625
+video_only_detected_lo                                                                               0.3486
+video_only_detected_hi                                                                               0.3767
+video_only_false_alarm                                                                               0.5517
+video_only_false_alarm_lo                                                                            0.5264
+video_only_false_alarm_hi                                                                            0.5767
+audio_only_detected                                                                                  0.5455
+audio_only_detected_lo                                                                               0.5309
+audio_only_detected_hi                                                                                 0.56
+audio_only_false_alarm                                                                               0.4283
+audio_only_false_alarm_lo                                                                            0.4034
+audio_only_false_alarm_hi                                                                            0.4535
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 33/211 [00:00<00:00, 300.58it/s]Loading weights:  36%|███▌      | 76/211 [00:00<00:00, 356.33it/s]Loading weights:  59%|█████▉    | 125/211 [00:00<00:00, 384.53it/s]Loading weights:  78%|███████▊  | 164/211 [00:00<00:00, 378.57it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 439.71it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+SocialDF: 991 video
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0aa0004530, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0aa00048e0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0aac004c80, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0aac005030, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0a9c004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0a9c004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0a98004490, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7a0a98004840, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794861602.687263  776939 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+  0/991
+  500/991
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0aa00048e0, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0aa0004530, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0a9c004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0a9c004490, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0aac005030, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0aac004c80, name=GPU WebGPU
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0a98004840, name=CpuAccelerator
+INFO: [accelerator_registry.cc:43] DestroyAccelerator: ptr=0x7a0a98004490, name=GPU WebGPU
+SocialDF: bao phu mat 0.979, co tieng 0.991
+                     auc     eer  detected  false_alarm
+branch family                                          
+video  baseline   0.5887  0.4425    0.3797       0.1479
+       aug        0.5897  0.4193    0.1825       0.0317
+       V-A        0.5939  0.4398    0.1515       0.0250
+       V-B        0.6515  0.3867    0.2199       0.0169
+       V-SBI      0.6364  0.4062    0.1960       0.0500
+audio  audio cu   0.5311  0.4865    0.9318       0.9391
+       audio v2a  0.4819  0.5057    0.5341       0.5499
+       audio v2b  0.4637  0.5214    0.4394       0.4861
+                                                                                                          0
+branch                                                                                               fusion
+ckpt                       checkpoints_video_vb_s44/best_effnet_b0.pt+checkpoints_audio_v2b_s43/best_mlp.pt
+family                                                                                                  API
+coverage                                                                                             0.9697
+n                                                                                                       961
+auc_mean                                                                                              0.588
+auc_video_only                                                                                        0.665
+auc_audio_only                                                                                        0.462
+or_rule_detected                                                                                     0.5882
+or_rule_detected_lo                                                                                   0.545
+or_rule_detected_hi                                                                                  0.6301
+or_rule_false_alarm                                                                                  0.5166
+or_rule_false_alarm_lo                                                                               0.4706
+or_rule_false_alarm_hi                                                                               0.5624
+video_only_detected                                                                                  0.2804
+video_only_detected_lo                                                                               0.2432
+video_only_detected_hi                                                                               0.3209
+video_only_false_alarm                                                                                 0.02
+video_only_false_alarm_lo                                                                            0.0105
+video_only_false_alarm_hi                                                                            0.0375
+audio_only_detected                                                                                  0.4529
+audio_only_detected_lo                                                                               0.4103
+audio_only_detected_hi                                                                               0.4963
+audio_only_false_alarm                                                                               0.5055
+audio_only_false_alarm_lo                                                                            0.4595
+audio_only_false_alarm_hi                                                                            0.5514

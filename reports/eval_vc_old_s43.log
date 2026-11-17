@@ -1,0 +1,11 @@
+Checkpoint checkpoints_video_vc_s43/best_effnet_b0.pt: epoch 7 (Val AUC luc huan luyen = 0.9512)
+
+--- KET QUA DANH GIA ---
+--> Nguong EER chon tren Val: 0.6505
+FF++ c23 Val           | Videos: 694  | AUC: 0.9512 [0.9360, 0.9662] | EER: 0.1017 | Acc@ValThr: 0.8977 | F1@ValThr: 0.9335 (Acc@0.5: 0.9020)
+FF++ c23 Test          | Videos: 700  | AUC: 0.9524 [0.9357, 0.9673] | EER: 0.1062 | Acc@ValThr: 0.8957 | F1@ValThr: 0.9333 (Acc@0.5: 0.9057)
+Celeb-DF v2 (200)      | Videos: 200  | AUC: 0.6754 [0.5961, 0.7479] | EER: 0.3650 | Acc@ValThr: 0.6550 | F1@ValThr: 0.6188 (Acc@0.5: 0.6200)
+Celeb-DF CRF30 (200)   | Videos: 200  | AUC: 0.6037 [0.5230, 0.6857] | EER: 0.3750 | Acc@ValThr: 0.5650 | F1@ValThr: 0.3256 (Acc@0.5: 0.5950)
+FF++ c40 Test          | Videos: 699  | AUC: 0.8361 [0.8014, 0.8680] | EER: 0.2449 | Acc@ValThr: 0.7182 | F1@ValThr: 0.7950 (Acc@0.5: 0.7754)
+
+Da ghi bang tong hop vao reports/eval/checkpoints_video_vc_s43/summary.csv va nhat ky reports/eval_ledger.csv

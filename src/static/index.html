@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiểm tra Deepfake</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--fg:#1c2330;--muted:#5d6878;--line:#dfe3ea;--accent:#2f5bd3;
+--bad:#c0392b;--bad-bg:#fdecea;--ok:#1e7d4f;--ok-bg:#e7f5ee;--unk:#8a6d00;--unk-bg:#fff6d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151b;--card:#1b2029;--fg:#e6e9ef;--muted:#9aa4b5;--line:#2c3340;--accent:#7a9cff;
+--bad:#ff8a7a;--bad-bg:#3a1f1c;--ok:#6fd3a0;--ok-bg:#16301f;--unk:#e8c65a;--unk-bg:#352d10}}
+:root[data-theme="dark"]{--bg:#12151b;--card:#1b2029;--fg:#e6e9ef;--muted:#9aa4b5;--line:#2c3340;--accent:#7a9cff;
+--bad:#ff8a7a;--bad-bg:#3a1f1c;--ok:#6fd3a0;--ok-bg:#16301f;--unk:#e8c65a;--unk-bg:#352d10}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:16px}
+.drop{border:2px dashed var(--line);border-radius:12px;padding:28px 16px;text-align:center;cursor:pointer;transition:border-color .15s}
+.drop:hover,.drop.over{border-color:var(--accent)}
+.drop input{display:none}
+.drop b{color:var(--accent)}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:12px}
+label.chk{display:flex;gap:6px;align-items:center;color:var(--muted)}
+button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 18px;font:inherit;cursor:pointer}
+button:disabled{opacity:.5;cursor:default}
+.fname{color:var(--muted);font-size:14px;word-break:break-all}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:680px){.grid{grid-template-columns:1fr}}
+h2{font-size:16px;margin:0 0 10px}
+.badge{display:inline-block;padding:4px 12px;border-radius:999px;font-weight:600;font-size:14px}
+.v-high_suspicion{background:var(--bad-bg);color:var(--bad)}
+.v-no_sign_detected{background:var(--ok-bg);color:var(--ok)}
+.v-inconclusive{background:var(--unk-bg);color:var(--unk)}
+.big{font-size:28px;font-weight:700;margin:10px 0 2px}
+.bar{position:relative;height:10px;background:var(--line);border-radius:5px;margin:8px 0 4px}
+.bar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--accent)}
+.bar s{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--fg)}
+.small{font-size:13px;color:var(--muted)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:10px 0 0;font-size:13px}
+dt{color:var(--muted)}dd{margin:0;word-break:break-all}
+img.cam{width:100%;border-radius:8px;margin-top:10px}
+svg.spark{width:100%;height:70px;margin-top:8px}
+.err{color:var(--bad)}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:r .8s linear infinite;vertical-align:-2px}
+@keyframes r{to{transform:rotate(360deg)}}
+footer{color:var(--muted);font-size:13px;margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+<h1>Kiểm tra video / âm thanh deepfake</h1>
+<p class="sub" id="ver">Đang kết nối API…</p>
+
+<div class="card">
+  <label class="drop" id="drop">
+    <input type="file" id="file" accept="video/*,audio/*,.wav,.flac,.mp4,.mov,.mkv,.webm,.avi">
+    <div><b>Chọn file</b> hoặc kéo thả vào đây</div>
+    <div class="small">Video (mp4, mov, webm…) hoặc âm thanh (wav, flac). Tối đa 100 MB. File chỉ xử lý trên máy này.</div>
+    <div class="fname" id="fname"></div>
+  </label>
+  <div class="row">
+    <label class="chk"><input type="checkbox" id="doVideo" checked> Kiểm tra hình (khuôn mặt)</label>
+    <label class="chk"><input type="checkbox" id="doAudio" checked> Kiểm tra giọng nói</label>
+    <label class="chk"><input type="checkbox" id="doCam" checked> Bản đồ nhiệt Grad-CAM</label>
+    <button id="go" disabled>Kiểm tra</button>
+  </div>
+</div>
+
+<div class="grid" id="out" hidden>
+  <div class="card" id="vcard"><h2>Hình ảnh</h2><div id="vbody"></div></div>
+  <div class="card" id="acard"><h2>Âm thanh</h2><div id="abody"></div></div>
+</div>
+
+<footer>
+  Ba mức kết luận: <b>Nghi ngờ cao</b> (điểm vượt ngưỡng báo nhầm 5% trên dữ liệu kiểm định),
+  <b>Không thấy dấu hiệu</b>, <b>Không kết luận được</b> (quá ít khuôn mặt, không có tiếng, hoặc quá ngắn).
+  Kết quả chỉ mang tính tham khảo, không phải kết luận pháp y. Cả hai nhánh bỏ sót nhiều deepfake thế hệ mới (video tạo bằng mô hình khuếch tán, giọng nhân bản ngoài các bộ dữ liệu đã học); "Không thấy dấu hiệu" không có nghĩa là file chắc chắn thật.
+</footer>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const VERDICT = {high_suspicion:'Nghi ngờ cao', no_sign_detected:'Không thấy dấu hiệu', inconclusive:'Không kết luận được'};
+const AUDIO_EXT = ['.wav','.flac'];
+const AUDIO_NOTE = 'Mô hình học trên ASVspoof 2019 LA, MAVOS-DD và LAV-DF. Ngưỡng được đặt dè dặt: ít báo nhầm giọng thật, nhưng bỏ sót nhiều giọng giả ngoài các bộ dữ liệu này. Chỉ mang tính tham khảo.';
+const STATUS_MSG = {
+  unreadable: 'Không đọc được hình từ file (file hỏng hoặc định dạng không hỗ trợ).',
+  no_reliable_face: 'Có dưới 4 frame có khuôn mặt rõ, không đủ để chấm điểm.',
+  no_audio: 'File không có tiếng hoặc tiếng quá ngắn sau khi bỏ khoảng lặng, không chấm điểm.'
+};
+const HTTP_MSG = {413: 'File quá lớn (tối đa 100 MB).', 415: 'Định dạng file không được hỗ trợ.',
+  422: 'Không đọc được âm thanh trong file (file hỏng hoặc định dạng không hỗ trợ).'};
+let file = null;
+
+fetch('health').then(r => r.json()).then(h => {
+  $('ver').textContent = `Mô hình hình: ${h.model_version} · Mô hình âm thanh: ${h.audio_model_version}`;
+}).catch(() => { $('ver').innerHTML = '<span class="err">Không kết nối được API.</span>'; });
+
+function pick(f){
+  if(!f) return;
+  file = f;
+  $('fname').textContent = `${f.name} (${(f.size/1048576).toFixed(1)} MB)`;
+  const isAudio = AUDIO_EXT.some(e => f.name.toLowerCase().endsWith(e));
+  $('doVideo').checked = !isAudio; $('doVideo').disabled = isAudio;
+  $('go').disabled = false;
+}
+$('file').onchange = e => pick(e.target.files[0]);
+const drop = $('drop');
+['dragenter','dragover'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.add('over'); }));
+['dragleave','drop'].forEach(ev => drop.addEventListener(ev, e => { e.preventDefault(); drop.classList.remove('over'); }));
+drop.addEventListener('drop', e => pick(e.dataTransfer.files[0]));
+
+async function call(path){
+  const fd = new FormData(); fd.append('file', file);
+  const r = await fetch(path, {method:'POST', body:fd});
+  const j = await r.json().catch(() => ({}));
+  if(!r.ok) throw new Error(HTTP_MSG[r.status] || j.detail || `Lỗi máy chủ (HTTP ${r.status})`);
+  return j;
+}
+
+function bar(value, thr, max){
+  const p = v => Math.max(0, Math.min(100, v / max * 100));
+  return `<div class="bar"><i style="width:${p(value)}%"></i><s style="left:${p(thr)}%" title="Ngưỡng"></s></div>`;
+}
+function badge(v){ return `<span class="badge v-${v}">${VERDICT[v] || v}</span>`; }
+
+function spark(scores, thr){
+  const w = 400, h = 70, n = scores.length;
+  const x = i => n > 1 ? i / (n - 1) * (w - 8) + 4 : w / 2;
+  const y = v => h - 4 - v * (h - 8);
+  const pts = scores.map((s, i) => `${x(i).toFixed(1)},${y(s.prob_fake).toFixed(1)}`).join(' ');
+  return `<svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <line x1="0" x2="${w}" y1="${y(thr)}" y2="${y(thr)}" stroke="currentColor" stroke-dasharray="4 4" opacity=".5"/>
+    <polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="2"/>
+    ${scores.map((s, i) => `<circle cx="${x(i)}" cy="${y(s.prob_fake)}" r="2.5" fill="var(--accent)"><title>Frame ${s.frame}: ${s.prob_fake}</title></circle>`).join('')}
+  </svg><div class="small">Xác suất giả theo từng frame (nét đứt = ngưỡng)</div>`;
+}
+
+function showVideo(j){
+  let h = badge(j.verdict);
+  if(j.status === 'ok'){
+    h += `<div class="big">${(j.score*100).toFixed(1)}%</div><div class="small">điểm giả trung bình · ngưỡng ${(j.threshold_fpr5*100).toFixed(1)}%</div>`;
+    h += bar(j.score, j.threshold_fpr5, 1);
+    if(j.frame_scores) h += spark(j.frame_scores, j.threshold_fpr5);
+    if(j.heatmap_jpeg_base64) h += `<img class="cam" alt="Grad-CAM" src="data:image/jpeg;base64,${j.heatmap_jpeg_base64}"><div class="small">Grad-CAM trên frame nghi ngờ nhất (frame ${j.best_frame}): vùng đỏ là nơi mô hình chú ý.</div>`;
+  } else {
+    h += `<p>${STATUS_MSG[j.status] || j.note || ''}</p>`;
+  }
+  h += `<dl><dt>Frame đọc</dt><dd>${j.frames_read}</dd><dt>Frame có mặt</dt><dd>${j.frames_used} / ${j.frames_with_detection}</dd>
+        <dt>Thời gian</dt><dd>${j.processing_seconds} s</dd><dt>Mô hình</dt><dd>${j.model_version}</dd></dl>`;
+  $('vbody').innerHTML = h;
+}
+
+function showAudio(j){
+  let h = badge(j.verdict);
+  if(j.status === 'ok'){
+    const thr = j.threshold_logit_fpr5, num = v => v.toFixed(2).replace('.', ',');
+    h += `<div class="big">${num(j.logit)}</div><div class="small">điểm giọng giả · ngưỡng nghi ngờ cao ${num(thr)} (${j.logit >= thr ? 'vượt' : 'dưới'} ngưỡng ${num(Math.abs(j.logit - thr))})</div>`;
+    const lo = -20, hi = 20;
+    h += bar(Math.max(lo, Math.min(hi, j.logit)) - lo, thr - lo, hi - lo);
+    h += `<div class="small">Điểm là đầu ra thô của mô hình (logit), không phải xác suất. Chỉ khi vượt vạch ngưỡng mới kết luận nghi ngờ cao.</div>`;
+  } else {
+    h += `<p>${STATUS_MSG[j.status] || j.note || ''}</p>`;
+  }
+  h += `<dl><dt>Giây âm thanh</dt><dd>${j.audio_seconds_used}</dd><dt>Nguồn</dt><dd>${j.source}${j.silence_trimmed ? ', đã cắt im lặng' : ''}</dd>
+        <dt>Thời gian</dt><dd>${j.processing_seconds} s</dd><dt>Mô hình</dt><dd>${j.model_version}</dd></dl>`;
+  if(j.status === 'ok') h += `<p class="small">${AUDIO_NOTE}</p>`;
+  $('abody').innerHTML = h;
+}
+
+$('go').onclick = async () => {
+  const dv = $('doVideo').checked && !$('doVideo').disabled, da = $('doAudio').checked;
+  if(!dv && !da) return;
+  $('go').disabled = true; $('out').hidden = false;
+  $('vcard').hidden = !dv; $('acard').hidden = !da;
+  const wait = '<span class="spin"></span> Đang xử lý…';
+  if(dv) $('vbody').innerHTML = wait;
+  if(da) $('abody').innerHTML = wait;
+  const cam = $('doCam').checked;
+  const jobs = [];
+  if(dv) jobs.push(call(`predict?heatmap=${cam}`).then(showVideo).catch(e => $('vbody').innerHTML = `<p class="err">Lỗi: ${e.message}</p>`));
+  if(da) jobs.push(call('predict_audio').then(showAudio).catch(e => $('abody').innerHTML = `<p class="err">Lỗi: ${e.message}</p>`));
+  await Promise.all(jobs);
+  $('go').disabled = false;
+};
+</script>
+</body>
+</html>

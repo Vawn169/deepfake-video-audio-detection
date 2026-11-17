@@ -4,7 +4,7 @@ import mediapipe as mp
 from mediapipe.tasks import python as mp_python
 from mediapipe.tasks.python import vision
 
-OUT = 'data/gradcam_out'
+OUT = sys.argv[1] if len(sys.argv) > 1 else 'data/gradcam_out'   # 17/11: them tham so thu muc (Grad-CAM vb_s44)
 ROOT = 'data/processed/ffpp_c23/test'
 LIPS = [61,146,91,181,84,17,314,405,321,375,291,409,270,269,267,0,37,39,40,185]
 LEYE = [263,249,390,373,374,380,381,382,362,398,384,385,386,387,388,466]

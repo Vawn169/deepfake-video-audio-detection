@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 37/211 [00:00<00:00, 336.61it/s]Loading weights:  39%|███▉      | 82/211 [00:00<00:00, 390.38it/s]Loading weights:  60%|██████    | 127/211 [00:00<00:00, 403.05it/s]Loading weights:  80%|████████  | 169/211 [00:00<00:00, 397.31it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 470.52it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+lavdf_train: 1000/6000  40.6 file/s
+lavdf_train: 2000/6000  41.4 file/s
+lavdf_train: 3000/6000  41.7 file/s
+lavdf_train: 4000/6000  41.7 file/s
+lavdf_train: 5000/6000  41.4 file/s
+lavdf_train: 6000/6000  41.7 file/s
+XONG lavdf_train: 6000 file, bo 0 khong co tieng [], 144s
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  75%|███████▌  | 159/211 [00:00<00:00, 1586.70it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 1943.44it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+XONG lavdf_dev: 800 file, bo 0 khong co tieng [], 19s

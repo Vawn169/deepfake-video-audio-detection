@@ -33,8 +33,8 @@ def _post(client, url, path):
 def test_health(client):
     r = client.get('/health').json()
     assert r['status'] == 'ok'
-    assert r['model_version'].startswith('effnet_b0-aug_s44')
-    assert r['audio_model_version'].startswith('w2v2base-L4-mlp-audio_v2b_s43')
+    assert r['model_version'].startswith('effnet_b0-vb_s44')
+    assert r['audio_model_version'].startswith('w2v2base-L4-mlp-audio_v2c_s44')
 
 
 def test_video_without_face_is_not_scored(client, media):
@@ -69,3 +69,9 @@ def test_unsupported_extension_rejected(client, media):
 
 def test_broken_audio_rejected(client, media):
     assert _post(client, '/predict_audio', media / 'broken.wav').status_code == 422
+
+
+def test_unreadable_video_is_reported(client, tmp_path):
+    bad = tmp_path / 'bad.mp4'; bad.write_bytes(b'not a video')
+    r = _post(client, '/predict?heatmap=false', bad).json()
+    assert r['status'] == 'unreadable' and r['verdict'] == 'inconclusive' and r['score'] is None

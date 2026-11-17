@@ -1,5 +1,6 @@
 import os, tempfile, threading
 from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.responses import FileResponse
 from api_core import AUDIO_EXT, VIDEO_EXT, AudioEngine, Engine
 
 MAX_MB = 100
@@ -22,6 +23,12 @@ def _save_upload(file, default_suffix):
     with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
         tmp.write(data)
         return tmp.name, suffix
+
+
+@app.get('/', include_in_schema=False)
+def demo_page():
+    """Trang demo tam: tai file len, goi /predict va /predict_audio, hien ket qua."""
+    return FileResponse(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static', 'index.html'))
 
 
 @app.get('/health')

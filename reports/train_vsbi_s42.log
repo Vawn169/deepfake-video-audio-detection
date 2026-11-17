@@ -1,0 +1,16 @@
+Train frames: 78172 (4969 videos) | pos_weight: 0.168 | anh that co diem moc: 11220/11232
+Val FF++: 694 videos | Val moi: 410 videos
+
+--- V-SBI TRAIN seed 42 tren cuda (10 EPOCHS) ---
+Epoch 01/10 (183.4s) | Train Loss: 0.1177 | Val AUC: 0.9197 | ValMoi AUC: 0.9444 | Score: 0.9321 [*BEST*]
+Epoch 02/10 (172.5s) | Train Loss: 0.0933 | Val AUC: 0.9470 | ValMoi AUC: 0.9706 | Score: 0.9588 [*BEST*]
+Epoch 03/10 (162.7s) | Train Loss: 0.0787 | Val AUC: 0.9583 | ValMoi AUC: 0.9819 | Score: 0.9701 [*BEST*]
+Epoch 04/10 (155.2s) | Train Loss: 0.0698 | Val AUC: 0.9688 | ValMoi AUC: 0.9860 | Score: 0.9774 [*BEST*]
+Epoch 05/10 (154.7s) | Train Loss: 0.0608 | Val AUC: 0.9660 | ValMoi AUC: 0.9865 | Score: 0.9762
+Epoch 06/10 (157.8s) | Train Loss: 0.0545 | Val AUC: 0.9633 | ValMoi AUC: 0.9835 | Score: 0.9734
+Epoch 07/10 (154.1s) | Train Loss: 0.0486 | Val AUC: 0.9691 | ValMoi AUC: 0.9853 | Score: 0.9772
+Epoch 08/10 (153.6s) | Train Loss: 0.0425 | Val AUC: 0.9695 | ValMoi AUC: 0.9841 | Score: 0.9768
+Epoch 09/10 (154.1s) | Train Loss: 0.0400 | Val AUC: 0.9700 | ValMoi AUC: 0.9836 | Score: 0.9768
+Epoch 10/10 (153.3s) | Train Loss: 0.0388 | Val AUC: 0.9707 | ValMoi AUC: 0.9855 | Score: 0.9781 [*BEST*]
+
+Hoan tat. Best select score: 0.9781 (luu tai checkpoints_video_vsbi_s42/best_effnet_b0.pt)

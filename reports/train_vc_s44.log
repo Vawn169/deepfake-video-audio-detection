@@ -1,0 +1,16 @@
+Train frames: 241360 (15783 videos) | pos_weight: 0.584
+Val: ffpp 694 videos, vb 410 videos, mavos 747 videos, lavdf 800 videos
+
+--- V-C TRAIN seed 44 tren cuda (10 EPOCHS) ---
+Epoch 01/10 (486.8s) | Train Loss: 0.2580 | ffpp 0.9229 | vb 0.9424 | mavos 0.9665 | lavdf 0.7475 | Score: 0.8948 [*BEST*]
+Epoch 02/10 (472.0s) | Train Loss: 0.1669 | ffpp 0.9453 | vb 0.9628 | mavos 0.9609 | lavdf 0.7360 | Score: 0.9012 [*BEST*]
+Epoch 03/10 (472.0s) | Train Loss: 0.1302 | ffpp 0.9437 | vb 0.9621 | mavos 0.9604 | lavdf 0.7494 | Score: 0.9039 [*BEST*]
+Epoch 04/10 (472.2s) | Train Loss: 0.1052 | ffpp 0.9522 | vb 0.9640 | mavos 0.9575 | lavdf 0.7426 | Score: 0.9041 [*BEST*]
+Epoch 05/10 (467.0s) | Train Loss: 0.0868 | ffpp 0.9510 | vb 0.9597 | mavos 0.9595 | lavdf 0.7329 | Score: 0.9008
+Epoch 06/10 (467.5s) | Train Loss: 0.0699 | ffpp 0.9572 | vb 0.9675 | mavos 0.9596 | lavdf 0.7257 | Score: 0.9025
+Epoch 07/10 (467.4s) | Train Loss: 0.0557 | ffpp 0.9556 | vb 0.9678 | mavos 0.9573 | lavdf 0.7298 | Score: 0.9026
+Epoch 08/10 (468.0s) | Train Loss: 0.0454 | ffpp 0.9497 | vb 0.9638 | mavos 0.9574 | lavdf 0.7382 | Score: 0.9023
+Epoch 09/10 (466.2s) | Train Loss: 0.0385 | ffpp 0.9531 | vb 0.9664 | mavos 0.9572 | lavdf 0.7257 | Score: 0.9006
+Epoch 10/10 (467.0s) | Train Loss: 0.0340 | ffpp 0.9506 | vb 0.9648 | mavos 0.9570 | lavdf 0.7317 | Score: 0.9010
+
+Hoan tat. Best select score: 0.9041 (luu tai checkpoints_video_vc_s44/best_effnet_b0.pt)

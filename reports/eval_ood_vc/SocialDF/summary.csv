@@ -1,0 +1,19 @@
+branch,ckpt,family,thr,coverage,table,subset,n_pos,n_neg,detected,detected_lo,detected_hi,detected_eerthr,false_alarm,false_alarm_lo,false_alarm_hi,false_alarm_eerthr,auc,eer
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9788,all,all,517,453,0.0986,0.0758,0.1274,0.2302,0.0464,0.0305,0.0698,0.1015,0.547,0.4422
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9788,group,fake,517,453,0.0986,0.0758,0.1274,0.2302,0.0464,0.0305,0.0698,0.1015,0.547,0.4422
+video,checkpoints_video_vc_s42/best_effnet_b0.pt,V-C,0.7069,0.9788,group,real,0,453,,,,,0.0464,0.0305,0.0698,0.1015,,
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9788,all,all,517,453,0.087,0.0657,0.1145,0.1489,0.0199,0.0105,0.0373,0.0773,0.5236,0.4722
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9788,group,fake,517,453,0.087,0.0657,0.1145,0.1489,0.0199,0.0105,0.0373,0.0773,0.5236,0.4722
+video,checkpoints_video_vc_s43/best_effnet_b0.pt,V-C,0.8315,0.9788,group,real,0,453,,,,,0.0199,0.0105,0.0373,0.0773,,
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9788,all,all,517,453,0.087,0.0657,0.1145,0.1335,0.0419,0.027,0.0646,0.0728,0.4518,0.5289
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9788,group,fake,517,453,0.087,0.0657,0.1145,0.1335,0.0419,0.027,0.0646,0.0728,0.4518,0.5289
+video,checkpoints_video_vc_s44/best_effnet_b0.pt,V-C,0.7605,0.9788,group,real,0,453,,,,,0.0419,0.027,0.0646,0.0728,,
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,0.9909,all,all,528,454,0.0019,0.0003,0.0106,,0.0132,0.0061,0.0285,,0.4213,0.557
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,0.9909,group,fake,528,454,0.0019,0.0003,0.0106,,0.0132,0.0061,0.0285,,0.4213,0.557
+audio,checkpoints_audio_v2c_s42/best_mlp.pt,audio v2c,6.8189,0.9909,group,real,0,454,,,,,0.0132,0.0061,0.0285,,,
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,0.9909,all,all,528,454,0.0019,0.0003,0.0106,,0.0154,0.0075,0.0315,,0.4149,0.5662
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,0.9909,group,fake,528,454,0.0019,0.0003,0.0106,,0.0154,0.0075,0.0315,,0.4149,0.5662
+audio,checkpoints_audio_v2c_s43/best_mlp.pt,audio v2c,6.5142,0.9909,group,real,0,454,,,,,0.0154,0.0075,0.0315,,,
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,0.9909,all,all,528,454,0.0019,0.0003,0.0106,,0.0154,0.0075,0.0315,,0.422,0.557
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,0.9909,group,fake,528,454,0.0019,0.0003,0.0106,,0.0154,0.0075,0.0315,,0.422,0.557
+audio,checkpoints_audio_v2c_s44/best_mlp.pt,audio v2c,6.8268,0.9909,group,real,0,454,,,,,0.0154,0.0075,0.0315,,,

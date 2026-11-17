@@ -1,0 +1,16 @@
+Phan tich duoc 49/50 anh. Khong thay landmark: ['NeuralTextures_759_755']
+                nang_luong_mat_mui_mieng  dien_tich_mat_mui_mieng  nang_luong_mat_con_lai  dien_tich_mat_con_lai  nang_luong_ngoai_mat  dien_tich_ngoai_mat
+method                                                                                                                                                     
+Deepfakes                          0.199                    0.064                   0.731                  0.422                 0.069                0.514
+Face2Face                          0.183                    0.061                   0.669                  0.411                 0.148                0.528
+FaceSwap                           0.171                    0.065                   0.734                  0.447                 0.094                0.488
+NeuralTextures                     0.176                    0.055                   0.680                  0.396                 0.144                0.548
+real                               0.147                    0.055                   0.595                  0.379                 0.257                0.567
+
+Ca sai:
+             method video_id label prob_mean  nang_luong_mat_mui_mieng  dien_tich_mat_mui_mieng  nang_luong_mat_con_lai  dien_tich_mat_con_lai  nang_luong_ngoai_mat  dien_tich_ngoai_mat
+1             real      724     0    0.6107                    0.2256                   0.0633                  0.6190                 0.3818                0.1555               0.5549
+2             real      047     0    0.9313                    0.1901                   0.0461                  0.6944                 0.3257                0.1155               0.6282
+7             real      507     0    0.8021                    0.1581                   0.0495                  0.7171                 0.4095                0.1247               0.5410
+8             real      862     0    0.6926                    0.1264                   0.0160                  0.5742                 0.0943                0.2994               0.8897
+48  NeuralTextures  142_138     1    0.4053                    0.0826                   0.0652                  0.8026                 0.4276                0.1148               0.5072

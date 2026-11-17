@@ -5,7 +5,7 @@ from api_core import Engine
 
 rows = [r for r in csv.DictReader(open('configs/manifest_ffpp_c23.csv')) if r['split'] == 'test']
 random.Random(1).shuffle(rows)
-pred = pd.read_csv('reports/eval/checkpoints_aug_s44/predictions/ffpp_c23_test_preds.csv').set_index('video_id')['prob']
+pred = pd.read_csv('reports/eval/checkpoints_video_vb_s44/predictions/ffpp_c23_test_preds.csv').set_index('video_id')['prob']
 eng, diffs = Engine(), []
 for r in rows:
     vid = f"{r['method']}_{r['video_id'].strip()}"

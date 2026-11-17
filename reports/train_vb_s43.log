@@ -1,0 +1,16 @@
+Train frames: 78172 (4969 videos) | pos_weight: 0.168
+Val FF++: 694 videos | Val moi: 410 videos
+
+--- V-B TRAIN seed 43 tren cuda (10 EPOCHS) ---
+Epoch 01/10 (205.5s) | Train Loss: 0.1452 | Val AUC: 0.9480 | ValMoi AUC: 0.9721 | Score: 0.9601 [*BEST*]
+Epoch 02/10 (208.6s) | Train Loss: 0.1011 | Val AUC: 0.9578 | ValMoi AUC: 0.9782 | Score: 0.9680 [*BEST*]
+Epoch 03/10 (192.0s) | Train Loss: 0.0825 | Val AUC: 0.9686 | ValMoi AUC: 0.9797 | Score: 0.9741 [*BEST*]
+Epoch 04/10 (196.1s) | Train Loss: 0.0700 | Val AUC: 0.9708 | ValMoi AUC: 0.9843 | Score: 0.9775 [*BEST*]
+Epoch 05/10 (208.2s) | Train Loss: 0.0605 | Val AUC: 0.9655 | ValMoi AUC: 0.9811 | Score: 0.9733
+Epoch 06/10 (208.7s) | Train Loss: 0.0512 | Val AUC: 0.9679 | ValMoi AUC: 0.9834 | Score: 0.9757
+Epoch 07/10 (191.3s) | Train Loss: 0.0434 | Val AUC: 0.9757 | ValMoi AUC: 0.9889 | Score: 0.9823 [*BEST*]
+Epoch 08/10 (207.5s) | Train Loss: 0.0367 | Val AUC: 0.9732 | ValMoi AUC: 0.9877 | Score: 0.9804
+Epoch 09/10 (191.4s) | Train Loss: 0.0331 | Val AUC: 0.9713 | ValMoi AUC: 0.9847 | Score: 0.9780
+Epoch 10/10 (209.5s) | Train Loss: 0.0313 | Val AUC: 0.9727 | ValMoi AUC: 0.9868 | Score: 0.9798
+
+Hoan tat. Best select score: 0.9823 (luu tai checkpoints_video_vb_s43/best_effnet_b0.pt)

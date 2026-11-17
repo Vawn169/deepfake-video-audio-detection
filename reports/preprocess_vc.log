@@ -1,0 +1,62 @@
+INFO: INFO: INFO: [environment.cc:36] Creating LiteRT environment with options[environment.cc:36] Creating LiteRT environment with options[environment.cc:36] Creating LiteRT environment with options
+
+
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879b00045f0, name=GPU WebGPUINFO: 
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a40045f0, name=GPU WebGPU[accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a8002430, name=GPU WebGPU
+INFO: 
+[gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879b00049a0, name=CpuAcceleratorINFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+[gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: 
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.INFO: 
+[accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a40049a0, name=CpuAccelerator[accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a80027e0, name=CpuAccelerator
+
+INFO: INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.[cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+
+INFO: INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+[compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+INFO: [environment.cc:36] Creating LiteRT environment with options
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a40045f0, name=GPU WebGPU
+INFO: [gpu_registry.cc:113] Statically linked GPU accelerator registered.
+INFO: [accelerator_registry.cc:54] RegisterAccelerator: ptr=0x7879a40049a0, name=CpuAccelerator
+INFO: [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+INFO: [compiled_model.cc:829] Flatbuffer model initialized directly from incoming litert model.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794865911.564991 1023013 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794865911.565585 1023015 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794865911.570648 1023016 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1794865911.570752 1023009 inference_runner_litert.cc:1090] Input tensor memory is not aligned according to LiteRt's memory alignment requirements. Reallocating memory and copying data.
+500/12720 | 1.94 video/s
+1000/12720 | 1.32 video/s
+1500/12720 | 1.25 video/s
+2000/12720 | 1.13 video/s
+2500/12720 | 1.14 video/s
+3000/12720 | 1.16 video/s
+3500/12720 | 1.26 video/s
+4000/12720 | 1.31 video/s
+4500/12720 | 1.31 video/s
+5000/12720 | 1.26 video/s
+5500/12720 | 1.24 video/s
+6000/12720 | 1.28 video/s
+6500/12720 | 1.37 video/s
+7000/12720 | 1.47 video/s
+7500/12720 | 1.56 video/s
+8000/12720 | 1.65 video/s
+8500/12720 | 1.74 video/s
+9000/12720 | 1.83 video/s
+9500/12720 | 1.92 video/s
+10000/12720 | 2.00 video/s
+10500/12720 | 2.09 video/s
+11000/12720 | 2.17 video/s
+11500/12720 | 2.26 video/s
+12000/12720 | 2.34 video/s
+12500/12720 | 2.42 video/s
+Xong 12720 video moi trong 5177s

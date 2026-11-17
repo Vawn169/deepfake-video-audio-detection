@@ -1,0 +1,4 @@
+set,part,ckpt,n,n_scored,coverage,threshold,false_alarm,false_alarm_ci_low,false_alarm_ci_high,n_false_alarm,detected,detected_ci_low,detected_ci_high,n_detected,auc,eer,fpr5_false_alarm,fpr5_false_alarm_ci_low,fpr5_false_alarm_ci_high,fpr5_n_false_alarm,fpr5_detected,fpr5_detected_ci_low,fpr5_detected_ci_high,fpr5_n_detected
+R4,audio,checkpoints_audio_v2c_s42/best_mlp.pt,5000,5000,1.0,6.8189,0.1196,0.1088,0.1314,3160,0.575,0.5523,0.5974,1840,0.848,0.226,,,,,,,,
+R4,audio,checkpoints_audio_v2c_s43/best_mlp.pt,5000,5000,1.0,6.5142,0.1206,0.1097,0.1324,3160,0.6185,0.5961,0.6404,1840,0.8579,0.2228,,,,,,,,
+R4,audio,checkpoints_audio_v2c_s44/best_mlp.pt,5000,5000,1.0,6.8268,0.1307,0.1194,0.1429,3160,0.6087,0.5862,0.6307,1840,0.8481,0.2298,0.1203,0.1094,0.1321,3160.0,0.5918,0.5692,0.6141,1840.0

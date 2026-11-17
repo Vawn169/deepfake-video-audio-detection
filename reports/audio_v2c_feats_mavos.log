@@ -1,0 +1,35 @@
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 2159.27it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+mavos_train: 1000/5120  31.9 file/s
+mavos_train: 2000/5120  33.9 file/s
+mavos_train: 3000/5120  34.0 file/s
+mavos_train: 4000/5120  33.5 file/s
+mavos_train: 5000/5120  33.3 file/s
+XONG mavos_train: 5120 file, bo 0 khong co tieng [], 155s
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 165/211 [00:00<00:00, 1645.85it/s]Loading weights: 100%|██████████| 211/211 [00:00<00:00, 2070.82it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: /home/van/deepfake-video/models/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+project_q.bias               | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+XONG mavos_val: 800 file, bo 0 khong co tieng [], 24s

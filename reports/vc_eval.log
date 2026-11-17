@@ -1,0 +1,13 @@
+11:51:30 bat dau eval_vc_old_s42: .venv/bin/python -u src/evaluate.py --ckpt checkpoints_video_vc_s42/best_effnet_b0.pt --datasets val test celebdf crf30 c40
+11:52:30 xong eval_vc_old_s42 (0 lan tam dung lam mat). Max nhiet: 57C
+11:52:30 bat dau eval_vc_old_s43: .venv/bin/python -u src/evaluate.py --ckpt checkpoints_video_vc_s43/best_effnet_b0.pt --datasets val test celebdf crf30 c40
+11:53:30 xong eval_vc_old_s43 (0 lan tam dung lam mat). Max nhiet: 55C
+11:53:30 bat dau eval_vc_old_s44: .venv/bin/python -u src/evaluate.py --ckpt checkpoints_video_vc_s44/best_effnet_b0.pt --datasets val test celebdf crf30 c40
+11:54:30 xong eval_vc_old_s44 (0 lan tam dung lam mat). Max nhiet: 57C
+11:54:30 bat dau eval_vc_vb: .venv/bin/python -u src/eval_vb.py --only V-C
+12:19:15 xong eval_vc_vb (0 lan tam dung lam mat). Max nhiet: 52C
+12:19:15 bat dau eval_v2c_old: .venv/bin/python -u -c import sys; sys.path.insert(0,'src'); from audio_v2 import evaluate; evaluate('c')
+12:19:56 xong eval_v2c_old (0 lan tam dung lam mat). Max nhiet: 48C
+12:19:56 bat dau eval_vc_ood: .venv/bin/python -u src/eval_ood.py --sets MAVOS-DD AV-Deepfake1M LAV-DF SocialDF --families V-C audio v2c
+14:35:59 xong eval_vc_ood (0 lan tam dung lam mat). Max nhiet: 58C
+14:35:59 DANH GIA V-C XONG

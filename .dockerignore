@@ -2,10 +2,10 @@
 !requirements-api.txt
 !src
 !models
-!checkpoints_aug_s44
-checkpoints_aug_s44/*
-!checkpoints_aug_s44/best_effnet_b0.pt
-!checkpoints_audio_v2b_s43
-checkpoints_audio_v2b_s43/*
-!checkpoints_audio_v2b_s43/best_mlp.pt
+!checkpoints_video_vb_s44
+checkpoints_video_vb_s44/*
+!checkpoints_video_vb_s44/best_effnet_b0.pt
+!checkpoints_audio_v2c_s44
+checkpoints_audio_v2c_s44/*
+!checkpoints_audio_v2c_s44/best_mlp.pt
 **/__pycache__
